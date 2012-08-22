@@ -12,7 +12,6 @@ describe Nfse::Lote do
 		end
 
 		it 'must have a default value' do
-			puts subject.id
 			subject.id.wont_be_nil
 		end
 	end
