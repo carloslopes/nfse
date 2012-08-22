@@ -5,6 +5,18 @@ describe Nfse::Lote do
 
 	subject { Nfse::Lote.new }
 
+	describe 'id attribute' do
+		it 'must have the accessors methods' do
+			subject.must_respond_to :id
+			subject.must_respond_to :id=
+		end
+
+		it 'must have a default value' do
+			puts subject.id
+			subject.id.wont_be_nil
+		end
+	end
+
 	describe 'cod_cidade attribute' do
 		it 'must have the accessors methods' do
 			subject.must_respond_to :cod_cidade
