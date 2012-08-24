@@ -3,158 +3,244 @@ require 'json'
 
 describe Nfse::Lote do
 
-	subject { Nfse::Lote.new }
+  subject { Nfse::Lote.new }
 
-	describe 'id attribute' do
-		it 'must have the accessors methods' do
-			subject.must_respond_to :id
-			subject.must_respond_to :id=
-		end
+  describe 'id attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :id
+      subject.must_respond_to :id=
+    end
 
-		it 'must have a default value' do
-			subject.id.wont_be_nil
-		end
-	end
+    it 'must have a default value' do
+      subject.id.wont_be_nil
+    end
+  end
 
-	describe 'cod_cidade attribute' do
-		it 'must have the accessors methods' do
-			subject.must_respond_to :cod_cidade
-			subject.must_respond_to :cod_cidade=
-		end
-	end
+  describe 'cod_cidade attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :cod_cidade
+      subject.must_respond_to :cod_cidade=
+    end
+  end
 
-	describe 'cpf_cnpj attribute' do
-		it 'must have the accessors methods' do
-			subject.must_respond_to :cpf_cnpj
-			subject.must_respond_to :cpf_cnpj=
-		end
-	end
+  describe 'cnpj attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :cnpj
+      subject.must_respond_to :cnpj=
+    end
+  end
 
-	describe 'razao_social attribute' do
-		it 'must have the accessors methods' do
-			subject.must_respond_to :razao_social
-			subject.must_respond_to :razao_social=
-		end
-	end
+  describe 'razao_social attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :razao_social
+      subject.must_respond_to :razao_social=
+    end
+  end
 
-	describe 'transacao attribute' do
-		it 'must have the accessors methods' do
-			subject.must_respond_to :transacao
-			subject.must_respond_to :transacao=
-		end
+  describe 'transacao attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :transacao
+      subject.must_respond_to :transacao=
+    end
 
-		it 'must have the right default value' do
-			subject.transacao.must_be :==, 'true'
-		end
+    it 'must have the right default value' do
+      subject.transacao.must_be :==, 'true'
+    end
 
-		it 'must respect if a new value is defined' do
-			value = 'false'
-			subject.transacao = value
-			subject.transacao.must_be :==, value
-		end
-	end
+    it 'must respect if a new value is defined' do
+      value = 'false'
+      subject.transacao = value
+      subject.transacao.must_be :==, value
+    end
+  end
 
-	describe 'data_inicio attribute' do
-		it 'must have the reader method' do
-			subject.must_respond_to :data_inicio
-		end
-	end
+  describe 'rps attribute' do
+    it 'must have the reader method' do
+      subject.must_respond_to :rps
+    end
 
-	describe 'data_fim attribute' do
-		it 'must have the reader method' do
-			subject.must_respond_to :data_fim
-		end
-	end
+    it 'must have the right value' do
+      subject.rps.must_be_instance_of Array
+    end
+  end
 
-	describe 'qtd_rps attribute' do
-		it 'must have the reader method' do
-			subject.must_respond_to :qtd_rps
-		end
-	end
+  describe 'versao attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :versao
+      subject.must_respond_to :versao=
+    end
 
-	describe 'valor_total_servicos attribute' do
-		it 'must have the reader method' do
-			subject.must_respond_to :valor_total_servicos
-		end
-	end
+    it 'must have the right default value' do
+      subject.versao.must_be :==, '1'
+    end
 
-	describe 'valor_total_deducoes attribute' do
-		it 'must have the reader method' do
-			subject.must_respond_to :valor_total_deducoes
-		end
-	end
+    it 'must respect if a new value is defined' do
+      value = '2'
+      subject.versao = value
+      subject.versao.must_be :==, value
+    end
+  end
 
-	describe 'versao attribute' do
-		it 'must have the accessors methods' do
-			subject.must_respond_to :versao
-			subject.must_respond_to :versao=
-		end
+  describe 'metodo_envio attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :metodo_envio
+      subject.must_respond_to :metodo_envio=
+    end
 
-		it 'must have the right default value' do
-			subject.versao.must_be :==, '1'
-		end
+    it 'must have the right default value' do
+      subject.metodo_envio.must_be :==, 'WS'
+    end
 
-		it 'must respect if a new value is defined' do
-			value = '2'
-			subject.versao = value
-			subject.versao.must_be :==, value
-		end
-	end
+    it 'must respect if a new value is defined' do
+      value = 'Foobar'
+      subject.metodo_envio = value
+      subject.metodo_envio.must_be :==, value
+    end
+  end
 
-	describe 'metodo_envio attribute' do
-		it 'must have the accessors methods' do
-			subject.must_respond_to :metodo_envio
-			subject.must_respond_to :metodo_envio=
-		end
+  describe '#qtd_rps method' do
+    it "must return the count of rps's that the lote has" do
+      subject.rps.push(*(1..10).to_a)
+      subject.qtd_rps.must_be :==, 10
+    end
+  end
 
-		it 'must have the right default value' do
-			subject.metodo_envio.must_be :==, 'WS'
-		end
+  describe '#valor_servicos method' do
+    it 'must return the sum of all Rps#valor_servico' do
+      rps = MiniTest::Mock.new
+      rps.expect(:valor_servico, 1000)
+      subject.rps << rps
 
-		it 'must respect if a new value is defined' do
-			value = 'Foobar'
-			subject.metodo_envio = value
-			subject.metodo_envio.must_be :==, value
-		end
-	end
+      rps = MiniTest::Mock.new
+      rps.expect(:valor_servico, 500)
+      subject.rps << rps
 
-	describe 'initialize passing a JSON string as parameter' do
-		before do
-			@values = {
-				cod_cidade:   '6291',
-				cpf_cnpj:     '02646676000182',
-				razao_social: 'Empresa Resp Modelo',
-				transacao:    'false',
-				versao: 			'2.5',
-				metodo_envio: 'other_method'
-			}
+      subject.valor_servicos.must_be :==, 1500
+    end
+  end
 
-			@lote = Nfse::Lote.new(JSON.generate(@values))
-		end
+  describe '#valor_deducoes method' do
+    it 'must return the sum of all Rps#valor_deducao' do
+      rps = MiniTest::Mock.new
+      rps.expect(:valor_deducao, 1000)
+      subject.rps << rps
 
-		it 'must have the right cod_cidade' do
-			@lote.cod_cidade.must_be :==, @values[:cod_cidade]
-		end
+      rps = MiniTest::Mock.new
+      rps.expect(:valor_deducao, 500)
+      subject.rps << rps
 
-		it 'must have the right cpf_cnpj' do
-			@lote.cpf_cnpj.must_be :==, @values[:cpf_cnpj]
-		end
+      subject.valor_deducoes.must_be :==, 1500
+    end
+  end
 
-		it 'must have the right razao_social' do
-			@lote.razao_social.must_be :==, @values[:razao_social]
-		end
+  describe '#data_inicio method' do
+    it "must return the #data_emissao of the first Lote's RPS" do
+      date = Time.now
 
-		it 'must have the right transacao' do
-			@lote.transacao.must_be :==, @values[:transacao]
-		end
+      rps = MiniTest::Mock.new
+      rps.expect(:data_emissao, date)
+      subject.rps << rps
 
-		it 'must have the right versao' do
-			@lote.versao.must_be :==, @values[:versao]
-		end
+      rps = MiniTest::Mock.new
+      rps.expect(:data_emissao, Time.new(2012, 1, 1))
+      subject.rps << rps
 
-		it 'must have the right metodo_envio' do
-			@lote.metodo_envio.must_be :==, @values[:metodo_envio]
-		end
-	end
+      subject.data_inicio.must_be :==, date.strftime('%Y-%m-%d')
+    end
+  end
+
+  describe '#data_fim method' do
+    it "must return the #data_emissao of the last Lote's RPS" do
+      date = Time.new(2012, 1, 1)
+
+      rps = MiniTest::Mock.new
+      rps.expect(:data_emissao, Time.now)
+      subject.rps << rps
+
+      rps = MiniTest::Mock.new
+      rps.expect(:data_emissao, date)
+      subject.rps << rps
+
+      subject.data_fim.must_be :==, date.strftime('%Y-%m-%d')
+    end
+  end
+
+  describe 'initialize passing a JSON of attributes' do
+    before do
+      @attr = {
+        cod_cidade:   '6291',
+        cnpj:         '02646676000182',
+        razao_social: 'Empresa Exemplo',
+        transacao:    'false',
+        versao:       '2.5',
+        metodo_envio: 'Metodo Exemplo'
+      }
+
+      @lote = Nfse::Lote.new(JSON.generate(@attr))
+    end
+
+    it 'must have the right attributes' do
+      @attr.each do |k,v|
+        @lote.send(k).must_be :==, v
+      end
+    end
+  end
+
+  describe 'initialize passing a JSON of attributes with RPSes data' do
+    before do
+      data_emissao = Time.now.to_s
+      @rps1 = {
+        numero:                  '109',
+        data_emissao:            data_emissao,
+        situacao:                'N',
+        serie_rps_substituido:   '123',
+        num_rps_substituido:     '456',
+        num_nfe_substituida:     '789',
+        data_nfe_substituida:    Time.new(2012, 2, 2).to_s,
+        cod_atividade:           '412040000',
+        aliquota_atividade:      '5.00',
+        tipo_recolhimento:       'R',
+        cod_municipio_prestacao: '0006291',
+        municipio_prestacao:     'CAMPINAS',
+        operacao:                'A',
+        tributacao:              'T',
+        valor_pis:               '0.00',
+        valor_cofins:            '1.11',
+        valor_inss:              '2.22',
+        valor_ir:                '3.33',
+        valor_csll:              '4.44',
+        aliquota_pis:            '5.55',
+        aliquota_cofins:         '6.66',
+        aliquota_inss:           '7.77',
+        aliquota_ir:             '8.88',
+        aliquota_csll:           '9.99',
+        descricao:               'TESTE',
+        motivo_cancelamento:     'motivo exemplo',
+        cnpj_intermediario:      '123456789',
+        tipo:                    'Tipo Exemplo',
+        serie:                   'Serie Exemplo',
+        serie_prestacao:         '21'
+      }
+
+      @rps2 = @rps1.merge(numero: '110', descricao: 'Teste 2')
+
+      attributes = { rps: [@rps1, @rps2] }
+      @lote = Nfse::Lote.new(JSON.generate(attributes))
+
+      # Formata os valores para eles baterem corretamente com o retorno dos getters
+      @rps1[:data_emissao] = DateTime.parse(@rps1[:data_emissao])
+      @rps2[:data_emissao] = DateTime.parse(@rps2[:data_emissao])
+    end
+
+    it 'must have the right attributes' do
+      @rps1.each do |k,v|
+        @lote.rps[0].send(k).must_be :==, v
+      end
+
+      @rps2.each do |k,v|
+        @lote.rps[1].send(k).must_be :==, v
+      end
+    end
+  end
 
 end

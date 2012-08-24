@@ -1,32 +1,57 @@
 require 'json'
 
 module Nfse
-	class Lote
-		attr_accessor :id, :cod_cidade, :cpf_cnpj, :razao_social
-		attr_writer :transacao, :versao, :metodo_envio
-		attr_reader :data_inicio, :data_fim, :qtd_rps, :valor_total_servicos, :valor_total_deducoes
+  class Lote < Base
+    attr_accessor :id, :cod_cidade, :cnpj, :razao_social
+    attr_writer :transacao, :versao, :metodo_envio
+    attr_reader :rps
 
-		def initialize(json = '')
-			@id = "#{self.object_id}#{Time.now.to_i}"
+    def initialize(json = '')
+      @id  = "#{self.object_id}#{Time.now.to_i}"
+      @rps = []
 
-			unless json.empty?
-				attributes = JSON.parse(json)
-				attributes.each do |k,v|
-					send("#{k}=", v)
-				end
-			end
-		end
+      unless json.empty?
+        attributes = JSON.parse(json)
 
-		def transacao
-			@transacao ||= 'true'
-		end
+        rpses = attributes.delete('rps')
+        rpses.each { |data| self.rps << Rps.new(data) } if rpses.is_a? Array
 
-		def versao
-			@versao ||= '1'
-		end
+        super(attributes)
+      end
+    end
 
-		def metodo_envio
-			@metodo_envio ||= 'WS'
-		end
-	end
+    def transacao
+      @transacao ||= 'true'
+    end
+
+    def versao
+      @versao ||= '1'
+    end
+
+    def metodo_envio
+      @metodo_envio ||= 'WS'
+    end
+
+    def qtd_rps
+      rps.size
+    end
+
+    # Soma do valor de todos os serviços de cada RPS
+    def valor_servicos
+      rps.collect{ |obj| obj.valor_servico }.reduce(:+)
+    end
+
+    # Soma do valor de todos as deduções de cada RPS
+    def valor_deducoes
+      rps.collect{ |obj| obj.valor_deducao }.reduce(:+)
+    end
+
+    def data_inicio
+      rps.first.data_emissao.strftime('%Y-%m-%d')
+    end
+
+    def data_fim
+      rps.last.data_emissao.strftime('%Y-%m-%d')
+    end
+  end
 end
