@@ -98,14 +98,14 @@ describe Nfse::Envio::Lote do
     end
   end
 
-  describe '#qtd_rps method' do
+  describe '#qtd_rps' do
     it "must return the count of rps's that the lote has" do
       subject.rps.push(*(1..10).to_a)
       subject.qtd_rps.must_be :==, 10
     end
   end
 
-  describe '#valor_servicos method' do
+  describe '#valor_servicos' do
     it 'must return the sum of all Rps#valor_servico' do
       rps = MiniTest::Mock.new
       rps.expect(:valor_servico, 1000)
@@ -119,7 +119,7 @@ describe Nfse::Envio::Lote do
     end
   end
 
-  describe '#valor_deducoes method' do
+  describe '#valor_deducoes' do
     it 'must return the sum of all Rps#valor_deducao' do
       rps = MiniTest::Mock.new
       rps.expect(:valor_deducao, 1000)
@@ -133,7 +133,7 @@ describe Nfse::Envio::Lote do
     end
   end
 
-  describe '#data_inicio method' do
+  describe '#data_inicio' do
     it "must return the #data_emissao of the first Lote's RPS" do
       date = Time.now
 
@@ -149,7 +149,7 @@ describe Nfse::Envio::Lote do
     end
   end
 
-  describe '#data_fim method' do
+  describe '#data_fim' do
     it "must return the #data_emissao of the last Lote's RPS" do
       date = Time.new(2012, 1, 1)
 

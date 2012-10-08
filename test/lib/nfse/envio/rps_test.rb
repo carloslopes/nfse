@@ -304,7 +304,7 @@ describe Nfse::Envio::Rps do
     end
   end
 
-  describe '#assinatura method' do
+  describe '#assinatura' do
     it 'must generate the right signature' do
       subject.prestador.inscricao_municipal = '0317330'
       subject.serie                         = 'NF'
@@ -325,7 +325,7 @@ describe Nfse::Envio::Rps do
     end
   end
 
-  describe '#valor_deducao method' do
+  describe '#valor_deducao' do
     it 'must return the sum of the value of all deducoes' do
       deducao = MiniTest::Mock.new
       deducao.expect(:valor, 1000)
@@ -339,7 +339,7 @@ describe Nfse::Envio::Rps do
     end
   end
 
-  describe '#valor_servico method' do
+  describe '#valor_servico' do
     it 'must return the sum of the value of all itens' do
       item = MiniTest::Mock.new
       item.expect(:valor_total, 1000)

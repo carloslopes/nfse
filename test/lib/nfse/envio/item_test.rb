@@ -52,7 +52,7 @@ describe Nfse::Envio::Item do
     end
   end
 
-  describe '#valor_total method' do
+  describe '#valor_total' do
     it 'must be the multiplication of valor_unitario and quantidade' do
       quantidade     = 5
       valor_unitario = 2.5
