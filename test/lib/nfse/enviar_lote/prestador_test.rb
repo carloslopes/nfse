@@ -1,8 +1,8 @@
-require_relative '../../test_helper'
+require_relative '../../../test_helper'
 
-describe Nfse::Prestador do
+describe Nfse::EnviarLote::Prestador do
 
-  subject { Nfse::Prestador.new }
+  subject { Nfse::EnviarLote::Prestador.new }
 
   describe 'inscricao_municipal attribute' do
     it 'must have the accessors methods' do
@@ -41,7 +41,7 @@ describe Nfse::Prestador do
         telefone:            '987654321'
       }
 
-      @prestador = Nfse::Prestador.new(@attr)
+      @prestador = Nfse::EnviarLote::Prestador.new(@attr)
     end
 
     it 'must have the right attributes' do

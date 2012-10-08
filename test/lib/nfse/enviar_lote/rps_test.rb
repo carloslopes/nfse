@@ -1,8 +1,8 @@
-require_relative '../../test_helper'
+require_relative '../../../test_helper'
 
-describe Nfse::Rps do
+describe Nfse::EnviarLote::Rps do
 
-  subject { Nfse::Rps.new }
+  subject { Nfse::EnviarLote::Rps.new }
 
   describe 'prestador attribute' do
     it 'must have the reader method' do
@@ -10,7 +10,7 @@ describe Nfse::Rps do
     end
 
     it 'must have the right value' do
-      subject.prestador.must_be_instance_of Nfse::Prestador
+      subject.prestador.must_be_instance_of Nfse::EnviarLote::Prestador
     end
   end
 
@@ -20,7 +20,7 @@ describe Nfse::Rps do
     end
 
     it 'must have the right value' do
-      subject.tomador.must_be_instance_of Nfse::Tomador
+      subject.tomador.must_be_instance_of Nfse::EnviarLote::Tomador
     end
   end
 
@@ -389,7 +389,7 @@ describe Nfse::Rps do
         serie_prestacao:         '21'
       }
 
-      @rps = Nfse::Rps.new(@attr)
+      @rps = Nfse::EnviarLote::Rps.new(@attr)
 
       # Formata o valor para ele bater corretamente com o retorno do getter
       @attr[:data_emissao] = DateTime.parse(data_emissao)
@@ -412,7 +412,7 @@ describe Nfse::Rps do
       }
 
       attributes = { 'prestador' => @prestador }
-      @rps = Nfse::Rps.new(attributes)
+      @rps = Nfse::EnviarLote::Rps.new(attributes)
     end
 
     it 'must have the right attributes' do
@@ -444,7 +444,7 @@ describe Nfse::Rps do
       }
 
       attributes = { 'tomador' => @tomador }
-      @rps = Nfse::Rps.new(attributes)
+      @rps = Nfse::EnviarLote::Rps.new(attributes)
     end
 
     it 'must have the right attributes' do
@@ -466,7 +466,7 @@ describe Nfse::Rps do
       @item2 = @item1.merge(discriminacao: 'Item exemplo 2', quantidade: '3')
 
       attributes = { 'itens' => [@item1, @item2] }
-      @rps = Nfse::Rps.new(attributes)
+      @rps = Nfse::EnviarLote::Rps.new(attributes)
 
       # Formata os valores para eles baterem corretamente com o retorno dos getters
       @item1[:quantidade]     = @item1[:quantidade].to_f
@@ -502,7 +502,7 @@ describe Nfse::Rps do
       @deducao2 = @deducao1.merge(por: 'Percentual', tipo: 'Outro tipo', valor: '55.0')
 
       attributes = { 'deducoes' => [@deducao1, @deducao2] }
-      @rps = Nfse::Rps.new(attributes)
+      @rps = Nfse::EnviarLote::Rps.new(attributes)
 
       # Formata os valores para eles baterem corretamente com o retorno dos getters
       @deducao1[:valor] = @deducao1[:valor].to_f

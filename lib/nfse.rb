@@ -1,12 +1,14 @@
 require 'nfse/version'
 
 module Nfse
-  autoload :Lote, 'nfse/lote'
-  autoload :Rps, 'nfse/rps'
-  autoload :Deducao, 'nfse/deducao'
-  autoload :Item, 'nfse/item'
-  autoload :Prestador, 'nfse/prestador'
-  autoload :Tomador, 'nfse/tomador'
+  # EnviarLote
+  EnviarLote = Module.new
+  EnviarLote.autoload(:Lote, 'nfse/enviar_lote/lote')
+  EnviarLote.autoload(:Rps, 'nfse/enviar_lote/rps')
+  EnviarLote.autoload(:Deducao, 'nfse/enviar_lote/deducao')
+  EnviarLote.autoload(:Item, 'nfse/enviar_lote/item')
+  EnviarLote.autoload(:Prestador, 'nfse/enviar_lote/prestador')
+  EnviarLote.autoload(:Tomador, 'nfse/enviar_lote/tomador')
 
   class Base
     def initialize(attributes = {})
