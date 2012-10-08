@@ -39,12 +39,12 @@ module Nfse
 
       # Soma do valor de todos os serviços de cada RPS
       def valor_servicos
-        rps.collect{ |obj| obj.valor_servico }.reduce(:+)
+        rps.map{ |obj| obj.valor_servico }.reduce(:+)
       end
 
       # Soma do valor de todos as deduções de cada RPS
       def valor_deducoes
-        rps.collect{ |obj| obj.valor_deducao }.reduce(:+)
+        rps.map{ |obj| obj.valor_deducao }.reduce(:+)
       end
 
       def data_inicio
