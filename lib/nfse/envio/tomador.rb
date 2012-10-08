@@ -1,5 +1,5 @@
 module Nfse
-  module EnviarLote
+  module Envio
     class Tomador < Base
       attr_accessor :inscricao_municipal, :doc_estrangeiro, :complemento_endereco,
         :cod_cidade, :cidade, :ddd, :telefone

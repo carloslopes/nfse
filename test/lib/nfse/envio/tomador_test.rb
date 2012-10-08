@@ -1,8 +1,8 @@
 require_relative '../../../test_helper'
 
-describe Nfse::EnviarLote::Tomador do
+describe Nfse::Envio::Tomador do
 
-  subject { Nfse::EnviarLote::Tomador.new }
+  subject { Nfse::Envio::Tomador.new }
 
   describe 'inscricao_municipal attribute' do
     it 'must have the accessors methods' do
@@ -227,7 +227,7 @@ describe Nfse::EnviarLote::Tomador do
         cep:                  '82947296'
       }
 
-      @tomador = Nfse::EnviarLote::Tomador.new(@attr)
+      @tomador = Nfse::Envio::Tomador.new(@attr)
     end
 
     it 'must have the right attributes' do

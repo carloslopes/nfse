@@ -1,5 +1,5 @@
 module Nfse
-  module EnviarLote
+  module Envio
     class Deducao < Base
       attr_accessor :por, :tipo, :cnpj_ref, :num_nf_ref, :valor_total_ref, :percentual
 

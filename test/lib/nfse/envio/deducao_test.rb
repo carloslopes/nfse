@@ -1,8 +1,8 @@
 require_relative '../../../test_helper'
 
-describe Nfse::EnviarLote::Deducao do
+describe Nfse::Envio::Deducao do
 
-  subject { Nfse::EnviarLote::Deducao.new }
+  subject { Nfse::Envio::Deducao.new }
 
   describe 'por attribute' do
     it 'must have the accessors methods' do
@@ -75,7 +75,7 @@ describe Nfse::EnviarLote::Deducao do
         valor:           '25.00'
       }
 
-      @deducao = Nfse::EnviarLote::Deducao.new(@attr)
+      @deducao = Nfse::Envio::Deducao.new(@attr)
 
       # Formata o valor para ele bater corretamente com o retorno do getter
       @attr[:valor] = @attr[:valor].to_f

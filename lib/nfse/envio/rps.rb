@@ -1,7 +1,7 @@
 require 'digest'
 
 module Nfse
-  module EnviarLote
+  module Envio
     class Rps < Base
       attr_accessor :numero, :situacao, :serie_rps_substituido,
         :num_rps_substituido, :num_nfe_substituida, :data_nfe_substituida,

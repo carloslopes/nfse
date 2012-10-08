@@ -1,8 +1,8 @@
 require_relative '../../../test_helper'
 
-describe Nfse::EnviarLote::Item do
+describe Nfse::Envio::Item do
 
-  subject { Nfse::EnviarLote::Item.new }
+  subject { Nfse::Envio::Item.new }
 
   describe 'discriminacao attribute' do
     it 'must have the accessors methods' do
@@ -73,7 +73,7 @@ describe Nfse::EnviarLote::Item do
         tributavel:     'S'
       }
 
-      @item = Nfse::EnviarLote::Item.new(@attr)
+      @item = Nfse::Envio::Item.new(@attr)
 
       # Formata os valores para eles baterem corretamente com o retorno dos getters
       @attr[:quantidade]     = @attr[:quantidade].to_f

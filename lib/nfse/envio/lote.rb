@@ -1,7 +1,7 @@
 require 'json'
 
 module Nfse
-  module EnviarLote
+  module Envio
     class Lote < Base
       attr_accessor :id, :cod_cidade, :cnpj, :razao_social
       attr_writer :transacao, :versao, :metodo_envio

@@ -1,9 +1,9 @@
 require_relative '../../../test_helper'
 require 'json'
 
-describe Nfse::EnviarLote::Lote do
+describe Nfse::Envio::Lote do
 
-  subject { Nfse::EnviarLote::Lote.new }
+  subject { Nfse::Envio::Lote.new }
 
   describe 'id attribute' do
     it 'must have the accessors methods' do
@@ -176,7 +176,7 @@ describe Nfse::EnviarLote::Lote do
         metodo_envio: 'Metodo Exemplo'
       }
 
-      @lote = Nfse::EnviarLote::Lote.new(JSON.generate(@attr))
+      @lote = Nfse::Envio::Lote.new(JSON.generate(@attr))
     end
 
     it 'must have the right attributes' do
@@ -225,7 +225,7 @@ describe Nfse::EnviarLote::Lote do
       @rps2 = @rps1.merge(numero: '110', descricao: 'Teste 2')
 
       attributes = { rps: [@rps1, @rps2] }
-      @lote = Nfse::EnviarLote::Lote.new(JSON.generate(attributes))
+      @lote = Nfse::Envio::Lote.new(JSON.generate(attributes))
 
       # Formata os valores para eles baterem corretamente com o retorno dos getters
       @rps1[:data_emissao] = DateTime.parse(@rps1[:data_emissao])

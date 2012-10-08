@@ -1,5 +1,5 @@
 module Nfse
-  module EnviarLote
+  module Envio
     class Item < Base
       attr_accessor :discriminacao, :tributavel
 
