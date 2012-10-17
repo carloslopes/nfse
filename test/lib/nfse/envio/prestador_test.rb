@@ -46,7 +46,7 @@ describe Nfse::Envio::Prestador do
 
     it 'must have the right attributes' do
       @attr.each do |k,v|
-        @prestador.send(k).must_be :==, v
+        @prestador.send(k).must_equal v
       end
     end
   end

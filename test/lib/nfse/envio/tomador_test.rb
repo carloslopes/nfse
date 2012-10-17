@@ -18,13 +18,13 @@ describe Nfse::Envio::Tomador do
     end
 
     it 'must have the right default value' do
-      subject.cnpj.must_be :==, '77777777777'
+      subject.cnpj.must_equal '77777777777'
     end
 
     it 'must respect if a new value is defined' do
       value = '123456789'
       subject.cnpj = value
-      subject.cnpj.must_be :==, value
+      subject.cnpj.must_equal value
     end
   end
 
@@ -35,13 +35,13 @@ describe Nfse::Envio::Tomador do
     end
 
     it 'must have the right default value' do
-      subject.razao_social.must_be :==, 'Consumidor'
+      subject.razao_social.must_equal 'Consumidor'
     end
 
     it 'must respect if a new value is defined' do
       value = 'Empresa exemplo'
       subject.razao_social = value
-      subject.razao_social.must_be :==, value
+      subject.razao_social.must_equal value
     end
   end
 
@@ -59,13 +59,13 @@ describe Nfse::Envio::Tomador do
     end
 
     it 'must have the right default value' do
-      subject.tipo_logradouro.must_be :==, '-'
+      subject.tipo_logradouro.must_equal '-'
     end
 
     it 'must respect if a new value is defined' do
       value = 'Tipo de logradouro exemplo'
       subject.tipo_logradouro = value
-      subject.tipo_logradouro.must_be :==, value
+      subject.tipo_logradouro.must_equal value
     end
   end
 
@@ -76,13 +76,13 @@ describe Nfse::Envio::Tomador do
     end
 
     it 'must have the right default value' do
-      subject.logradouro.must_be :==, '-'
+      subject.logradouro.must_equal '-'
     end
 
     it 'must respect if a new value is defined' do
       value = 'Logradouro exemplo'
       subject.logradouro = value
-      subject.logradouro.must_be :==, value
+      subject.logradouro.must_equal value
     end
   end
 
@@ -93,13 +93,13 @@ describe Nfse::Envio::Tomador do
     end
 
     it 'must have the right default value' do
-      subject.num_endereco.must_be :==, '0'
+      subject.num_endereco.must_equal '0'
     end
 
     it 'must respect if a new value is defined' do
       value = '123'
       subject.num_endereco = value
-      subject.num_endereco.must_be :==, value
+      subject.num_endereco.must_equal value
     end
   end
 
@@ -117,13 +117,13 @@ describe Nfse::Envio::Tomador do
     end
 
     it 'must have the right default value' do
-      subject.tipo_bairro.must_be :==, '-'
+      subject.tipo_bairro.must_equal '-'
     end
 
     it 'must respect if a new value is defined' do
       value = 'Tipo do bairro exemplo'
       subject.tipo_bairro = value
-      subject.tipo_bairro.must_be :==, value
+      subject.tipo_bairro.must_equal value
     end
   end
 
@@ -134,13 +134,13 @@ describe Nfse::Envio::Tomador do
     end
 
     it 'must have the right default value' do
-      subject.bairro.must_be :==, '-'
+      subject.bairro.must_equal '-'
     end
 
     it 'must respect if a new value is defined' do
       value = 'Bairro exemplo'
       subject.bairro = value
-      subject.bairro.must_be :==, value
+      subject.bairro.must_equal value
     end
   end
 
@@ -165,13 +165,13 @@ describe Nfse::Envio::Tomador do
     end
 
     it 'must have the right default value' do
-      subject.cep.must_be :==, '00000000'
+      subject.cep.must_equal '00000000'
     end
 
     it 'must respect if a new value is defined' do
       value = '123456789'
       subject.cep = value
-      subject.cep.must_be :==, value
+      subject.cep.must_equal value
     end
   end
 
@@ -182,13 +182,13 @@ describe Nfse::Envio::Tomador do
     end
 
     it 'must have the right default value' do
-      subject.email.must_be :==, '-'
+      subject.email.must_equal '-'
     end
 
     it 'must respect if a new value is defined' do
       value = 'email@example.com'
       subject.email = value
-      subject.email.must_be :==, value
+      subject.email.must_equal value
     end
   end
 
@@ -232,7 +232,7 @@ describe Nfse::Envio::Tomador do
 
     it 'must have the right attributes' do
       @attr.each do |k,v|
-        @tomador.send(k).must_be :==, v
+        @tomador.send(k).must_equal v
       end
     end
   end

@@ -44,13 +44,13 @@ describe Nfse::Envio::Lote do
     end
 
     it 'must have the right default value' do
-      subject.transacao.must_be :==, 'true'
+      subject.transacao.must_equal 'true'
     end
 
     it 'must respect if a new value is defined' do
       value = 'false'
       subject.transacao = value
-      subject.transacao.must_be :==, value
+      subject.transacao.must_equal value
     end
   end
 
@@ -71,13 +71,13 @@ describe Nfse::Envio::Lote do
     end
 
     it 'must have the right default value' do
-      subject.versao.must_be :==, '1'
+      subject.versao.must_equal '1'
     end
 
     it 'must respect if a new value is defined' do
       value = '2'
       subject.versao = value
-      subject.versao.must_be :==, value
+      subject.versao.must_equal value
     end
   end
 
@@ -88,20 +88,20 @@ describe Nfse::Envio::Lote do
     end
 
     it 'must have the right default value' do
-      subject.metodo_envio.must_be :==, 'WS'
+      subject.metodo_envio.must_equal 'WS'
     end
 
     it 'must respect if a new value is defined' do
       value = 'Foobar'
       subject.metodo_envio = value
-      subject.metodo_envio.must_be :==, value
+      subject.metodo_envio.must_equal value
     end
   end
 
   describe '#qtd_rps' do
     it "must return the count of rps's that the lote has" do
       subject.rps.push(*(1..10).to_a)
-      subject.qtd_rps.must_be :==, 10
+      subject.qtd_rps.must_equal 10
     end
   end
 
@@ -115,7 +115,7 @@ describe Nfse::Envio::Lote do
       rps.expect(:valor_servico, 500)
       subject.rps << rps
 
-      subject.valor_servicos.must_be :==, 1500
+      subject.valor_servicos.must_equal 1500
     end
   end
 
@@ -129,7 +129,7 @@ describe Nfse::Envio::Lote do
       rps.expect(:valor_deducao, 500)
       subject.rps << rps
 
-      subject.valor_deducoes.must_be :==, 1500
+      subject.valor_deducoes.must_equal 1500
     end
   end
 
@@ -145,7 +145,7 @@ describe Nfse::Envio::Lote do
       rps.expect(:data_emissao, Time.new(2012, 1, 1))
       subject.rps << rps
 
-      subject.data_inicio.must_be :==, date.strftime('%Y-%m-%d')
+      subject.data_inicio.must_equal date.strftime('%Y-%m-%d')
     end
   end
 
@@ -161,7 +161,7 @@ describe Nfse::Envio::Lote do
       rps.expect(:data_emissao, date)
       subject.rps << rps
 
-      subject.data_fim.must_be :==, date.strftime('%Y-%m-%d')
+      subject.data_fim.must_equal date.strftime('%Y-%m-%d')
     end
   end
 
@@ -181,7 +181,7 @@ describe Nfse::Envio::Lote do
 
     it 'must have the right attributes' do
       @attr.each do |k,v|
-        @lote.send(k).must_be :==, v
+        @lote.send(k).must_equal v
       end
     end
   end
@@ -234,11 +234,11 @@ describe Nfse::Envio::Lote do
 
     it 'must have the right attributes' do
       @rps1.each do |k,v|
-        @lote.rps[0].send(k).must_be :==, v
+        @lote.rps[0].send(k).must_equal v
       end
 
       @rps2.each do |k,v|
-        @lote.rps[1].send(k).must_be :==, v
+        @lote.rps[1].send(k).must_equal v
       end
     end
   end

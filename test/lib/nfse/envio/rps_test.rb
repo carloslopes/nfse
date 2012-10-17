@@ -51,13 +51,13 @@ describe Nfse::Envio::Rps do
     end
 
     it 'must have the right default value' do
-      subject.tipo.must_be :==, 'RPS'
+      subject.tipo.must_equal 'RPS'
     end
 
     it 'must respect if a new value is defined' do
       value = 'foobar'
       subject.tipo = value
-      subject.tipo.must_be :==, value
+      subject.tipo.must_equal value
     end
   end
 
@@ -68,13 +68,13 @@ describe Nfse::Envio::Rps do
     end
 
     it 'must have the right default value' do
-      subject.serie.must_be :==, 'NF'
+      subject.serie.must_equal 'NF'
     end
 
     it 'must respect if a new value is defined' do
       value = 'foobar'
       subject.serie = value
-      subject.serie.must_be :==, value
+      subject.serie.must_equal value
     end
   end
 
@@ -156,13 +156,13 @@ describe Nfse::Envio::Rps do
     end
 
     it 'must have the right default value' do
-      subject.serie_prestacao.must_be :==, '99'
+      subject.serie_prestacao.must_equal '99'
     end
 
     it 'must respect if a new value is defined' do
       value = 10
       subject.serie_prestacao = value
-      subject.serie_prestacao.must_be :==, value
+      subject.serie_prestacao.must_equal value
     end
   end
 
@@ -323,7 +323,7 @@ describe Nfse::Envio::Rps do
       subject.itens << item
 
       assinatura = '6bcbb93fd7e6d7f0417656f4931ba9f92a7ac1da'
-      subject.assinatura.must_be :==, assinatura
+      subject.assinatura.must_equal assinatura
     end
   end
 
@@ -337,7 +337,7 @@ describe Nfse::Envio::Rps do
       deducao.expect(:valor, 500)
       subject.deducoes << deducao
 
-      subject.valor_deducao.must_be :==, 1500
+      subject.valor_deducao.must_equal 1500
     end
   end
 
@@ -351,7 +351,7 @@ describe Nfse::Envio::Rps do
       item.expect(:valor_total, 500)
       subject.itens << item
 
-      subject.valor_servico.must_be :==, 1500
+      subject.valor_servico.must_equal 1500
     end
   end
 
@@ -399,7 +399,7 @@ describe Nfse::Envio::Rps do
 
     it 'must have the right attributes' do
       @attr.each do |k,v|
-        @rps.send(k).must_be :==, v
+        @rps.send(k).must_equal v
       end
     end
   end
@@ -419,7 +419,7 @@ describe Nfse::Envio::Rps do
 
     it 'must have the right attributes' do
       @prestador.each do |k,v|
-        @rps.prestador.send(k).must_be :==, v
+        @rps.prestador.send(k).must_equal v
       end
     end
   end
@@ -451,7 +451,7 @@ describe Nfse::Envio::Rps do
 
     it 'must have the right attributes' do
       @tomador.each do |k,v|
-        @rps.tomador.send(k).must_be :==, v
+        @rps.tomador.send(k).must_equal v
       end
     end
   end
@@ -480,11 +480,11 @@ describe Nfse::Envio::Rps do
 
     it 'must have the right attributes' do
       @item1.each do |k,v|
-        @rps.itens[0].send(k).must_be :==, v
+        @rps.itens[0].send(k).must_equal v
       end
 
       @item2.each do |k,v|
-        @rps.itens[1].send(k).must_be :==, v
+        @rps.itens[1].send(k).must_equal v
       end
     end
   end
@@ -513,11 +513,11 @@ describe Nfse::Envio::Rps do
 
     it 'must have the right attributes' do
       @deducao1.each do |k,v|
-        @rps.deducoes[0].send(k).must_be :==, v
+        @rps.deducoes[0].send(k).must_equal v
       end
 
       @deducao2.each do |k,v|
-        @rps.deducoes[1].send(k).must_be :==, v
+        @rps.deducoes[1].send(k).must_equal v
       end
     end
   end
