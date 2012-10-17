@@ -176,7 +176,7 @@ describe Nfse::Envio::Lote do
         serie_rps_substituido:   '123',
         num_rps_substituido:     '456',
         num_nfse_substituida:    '789',
-        data_nfe_substituida:    Time.new(2012, 2, 2).to_s,
+        data_nfse_substituida:   Time.new(2012, 2, 2).to_s,
         cod_atividade:           '412040000',
         aliquota_atividade:      '5.00',
         tipo_recolhimento:       'R',

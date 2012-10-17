@@ -6,7 +6,7 @@ module Nfse
       self.template_file = File.expand_path('../templates/rps.mustache', __FILE__)
 
       attr_accessor :numero, :situacao, :serie_rps_substituido,
-        :num_rps_substituido, :num_nfse_substituida, :data_nfe_substituida,
+        :num_rps_substituido, :num_nfse_substituida, :data_nfse_substituida,
         :cod_atividade, :aliquota_atividade, :tipo_recolhimento,
         :cod_municipio_prestacao, :municipio_prestacao, :operacao,
         :tributacao, :valor_pis, :valor_cofins, :valor_inss, :valor_ir,
