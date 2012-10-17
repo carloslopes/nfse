@@ -135,10 +135,10 @@ describe Nfse::Envio::Rps do
     end
   end
 
-  describe 'num_nfe_substituida attribute' do
+  describe 'num_nfse_substituida attribute' do
     it 'must have the accessors methods' do
-      subject.must_respond_to :num_nfe_substituida
-      subject.must_respond_to :num_nfe_substituida=
+      subject.must_respond_to :num_nfse_substituida
+      subject.must_respond_to :num_nfse_substituida=
     end
   end
 
@@ -352,7 +352,7 @@ describe Nfse::Envio::Rps do
         situacao:                'N',
         serie_rps_substituido:   '123',
         num_rps_substituido:     '456',
-        num_nfe_substituida:     '789',
+        num_nfse_substituida:    '789',
         data_nfe_substituida:    Time.new(2012, 2, 2).to_s,
         cod_atividade:           '412040000',
         aliquota_atividade:      '5.00',
@@ -517,7 +517,7 @@ describe Nfse::Envio::Rps do
       subject.situacao = 'N'
       subject.serie_rps_substituido = '123'
       subject.num_rps_substituido = '0'
-      subject.num_nfe_substituida = '1'
+      subject.num_nfse_substituida = '1'
       subject.data_nfe_substituida = '1900-01-01'
       subject.cod_atividade = '412040000'
       subject.aliquota_atividade = 5.0
