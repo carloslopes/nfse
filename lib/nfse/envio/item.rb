@@ -1,7 +1,16 @@
 module Nfse
   module Envio
-    class Item < Base
+    class Item < Mustache
+      self.template_file = File.expand_path('../templates/item.mustache', __FILE__)
       attr_accessor :discriminacao, :tributavel
+
+      def initialize(attributes = {})
+        if attributes.is_a?(Hash)
+          attributes.each do |k,v|
+            send("#{k}=", v)
+          end
+        end
+      end
 
       def quantidade
         @quantidade ||= 0.0

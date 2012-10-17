@@ -228,8 +228,8 @@ describe Nfse::Envio::Lote do
       @lote = Nfse::Envio::Lote.new(JSON.generate(attributes))
 
       # Formata os valores para eles baterem corretamente com o retorno dos getters
-      @rps1[:data_emissao] = DateTime.parse(@rps1[:data_emissao])
-      @rps2[:data_emissao] = DateTime.parse(@rps2[:data_emissao])
+      @rps1[:data_emissao] = DateTime.parse(@rps1[:data_emissao]).strftime('%Y-%m-%dT%H:%M:%S')
+      @rps2[:data_emissao] = DateTime.parse(@rps2[:data_emissao]).strftime('%Y-%m-%dT%H:%M:%S')
     end
 
     it 'must have the right attributes' do
@@ -240,6 +240,26 @@ describe Nfse::Envio::Lote do
       @rps2.each do |k,v|
         @lote.rps[1].send(k).must_be :==, v
       end
+    end
+  end
+
+  describe '#render' do
+    it 'must render the right xml' do
+      subject.id = '1ABCDZ'
+      subject.cod_cidade = 6291
+      subject.cnpj = '02646676000182'
+      subject.razao_social = 'EMPRESA RESP. MODELO'
+      subject.expects(:data_inicio).returns('2009-10-01')
+      subject.expects(:data_fim).returns('2009-10-01')
+      subject.expects(:qtd_rps).returns(2)
+      subject.expects(:valor_servicos).returns('11.00')
+      subject.expects(:valor_deducoes).returns('49.30')
+
+      # Rps
+      subject.rps << stub(render: xml('RPS[1]'))
+      subject.rps << stub(render: xml('RPS[2]'))
+
+      xml('ns1:ReqEnvioLoteRPS', subject.render).must_equal xml('ns1:ReqEnvioLoteRPS')
     end
   end
 

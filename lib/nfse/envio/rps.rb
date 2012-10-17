@@ -2,7 +2,9 @@ require 'digest'
 
 module Nfse
   module Envio
-    class Rps < Base
+    class Rps < Mustache
+      self.template_file = File.expand_path('../templates/rps.mustache', __FILE__)
+
       attr_accessor :numero, :situacao, :serie_rps_substituido,
         :num_rps_substituido, :num_nfe_substituida, :data_nfe_substituida,
         :cod_atividade, :aliquota_atividade, :tipo_recolhimento,
@@ -22,16 +24,21 @@ module Nfse
         @deducoes  = []
 
         _itens = attributes.delete('itens')
-        _itens.each { |data| self.itens << Item.new(data) } if _itens.is_a? Array
+        _itens.each { |data| self.itens << Item.new(data) } if _itens.is_a?(Array)
 
         _deducoes = attributes.delete('deducoes')
-        _deducoes.each { |data| self.deducoes << Deducao.new(data) } if _deducoes.is_a? Array
+        _deducoes.each { |data| self.deducoes << Deducao.new(data) } if _deducoes.is_a?(Array)
 
-        super
+        if attributes.is_a?(Hash)
+          attributes.each do |k,v|
+            send("#{k}=", v)
+          end
+        end
       end
 
       def data_emissao
         @data_emissao ||= DateTime.now
+        @data_emissao.strftime('%Y-%m-%dT%H:%M:%S')
       end
 
       # Atribui um valor para a data de emissao
@@ -67,23 +74,35 @@ module Nfse
         itens.map{ |item| item.valor_total }.reduce(:+)
       end
 
-      private
-      def raw_signature
-        deducao = valor_deducao
-        valor_servico_com_deducao = valor_servico - deducao
-
-        signature = prestador.inscricao_municipal.rjust(11, '0')
-        signature << serie.ljust(5)
-        signature << numero.rjust(12, '0')
-        signature << data_emissao.strftime('%Y%m%d')
-        signature << tributacao.ljust(2)
-        signature << situacao
-        signature << (tipo_recolhimento == 'A' ? 'N' : 'S')
-        signature << valor_servico_com_deducao.to_s.rjust(15, '0')
-        signature << deducao.to_s.rjust(15, '0')
-        signature << cod_atividade.rjust(10, '0')
-        signature << tomador.cnpj.rjust(14, '0')
+      def render_deducoes
+        deducoes.reduce('') do |xml,deducao|
+          xml << deducao.render
+        end
       end
+
+      def render_itens
+        itens.reduce('') do |xml,item|
+          xml << item.render
+        end
+      end
+
+      private
+        def raw_signature
+          deducao = valor_deducao
+          valor_servico_com_deducao = valor_servico - deducao
+
+          signature = prestador.inscricao_municipal.rjust(11, '0')
+          signature << serie.ljust(5)
+          signature << numero.rjust(12, '0')
+          signature << @data_emissao.strftime('%Y%m%d')
+          signature << tributacao.ljust(2)
+          signature << situacao
+          signature << (tipo_recolhimento == 'A' ? 'N' : 'S')
+          signature << valor_servico_com_deducao.to_s.rjust(15, '0')
+          signature << deducao.to_s.rjust(15, '0')
+          signature << cod_atividade.rjust(10, '0')
+          signature << tomador.cnpj.rjust(14, '0')
+        end
     end
   end
 end

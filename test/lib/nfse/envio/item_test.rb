@@ -87,4 +87,15 @@ describe Nfse::Envio::Item do
     end
   end
 
+  describe '#render' do
+    it 'must render the right xml' do
+      subject.discriminacao  = 'Item 1'
+      subject.quantidade     = 2.0
+      subject.valor_unitario = 3.0
+      subject.tributavel     = 'S'
+
+      xml('Item', subject.render).must_equal xml('Item[1]')
+    end
+  end
+
 end

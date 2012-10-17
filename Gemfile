@@ -5,5 +5,4 @@ gemspec
 
 group :development, :test do
   gem 'pry'
-  gem 'rake'
 end

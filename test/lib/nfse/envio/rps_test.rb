@@ -87,28 +87,30 @@ describe Nfse::Envio::Rps do
 
   describe 'data_emissao attribute' do
     it 'must be now if no value was passed' do
-      # Não é possivel testar o DateTime.now, então está sendo testado o tipo do objeto retornado
-      subject.data_emissao.must_be_instance_of DateTime
+      now = DateTime.now
+      DateTime.expects(:now).returns(now)
+
+      subject.data_emissao.must_equal now.strftime('%Y-%m-%dT%H:%M:%S')
     end
 
     it "must keep the old value if is passed an invalid date" do
       value = '2012-10-10'
       subject.data_emissao = value
       subject.data_emissao = ''
-      subject.data_emissao.must_be :==, DateTime.parse(value)
+      subject.data_emissao.must_equal DateTime.parse(value).strftime('%Y-%m-%dT%H:%M:%S')
     end
 
     it "must keep the old value if is passed an invalid object" do
       value = '2012-10-10'
       subject.data_emissao = value
       subject.data_emissao = false
-      subject.data_emissao.must_be :==, DateTime.parse(value)
+      subject.data_emissao.must_equal DateTime.parse(value).strftime('%Y-%m-%dT%H:%M:%S')
     end
 
     it 'must convert correctly if is passed a valid datetime value' do
       value = '2012-10-10 14:32:45'
       subject.data_emissao = value
-      subject.data_emissao.must_be :==, DateTime.parse(value)
+      subject.data_emissao.must_equal DateTime.parse(value).strftime('%Y-%m-%dT%H:%M:%S')
     end
   end
 
@@ -392,7 +394,7 @@ describe Nfse::Envio::Rps do
       @rps = Nfse::Envio::Rps.new(@attr)
 
       # Formata o valor para ele bater corretamente com o retorno do getter
-      @attr[:data_emissao] = DateTime.parse(data_emissao)
+      @attr[:data_emissao] = DateTime.parse(data_emissao).strftime('%Y-%m-%dT%H:%M:%S')
     end
 
     it 'must have the right attributes' do
@@ -517,6 +519,75 @@ describe Nfse::Envio::Rps do
       @deducao2.each do |k,v|
         @rps.deducoes[1].send(k).must_be :==, v
       end
+    end
+  end
+
+  describe '#render' do
+    it 'must render the right xml' do
+      subject.numero = 109
+      subject.data_emissao = Time.new(2009, 10, 1)
+      subject.situacao = 'N'
+      subject.serie_rps_substituido = '123'
+      subject.num_rps_substituido = '0'
+      subject.num_nfe_substituida = '1'
+      subject.data_nfe_substituida = '1900-01-01'
+      subject.cod_atividade = '412040000'
+      subject.aliquota_atividade = 5.0
+      subject.tipo_recolhimento = 'R'
+      subject.cod_municipio_prestacao = '0006291'
+      subject.municipio_prestacao = 'CAMPINAS'
+      subject.operacao = 'A'
+      subject.tributacao = 'T'
+      subject.valor_pis = 0.0
+      subject.valor_cofins = 1.1
+      subject.valor_inss = 2.2
+      subject.valor_ir = 3.3
+      subject.valor_csll = 4.4
+      subject.aliquota_pis = 5.5
+      subject.aliquota_cofins = 6.6
+      subject.aliquota_inss = 7.7
+      subject.aliquota_ir = 8.8
+      subject.aliquota_csll = 9.9
+      subject.descricao = 'TESTE'
+      subject.motivo_cancelamento = 'motivo exemplo'
+      subject.cnpj_intermediario = '123456789'
+
+      # Assinatura
+      subject.expects(:assinatura).returns('02bc34ff87f8112295e56901832a4a87b5c4fb6a')
+
+      # Prestador
+      prestador = subject.prestador
+      prestador.inscricao_municipal = '0370835'
+      prestador.razao_social        = 'EMPRESA MODELO'
+      prestador.ddd                 = '035'
+      prestador.telefone            = '40405050'
+
+      # Tomador
+      tomador = subject.tomador
+      tomador.inscricao_municipal = '0000000'
+      tomador.cnpj                = '27394162000108'
+      tomador.razao_social        = 'EMPRESA DE TESTE'
+      tomador.tipo_logradouro     = 'RUA'
+      tomador.logradouro          = 'logradouro exemplo'
+      tomador.num_endereco        = '9'
+      tomador.tipo_bairro         = 'BAIRRO'
+      tomador.bairro              = 'bairro exemplo'
+      tomador.cod_cidade          = '00062910'
+      tomador.cidade              = 'SAO PAULO'
+      tomador.cep                 = '05010040'
+      tomador.email               = 'foo@example.com'
+      tomador.ddd                 = '011'
+      tomador.telefone            = '923156467'
+
+      # Deducao
+      subject.deducoes << stub(render: xml('Deducao[1]'))
+      subject.deducoes << stub(render: xml('Deducao[2]'))
+
+      # Item
+      subject.itens << stub(render: xml('Item[1]'))
+      subject.itens << stub(render: xml('Item[2]'))
+
+      xml('RPS', subject.render).must_equal xml('RPS[1]')
     end
   end
 

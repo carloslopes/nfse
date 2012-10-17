@@ -88,4 +88,18 @@ describe Nfse::Envio::Deducao do
     end
   end
 
+  describe '#render' do
+    it 'must render the right xml' do
+      subject.por             = 'Valor'
+      subject.tipo            = 'Despesas com Materiais'
+      subject.cnpj_ref        = '27394162000108'
+      subject.num_nf_ref      = '321'
+      subject.valor_total_ref = 25.5
+      subject.percentual      = 5
+      subject.valor           = 10
+
+      xml('Deducao', subject.render).must_equal xml('Deducao[1]')
+    end
+  end
+
 end

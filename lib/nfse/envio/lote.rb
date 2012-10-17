@@ -2,7 +2,8 @@ require 'json'
 
 module Nfse
   module Envio
-    class Lote < Base
+    class Lote < Mustache
+      self.template_file = File.expand_path('../templates/lote.mustache', __FILE__)
       attr_accessor :id, :cod_cidade, :cnpj, :razao_social
       attr_writer :transacao, :versao, :metodo_envio
       attr_reader :rps
@@ -15,9 +16,13 @@ module Nfse
           attributes = JSON.parse(json)
 
           rpses = attributes.delete('rps')
-          rpses.each { |data| self.rps << Rps.new(data) } if rpses.is_a? Array
+          rpses.each { |data| self.rps << Rps.new(data) } if rpses.is_a?(Array)
 
-          super(attributes)
+          if attributes.is_a?(Hash)
+            attributes.each do |k,v|
+              send("#{k}=", v)
+            end
+          end
         end
       end
 
@@ -53,6 +58,12 @@ module Nfse
 
       def data_fim
         rps.last.data_emissao.strftime('%Y-%m-%d')
+      end
+
+      def render_rps
+        rps.reduce('') do |xml,rps|
+          xml << rps.render
+        end
       end
     end
   end

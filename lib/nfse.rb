@@ -1,4 +1,5 @@
 require 'nfse/version'
+require 'mustache'
 
 module Nfse
   # Envio
@@ -9,14 +10,4 @@ module Nfse
   Envio.autoload(:Item, 'nfse/envio/item')
   Envio.autoload(:Prestador, 'nfse/envio/prestador')
   Envio.autoload(:Tomador, 'nfse/envio/tomador')
-
-  class Base
-    def initialize(attributes = {})
-      if attributes.is_a? Hash
-        attributes.each do |k,v|
-          send("#{k}=", v)
-        end
-      end
-    end
-  end
 end
