@@ -318,9 +318,7 @@ describe Nfse::Envio::Rps do
       subject.cod_atividade                 = '829979900'
       subject.tomador.cnpj                  = '8764130000102'
 
-      item = MiniTest::Mock.new
-      item.expect(:valor_total, 1686)
-      subject.itens << item
+      subject.itens << stub(valor_total: 1686)
 
       assinatura = '6bcbb93fd7e6d7f0417656f4931ba9f92a7ac1da'
       subject.assinatura.must_equal assinatura
@@ -329,13 +327,8 @@ describe Nfse::Envio::Rps do
 
   describe '#valor_deducao' do
     it 'must return the sum of the value of all deducoes' do
-      deducao = MiniTest::Mock.new
-      deducao.expect(:valor, 1000)
-      subject.deducoes << deducao
-
-      deducao = MiniTest::Mock.new
-      deducao.expect(:valor, 500)
-      subject.deducoes << deducao
+      subject.deducoes << stub(valor: 1000)
+      subject.deducoes << stub(valor: 500)
 
       subject.valor_deducao.must_equal 1500
     end
@@ -343,13 +336,8 @@ describe Nfse::Envio::Rps do
 
   describe '#valor_servico' do
     it 'must return the sum of the value of all itens' do
-      item = MiniTest::Mock.new
-      item.expect(:valor_total, 1000)
-      subject.itens << item
-
-      item = MiniTest::Mock.new
-      item.expect(:valor_total, 500)
-      subject.itens << item
+      subject.itens << stub(valor_total: 1000)
+      subject.itens << stub(valor_total: 500)
 
       subject.valor_servico.must_equal 1500
     end

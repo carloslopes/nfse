@@ -107,13 +107,8 @@ describe Nfse::Envio::Lote do
 
   describe '#valor_servicos' do
     it 'must return the sum of all Rps#valor_servico' do
-      rps = MiniTest::Mock.new
-      rps.expect(:valor_servico, 1000)
-      subject.rps << rps
-
-      rps = MiniTest::Mock.new
-      rps.expect(:valor_servico, 500)
-      subject.rps << rps
+      subject.rps << stub(valor_servico: 1000)
+      subject.rps << stub(valor_servico: 500)
 
       subject.valor_servicos.must_equal 1500
     end
@@ -121,13 +116,8 @@ describe Nfse::Envio::Lote do
 
   describe '#valor_deducoes' do
     it 'must return the sum of all Rps#valor_deducao' do
-      rps = MiniTest::Mock.new
-      rps.expect(:valor_deducao, 1000)
-      subject.rps << rps
-
-      rps = MiniTest::Mock.new
-      rps.expect(:valor_deducao, 500)
-      subject.rps << rps
+      subject.rps << stub(valor_deducao: 1000)
+      subject.rps << stub(valor_deducao: 500)
 
       subject.valor_deducoes.must_equal 1500
     end
@@ -135,15 +125,10 @@ describe Nfse::Envio::Lote do
 
   describe '#data_inicio' do
     it "must return the #data_emissao of the first Lote's RPS" do
-      date = Time.now
+      date = Time.new(2012, 1, 1)
 
-      rps = MiniTest::Mock.new
-      rps.expect(:data_emissao, date)
-      subject.rps << rps
-
-      rps = MiniTest::Mock.new
-      rps.expect(:data_emissao, Time.new(2012, 1, 1))
-      subject.rps << rps
+      subject.rps << stub(data_emissao: date)
+      subject.rps << stub(data_emissao: Time.new(1900, 1, 1))
 
       subject.data_inicio.must_equal date.strftime('%Y-%m-%d')
     end
@@ -153,13 +138,8 @@ describe Nfse::Envio::Lote do
     it "must return the #data_emissao of the last Lote's RPS" do
       date = Time.new(2012, 1, 1)
 
-      rps = MiniTest::Mock.new
-      rps.expect(:data_emissao, Time.now)
-      subject.rps << rps
-
-      rps = MiniTest::Mock.new
-      rps.expect(:data_emissao, date)
-      subject.rps << rps
+      subject.rps << stub(data_emissao: Time.new(1900, 1, 1))
+      subject.rps << stub(data_emissao: date)
 
       subject.data_fim.must_equal date.strftime('%Y-%m-%d')
     end
