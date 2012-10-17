@@ -66,12 +66,16 @@ module Nfse
 
       # Soma do valor de todas as deducoes
       def valor_deducao
-        deducoes.map{ |deducao| deducao.valor }.reduce(:+) || 0
+        deducoes.reduce(0) do |total,deducao|
+          total += deducao.valor
+        end
       end
 
       # Soma do valor de todos os serviços
       def valor_servico
-        itens.map{ |item| item.valor_total }.reduce(:+)
+        itens.reduce(0) do |total,item|
+          total += item.valor_total
+        end
       end
 
       def render_deducoes
