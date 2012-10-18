@@ -54,4 +54,14 @@ describe Nfse::ConsultaLote do
     end
   end
 
+  describe '#render' do
+    it 'must render the right xml' do
+      subject.cod_cidade = 6291
+      subject.cnpj       = 27394162000108
+      subject.num_lote   = 7105
+
+      xml('ns1:ReqConsultaLote', str: subject.render).must_equal xml('ns1:ReqConsultaLote', file: :consultalote)
+    end
+  end
+
 end
