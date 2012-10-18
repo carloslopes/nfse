@@ -98,7 +98,7 @@ describe Nfse::Envio::Deducao do
       subject.percentual      = 5
       subject.valor           = 10
 
-      xml('Deducao', subject.render).must_equal xml('Deducao[1]')
+      xml('Deducao', str: subject.render).must_equal xml('Deducao[1]', file: :envio)
     end
   end
 

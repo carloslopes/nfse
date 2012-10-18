@@ -236,10 +236,10 @@ describe Nfse::Envio::Lote do
       subject.expects(:valor_deducoes).returns('49.30')
 
       # Rps
-      subject.rps << stub(render: xml('RPS[1]'))
-      subject.rps << stub(render: xml('RPS[2]'))
+      subject.rps << stub(render: xml('RPS[1]', file: :envio))
+      subject.rps << stub(render: xml('RPS[2]', file: :envio))
 
-      xml('ns1:ReqEnvioLoteRPS', subject.render).must_equal xml('ns1:ReqEnvioLoteRPS')
+      xml('ns1:ReqEnvioLoteRPS', str: subject.render).must_equal xml('ns1:ReqEnvioLoteRPS', file: :envio)
     end
   end
 

@@ -94,7 +94,7 @@ describe Nfse::Envio::Item do
       subject.valor_unitario = 3.0
       subject.tributavel     = 'S'
 
-      xml('Item', subject.render).must_equal xml('Item[1]')
+      xml('Item', str: subject.render).must_equal xml('Item[1]', file: :envio)
     end
   end
 

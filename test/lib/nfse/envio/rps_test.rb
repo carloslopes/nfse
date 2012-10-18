@@ -568,14 +568,14 @@ describe Nfse::Envio::Rps do
       tomador.telefone            = '923156467'
 
       # Deducao
-      subject.deducoes << stub(render: xml('Deducao[1]'))
-      subject.deducoes << stub(render: xml('Deducao[2]'))
+      subject.deducoes << stub(render: xml('Deducao[1]', file: :envio))
+      subject.deducoes << stub(render: xml('Deducao[2]', file: :envio))
 
       # Item
-      subject.itens << stub(render: xml('Item[1]'))
-      subject.itens << stub(render: xml('Item[2]'))
+      subject.itens << stub(render: xml('Item[1]', file: :envio))
+      subject.itens << stub(render: xml('Item[2]', file: :envio))
 
-      xml('RPS', subject.render).must_equal xml('RPS[1]')
+      xml('RPS', str: subject.render).must_equal xml('RPS[1]', file: :envio)
     end
   end
 
