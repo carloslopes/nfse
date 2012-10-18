@@ -1,13 +1,24 @@
 # NFS-e
 
-Gem para realizar diversas ações relacionadas a nota fiscal de serviço eletrônica, por exemplo:
+Gem para realizar diversas ações relacionadas a nota fiscal de **serviço** eletrônica.
 
-* Gerar um arquivo `.xsd` válido a partir de um json;
-* Criar lotes de RPS e enviá-los;
-* Consultar o status dos lotes no webservice;
-* Cancelar notas fiscais.
+#### Features prontas
+* Geração do xml de envio de lote
+* Geração do xml de consulta de lote
 
-PS: A princípio a gem será compatível apenas com a prefeitura de Campinas/SP.
+#### Todo
+* Assinar os XML gerados
+* Enviar os XML gerados e assinados para o WebService
+* Cancelamento de nota
+* Consulta de notas
+* Consulta sequencial RPS
+* Usage instructions
+
+**Atualmente a gem só gera NFS-e seguindo os padrões da prefeitura de Campinas/SP**
+
+## Links de referências
+[Manual de uso do WebService](http://nfse.campinas.sp.gov.br/NotaFiscal/cpqPDF/WebService.pdf)
+[Exemplos de XML e XSD](http://www.dsfnet.com.br/nfse_lote/exemplosws.zip)
 
 ## Installation
 
