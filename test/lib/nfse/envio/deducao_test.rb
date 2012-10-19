@@ -54,11 +54,13 @@ describe Nfse::Envio::Deducao do
     it "must keep the old value if is passed a object that doesn't respond to #to_f" do
       subject.valor = 2.5
       subject.valor = false
+
       subject.valor.must_equal 2.5
     end
 
     it 'must convert correctly if is passed a valid float value' do
       subject.valor = '13.67'
+
       subject.valor.must_equal 13.67
     end
   end
@@ -81,7 +83,7 @@ describe Nfse::Envio::Deducao do
       @attr[:valor] = @attr[:valor].to_f
     end
 
-    it 'must have the right attributes' do
+    it 'must have the right attributes values' do
       @attr.each do |k,v|
         @deducao.send(k).must_equal v
       end

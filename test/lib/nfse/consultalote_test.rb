@@ -28,6 +28,12 @@ describe Nfse::ConsultaLote do
     it 'must have the right default value' do
       subject.versao.must_equal '1'
     end
+
+    it 'must respect if a new value is defined' do
+      subject.versao = '2'
+
+      subject.versao.must_equal '2'
+    end
   end
 
   describe 'num_lote attribute' do
@@ -56,9 +62,9 @@ describe Nfse::ConsultaLote do
 
   describe '#render' do
     it 'must render the right xml' do
-      subject.cod_cidade = 6291
-      subject.cnpj       = 27394162000108
-      subject.num_lote   = 7105
+      subject.cod_cidade = '6291'
+      subject.cnpj       = '27394162000108'
+      subject.num_lote   = '7105'
 
       xml('ns1:ReqConsultaLote', str: subject.render).must_equal xml('ns1:ReqConsultaLote', file: :consultalote)
     end

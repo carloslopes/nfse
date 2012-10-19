@@ -5,41 +5,41 @@ describe Nfse::Envio::Rps do
   subject { Nfse::Envio::Rps.new }
 
   describe 'prestador attribute' do
-    it 'must have the reader method' do
-      subject.must_respond_to :prestador
+    it "won't have the writer method" do
+      subject.wont_respond_to :prestador=
     end
 
-    it 'must have the right value' do
+    it 'must be an instance of Prestador' do
       subject.prestador.must_be_instance_of Nfse::Envio::Prestador
     end
   end
 
   describe 'tomador attribute' do
-    it 'must have the reader method' do
-      subject.must_respond_to :tomador
+    it "won't have the writer method" do
+      subject.wont_respond_to :tomador=
     end
 
-    it 'must have the right value' do
+    it 'must be an instance of Tomador' do
       subject.tomador.must_be_instance_of Nfse::Envio::Tomador
     end
   end
 
   describe 'itens attribute' do
-    it 'must have the reader method' do
-      subject.must_respond_to :itens
+    it "won't have the writer method" do
+      subject.wont_respond_to :itens=
     end
 
-    it 'must have the right value' do
+    it 'must be an instance of Array' do
       subject.itens.must_be_instance_of Array
     end
   end
 
   describe 'deducoes attribute' do
-    it 'must have the reader method' do
-      subject.must_respond_to :deducoes
+    it "won't have the writer method" do
+      subject.wont_respond_to :deducoes=
     end
 
-    it 'must have the right value' do
+    it 'must be an instance of Array' do
       subject.deducoes.must_be_instance_of Array
     end
   end
@@ -57,6 +57,7 @@ describe Nfse::Envio::Rps do
     it 'must respect if a new value is defined' do
       value = 'foobar'
       subject.tipo = value
+
       subject.tipo.must_equal value
     end
   end
@@ -74,6 +75,7 @@ describe Nfse::Envio::Rps do
     it 'must respect if a new value is defined' do
       value = 'foobar'
       subject.serie = value
+
       subject.serie.must_equal value
     end
   end
@@ -97,6 +99,7 @@ describe Nfse::Envio::Rps do
       value = '2012-10-10'
       subject.data_emissao = value
       subject.data_emissao = ''
+
       subject.data_emissao.must_equal DateTime.parse(value).strftime('%Y-%m-%dT%H:%M:%S')
     end
 
@@ -104,12 +107,14 @@ describe Nfse::Envio::Rps do
       value = '2012-10-10'
       subject.data_emissao = value
       subject.data_emissao = false
+
       subject.data_emissao.must_equal DateTime.parse(value).strftime('%Y-%m-%dT%H:%M:%S')
     end
 
     it 'must convert correctly if is passed a valid datetime value' do
       value = '2012-10-10 14:32:45'
       subject.data_emissao = value
+
       subject.data_emissao.must_equal DateTime.parse(value).strftime('%Y-%m-%dT%H:%M:%S')
     end
   end
@@ -162,6 +167,7 @@ describe Nfse::Envio::Rps do
     it 'must respect if a new value is defined' do
       value = 10
       subject.serie_prestacao = value
+
       subject.serie_prestacao.must_equal value
     end
   end
@@ -385,7 +391,7 @@ describe Nfse::Envio::Rps do
       @attr[:data_emissao] = DateTime.parse(data_emissao).strftime('%Y-%m-%dT%H:%M:%S')
     end
 
-    it 'must have the right attributes' do
+    it 'must have the right attributes values' do
       @attr.each do |k,v|
         @rps.send(k).must_equal v
       end
@@ -394,125 +400,63 @@ describe Nfse::Envio::Rps do
 
   describe 'initialize passing a hash of attributes with Prestador data' do
     before do
-      @prestador = {
-        inscricao_municipal: '1234567',
-        razao_social:        'Empresa exemplo',
-        ddd:                 '019',
-        telefone:            '987654321'
-      }
+      @prestador = { inscricao_municipal: '123' }
 
       attributes = { 'prestador' => @prestador }
       @rps = Nfse::Envio::Rps.new(attributes)
     end
 
-    it 'must have the right attributes' do
-      @prestador.each do |k,v|
-        @rps.prestador.send(k).must_equal v
-      end
+    it 'must have the right attributes values' do
+      @rps.prestador.inscricao_municipal.must_equal @prestador[:inscricao_municipal]
     end
   end
 
   describe 'initialize passing a hash of attributes with Tomador data' do
     before do
-      @tomador = {
-        inscricao_municipal:  '123456789',
-        doc_estrangeiro:      '123',
-        complemento_endereco: '456',
-        cod_cidade:           '789',
-        cidade:               'Exemplo',
-        ddd:                  '019',
-        telefone:             '987654321',
-        cnpj:                 '321456987',
-        razao_social:         'Empresa exemplo',
-        tipo_logradouro:      'Avenida',
-        logradouro:           'Exemplo logradouro',
-        tipo_bairro:          'Bairro',
-        bairro:               'Exemplo bairro',
-        email:                'email@example.com',
-        num_endereco:         '925',
-        cep:                  '82947296'
-      }
+      @tomador = { email: 'foo@example.com' }
 
       attributes = { 'tomador' => @tomador }
       @rps = Nfse::Envio::Rps.new(attributes)
     end
 
-    it 'must have the right attributes' do
-      @tomador.each do |k,v|
-        @rps.tomador.send(k).must_equal v
-      end
+    it 'must have the right attributes values' do
+      @rps.tomador.email.must_equal @tomador[:email]
     end
   end
 
   describe 'initialize passing a hash of attributes with Itens data' do
     before do
-      @item1 = {
-        discriminacao:  'Item exemplo',
-        quantidade:     '10',
-        valor_unitario: '1.00',
-        tributavel:     'S'
-      }
-
-      @item2 = @item1.merge(discriminacao: 'Item exemplo 2', quantidade: '3')
+      @item1 = { discriminacao: 'Item 1' }
+      @item2 = { discriminacao: 'Item 2' }
 
       attributes = { 'itens' => [@item1, @item2] }
       @rps = Nfse::Envio::Rps.new(attributes)
-
-      # Formata os valores para eles baterem corretamente com o retorno dos getters
-      @item1[:quantidade]     = @item1[:quantidade].to_f
-      @item1[:valor_unitario] = @item1[:valor_unitario].to_f
-
-      @item2[:quantidade]     = @item2[:quantidade].to_f
-      @item2[:valor_unitario] = @item2[:valor_unitario].to_f
     end
 
-    it 'must have the right attributes' do
-      @item1.each do |k,v|
-        @rps.itens[0].send(k).must_equal v
-      end
-
-      @item2.each do |k,v|
-        @rps.itens[1].send(k).must_equal v
-      end
+    it 'must have the right attributes values' do
+      @rps.itens[0].discriminacao.must_equal @item1[:discriminacao]
+      @rps.itens[1].discriminacao.must_equal @item2[:discriminacao]
     end
   end
 
   describe 'initialize passing a hash of attributes with Deducoes data' do
     before do
-      @deducao1 = {
-        por:             'Valor',
-        tipo:            'Despesas com Materiais',
-        cnpj_ref:        '123456789',
-        num_nf_ref:      '987654321',
-        valor_total_ref: '100.00',
-        percentual:      '20.00',
-        valor:           '25.00'
-      }
-
-      @deducao2 = @deducao1.merge(por: 'Percentual', tipo: 'Outro tipo', valor: '55.0')
+      @deducao1 = { por: 'Valor' }
+      @deducao2 = { por: 'Percentual' }
 
       attributes = { 'deducoes' => [@deducao1, @deducao2] }
       @rps = Nfse::Envio::Rps.new(attributes)
-
-      # Formata os valores para eles baterem corretamente com o retorno dos getters
-      @deducao1[:valor] = @deducao1[:valor].to_f
-      @deducao2[:valor] = @deducao2[:valor].to_f
     end
 
-    it 'must have the right attributes' do
-      @deducao1.each do |k,v|
-        @rps.deducoes[0].send(k).must_equal v
-      end
-
-      @deducao2.each do |k,v|
-        @rps.deducoes[1].send(k).must_equal v
-      end
+    it 'must have the right attributes values' do
+      @rps.deducoes[0].por.must_equal @deducao1[:por]
+      @rps.deducoes[1].por.must_equal @deducao2[:por]
     end
   end
 
   describe '#render' do
     it 'must render the right xml' do
-      subject.numero = 109
+      subject.numero = '109'
       subject.data_emissao = Time.new(2009, 10, 1)
       subject.situacao = 'N'
       subject.serie_rps_substituido = '123'
@@ -520,7 +464,7 @@ describe Nfse::Envio::Rps do
       subject.num_nfse_substituida = '1'
       subject.data_nfse_substituida = '1900-01-01'
       subject.cod_atividade = '412040000'
-      subject.aliquota_atividade = 5.0
+      subject.aliquota_atividade = '5.0'
       subject.tipo_recolhimento = 'R'
       subject.cod_municipio_prestacao = '0006291'
       subject.municipio_prestacao = 'CAMPINAS'

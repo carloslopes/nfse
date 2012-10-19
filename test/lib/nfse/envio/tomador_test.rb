@@ -230,7 +230,7 @@ describe Nfse::Envio::Tomador do
       @tomador = Nfse::Envio::Tomador.new(@attr)
     end
 
-    it 'must have the right attributes' do
+    it 'must have the right attributes values' do
       @attr.each do |k,v|
         @tomador.send(k).must_equal v
       end

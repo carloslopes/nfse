@@ -102,30 +102,14 @@ describe Nfse::Cancelamento::Lote do
 
   describe 'initialize passing a JSON of attributes with Notas data' do
     it 'notas must have the right attributes values' do
-      nota1 = {
-        numero: '5',
-        inscricao_municipal: '000000111',
-        cod_verificacao: 'codigo',
-        motivo_cancelamento: 'Teste'
-      }
-
-      nota2 = {
-        numero: '6',
-        inscricao_municipal: '000000222',
-        cod_verificacao: 'cod 2',
-        motivo_cancelamento: 'Teste 2'
-      }
+      nota1 = { numero: '1' }
+      nota2 = { numero: '2' }
 
       attributes = { notas: [nota1, nota2] }
       lote = Nfse::Cancelamento::Lote.new(JSON.generate(attributes))
 
-      nota1.each do |k,v|
-        lote.notas[0].send(k).must_equal v
-      end
-
-      nota2.each do |k,v|
-        lote.notas[1].send(k).must_equal v
-      end
+      lote.notas[0].numero.must_equal nota1[:numero]
+      lote.notas[1].numero.must_equal nota2[:numero]
     end
   end
 
