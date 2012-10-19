@@ -13,7 +13,7 @@ module Nfse
           attributes = JSON.parse(json)
 
           notas = attributes.delete('notas')
-          notas.each { |value| self.notas << Nota.new(value) } if notas
+          notas.each { |data| self.notas << Nota.new(data) } if notas
 
           attributes.each do |k,v|
             send("#{k}=", v)

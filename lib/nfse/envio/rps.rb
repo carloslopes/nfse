@@ -23,16 +23,14 @@ module Nfse
         @itens     = []
         @deducoes  = []
 
-        _itens = attributes.delete('itens')
-        _itens.each { |data| self.itens << Item.new(data) } if _itens.is_a?(Array)
+        itens = attributes.delete('itens')
+        itens.each { |data| self.itens << Item.new(data) } if itens
 
-        _deducoes = attributes.delete('deducoes')
-        _deducoes.each { |data| self.deducoes << Deducao.new(data) } if _deducoes.is_a?(Array)
+        deducoes = attributes.delete('deducoes')
+        deducoes.each { |data| self.deducoes << Deducao.new(data) } if deducoes
 
-        if attributes.is_a?(Hash)
-          attributes.each do |k,v|
-            send("#{k}=", v)
-          end
+        attributes.each do |k,v|
+          send("#{k}=", v)
         end
       end
 

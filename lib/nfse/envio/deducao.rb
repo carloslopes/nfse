@@ -5,10 +5,8 @@ module Nfse
       attr_accessor :por, :tipo, :cnpj_ref, :num_nf_ref, :valor_total_ref, :percentual
 
       def initialize(attributes = {})
-        if attributes.is_a?(Hash)
-          attributes.each do |k,v|
-            send("#{k}=", v)
-          end
+        attributes.each do |k,v|
+          send("#{k}=", v)
         end
       end
 

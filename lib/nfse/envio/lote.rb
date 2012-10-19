@@ -8,20 +8,18 @@ module Nfse
       attr_writer :transacao, :versao, :metodo_envio
       attr_reader :rps
 
-      def initialize(json = '')
+      def initialize(json = nil)
         @id  = "#{self.object_id}#{Time.now.to_i}"
         @rps = []
 
-        unless json.empty?
+        if json
           attributes = JSON.parse(json)
 
-          rpses = attributes.delete('rps')
-          rpses.each { |data| self.rps << Rps.new(data) } if rpses.is_a?(Array)
+          rps = attributes.delete('rps')
+          rps.each { |data| self.rps << Rps.new(data) } if rps
 
-          if attributes.is_a?(Hash)
-            attributes.each do |k,v|
-              send("#{k}=", v)
-            end
+          attributes.each do |k,v|
+            send("#{k}=", v)
           end
         end
       end

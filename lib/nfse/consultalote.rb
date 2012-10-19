@@ -7,7 +7,7 @@ module Nfse
     attr_writer :versao
 
     def initialize(json = nil)
-      unless json.nil?
+      if json
         attributes = JSON.parse(json)
         attributes.each do |k,v|
           send("#{k}=", v)

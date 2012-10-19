@@ -5,10 +5,8 @@ module Nfse
       attr_accessor :discriminacao, :tributavel
 
       def initialize(attributes = {})
-        if attributes.is_a?(Hash)
-          attributes.each do |k,v|
-            send("#{k}=", v)
-          end
+        attributes.each do |k,v|
+          send("#{k}=", v)
         end
       end
 
