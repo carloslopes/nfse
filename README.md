@@ -5,11 +5,11 @@ Gem para realizar diversas ações relacionadas a nota fiscal de **serviço** el
 #### Features prontas
 * Geração do xml de envio de lote
 * Geração do xml de consulta de lote
+* Geração do xml de cancelamento de nota
 
 #### Todo
 * Assinar os XML gerados
 * Enviar os XML gerados e assinados para o WebService
-* Cancelamento de nota
 * Consulta de notas
 * Consulta sequencial RPS
 * Usage instructions
@@ -17,7 +17,7 @@ Gem para realizar diversas ações relacionadas a nota fiscal de **serviço** el
 **Atualmente a gem só gera NFS-e seguindo os padrões da prefeitura de Campinas/SP**
 
 ## Links de referências
-[Manual de uso do WebService](http://nfse.campinas.sp.gov.br/NotaFiscal/cpqPDF/WebService.pdf)
+[Manual de uso do WebService](http://nfse.campinas.sp.gov.br/NotaFiscal/cpqPDF/WebService.pdf)  
 [Exemplos de XML e XSD](http://www.dsfnet.com.br/nfse_lote/exemplosws.zip)
 
 ## Installation
