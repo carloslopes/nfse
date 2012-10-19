@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:ReqCancelamentoNFSe xmlns:ns1="http://localhost:8080/WsNFe2/lote"
+	xmlns:tipos="http://localhost:8080/WsNFe2/tp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://localhost:8080/WsNFe2/lote http://localhost:8080/WsNFe2/xsd/ReqCancelamentoNFSe.xsd">
+	<Cabecalho>
+		<CodCidade>6291</CodCidade>
+		<CPFCNPJRemetente>04659416000177</CPFCNPJRemetente>
+		<transacao>true</transacao>
+		<Versao>1</Versao>
+	</Cabecalho>
+	<Lote Id="lote:1ABCDZ">
+		<Nota Id="nota:5">
+			<InscricaoMunicipalPrestador>000000108</InscricaoMunicipalPrestador>
+			<NumeroNota>5</NumeroNota>
+			<CodigoVerificacao>98d0e61d9396b60e5a847a361cb9264e4b6d0c9f</CodigoVerificacao>
+			<MotivoCancelamento>Teste de cancelamento</MotivoCancelamento>
+		</Nota>
+		<Nota Id="nota:6">
+			<InscricaoMunicipalPrestador>801000000</InscricaoMunicipalPrestador>
+			<NumeroNota>6</NumeroNota>
+			<CodigoVerificacao>f9c0d6b4e4629bc163a748a5e06b6939d16e0d89</CodigoVerificacao>
+			<MotivoCancelamento>Teste de cancelamento 2</MotivoCancelamento>
+		</Nota>
+	</Lote>
+</ns1:ReqCancelamentoNFSe>

@@ -13,4 +13,9 @@ module Nfse
 
   # Consulta Lote
   autoload(:ConsultaLote, 'nfse/consultalote')
+
+  # Cancelamento
+  Cancelamento = Module.new
+  Cancelamento.autoload(:Lote, 'nfse/cancelamento/lote')
+  Cancelamento.autoload(:Nota, 'nfse/cancelamento/nota')
 end
