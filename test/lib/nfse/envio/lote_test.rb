@@ -19,6 +19,17 @@ describe Nfse::Envio::Lote do
     end
   end
 
+  describe 'numero attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :numero
+      subject.must_respond_to :numero=
+    end
+
+    it 'must have the right default value' do
+      subject.numero.must_equal "1"
+    end
+  end
+
   describe 'cod_cidade attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :cod_cidade
@@ -161,6 +172,7 @@ describe Nfse::Envio::Lote do
   describe 'initialize passing a JSON of attributes' do
     before do
       @attr = {
+        numero:       '2',
         cod_cidade:   '6291',
         cnpj:         '02646676000182',
         razao_social: 'Empresa Exemplo',
@@ -222,6 +234,7 @@ describe Nfse::Envio::Lote do
     describe "rio_de_janeiro" do
       before do
         Nfse::Base.prefeitura = :rio_de_janeiro
+        subject.numero = '3'
         subject.id = '1ABCDZ'
         subject.cnpj = '02646676000182'
         subject.inscricao_municipal = '001002003'
