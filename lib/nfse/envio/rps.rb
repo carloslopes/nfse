@@ -20,13 +20,14 @@ module Nfse
 
       def initialize(attributes = {})
         @id  = "#{self.object_id}#{Time.now.to_i}"
-        @tipo = 'RPS'
+        @tipo = 'RPS' # RJ: 1 - RPS, 2 – Nota Fiscal Conjugada (Mista), 3 – Cupom
         @serie = 'NF'
         @serie_prestacao = '99'
-        @optante_simples_nacional = 1 # 1 = Sim, 2 = Não
-        @incentivador_cultural = 2 # 1 = Sim, 2 = Não
-        @status_rps = 1 # 1 = Normal, 2 = Cancelado
-        @iss_retido = 2 # 1 = Sim, 2 = Não
+        @operacao = '1' # RJ: 1 – Tributação no município, 2 - Tributação fora do município, 3 - Isenção, 4 - Imune, 5 –Exigibilidade suspensa por decisão judicial, 6 – Exigibilidade suspensa por procedimento administrativo
+        @optante_simples_nacional = 1 # RJ: 1 = Sim, 2 = Não
+        @incentivador_cultural = 2 # RJ: 1 = Sim, 2 = Não
+        @status_rps = 1 # RJ: 1 = Normal, 2 = Cancelado
+        @iss_retido = 2 # RJ: 1 = Sim, 2 = Não
         @valor_iss = 0.0
         @valor_outras_retencoes = 0.0
         @desconto_incondicionado = 0.0
