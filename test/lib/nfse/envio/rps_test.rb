@@ -587,7 +587,6 @@ describe Nfse::Envio::Rps do
         subject.tipo_recolhimento = '140520'
         subject.cod_municipio_prestacao = '3304557'
         subject.operacao = '1'
-        subject.tributacao = 'T'
         subject.valor_pis = 0.0
         subject.valor_cofins = 1.11
         subject.valor_inss = 2.22
@@ -595,8 +594,6 @@ describe Nfse::Envio::Rps do
         subject.valor_csll = 4.44
         subject.valor_iss = 5.0
         subject.descricao = 'Exemplo de Discriminacao de RPS'
-        subject.motivo_cancelamento = 'motivo exemplo'
-        subject.cnpj_intermediario = '123456789'
 
         # Prestador
         prestador = subject.prestador
