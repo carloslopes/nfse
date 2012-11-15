@@ -20,4 +20,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake', '~> 0.9.2'
   gem.add_development_dependency 'nokogiri', '~> 1.5'
   gem.add_development_dependency 'mocha', '~> 0.12.7'
+  gem.add_development_dependency 'minitest-debugger', '~> 1.0.0'
+
 end

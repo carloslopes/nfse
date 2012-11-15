@@ -1,3 +1,4 @@
+require 'minitest/debugger' if ENV['DEBUG']
 require 'minitest/autorun'
 require 'minitest/pride'
 require 'mocha'
@@ -14,8 +15,11 @@ module NfseXmlComparator
     doc = Nokogiri::XML(options[:str]) do |config|
       config.noblanks
     end
-
-    doc.xpath(".//#{path}").to_xml
+    
+    str = doc.xpath(".//#{path}").to_xml
+    str = doc.css("//#{path}").to_xml if str.empty?
+    raise "Empty content" if str.empty?
+    str
   end
 end
 
