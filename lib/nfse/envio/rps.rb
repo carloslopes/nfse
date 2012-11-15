@@ -1,4 +1,5 @@
 require 'digest'
+require 'date'
 
 module Nfse
   module Envio
