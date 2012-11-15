@@ -56,13 +56,18 @@ describe Nfse::Cancelamento::Nota do
   end
 
   describe '#render' do
-    it 'must render the right xml' do
-      subject.numero              = '5'
-      subject.inscricao_municipal = '108'
-      subject.cod_verificacao     = '98d0e61d9396b60e5a847a361cb9264e4b6d0c9f'
-      subject.motivo_cancelamento = 'Teste de cancelamento'
+    describe "campinas" do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+      it 'must render the right xml' do
+        subject.numero              = '5'
+        subject.inscricao_municipal = '108'
+        subject.cod_verificacao     = '98d0e61d9396b60e5a847a361cb9264e4b6d0c9f'
+        subject.motivo_cancelamento = 'Teste de cancelamento'
 
-      xml('Nota', str: subject.render).must_equal xml('Nota[1]', prefeitura: :campinas, file: :cancelamento)
+        xml('Nota', str: subject.render).must_equal xml('Nota[1]', prefeitura: :campinas, file: :cancelamento)
+      end
     end
   end
 

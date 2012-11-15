@@ -114,15 +114,20 @@ describe Nfse::Cancelamento::Lote do
   end
 
   describe '#render' do
-    it 'must render the right xml' do
-      subject.id         = '1ABCDZ'
-      subject.cod_cidade = '6291'
-      subject.cnpj       = '04659416000177'
+    describe "campinas" do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+      it 'must render the right xml' do
+        subject.id         = '1ABCDZ'
+        subject.cod_cidade = '6291'
+        subject.cnpj       = '04659416000177'
 
-      subject.notas << stub(render: xml('Nota[1]', prefeitura: :campinas, file: :cancelamento))
-      subject.notas << stub(render: xml('Nota[2]', prefeitura: :campinas, file: :cancelamento))
+        subject.notas << stub(render: xml('Nota[1]', prefeitura: :campinas, file: :cancelamento))
+        subject.notas << stub(render: xml('Nota[2]', prefeitura: :campinas, file: :cancelamento))
 
-      xml('ns1:ReqCancelamentoNFSe', str: subject.render).must_equal xml('ns1:ReqCancelamentoNFSe', prefeitura: :campinas, file: :cancelamento)
+        xml('ns1:ReqCancelamentoNFSe', str: subject.render).must_equal xml('ns1:ReqCancelamentoNFSe', prefeitura: :campinas, file: :cancelamento)
+      end
     end
   end
 
