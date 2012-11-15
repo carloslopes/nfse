@@ -1,3 +1,5 @@
+$LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__)))
+
 require 'mustache'
 require 'nfse/version'
 require 'nfse/base'
