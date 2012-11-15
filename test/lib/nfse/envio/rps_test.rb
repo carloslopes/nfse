@@ -573,8 +573,6 @@ describe Nfse::Envio::Rps do
     describe "rio de janeiro" do
       before do
         Nfse::Base.prefeitura = :rio_de_janeiro
-      end
-      it 'must render the right xml' do
         subject.numero = '109'
         subject.serie = "A"
         subject.tipo = "1"
@@ -613,6 +611,8 @@ describe Nfse::Envio::Rps do
         tomador.uf                  = 'RJ'
         tomador.cep                 = '05010040'
         tomador.email               = 'foo@example.com'
+        tomador.ddd                 = '21'
+        tomador.telefone            = '99999999'
 
         # Item
         subject.itens << Nfse::Envio::Item.new({
@@ -623,7 +623,14 @@ describe Nfse::Envio::Rps do
         })
 
         subject.expects(:id).returns('21530858201353011970')
+      end
+      it 'must render the right xml' do
         xml('Rps', str: subject.render).must_equal xml('Rps[1]', prefeitura: :rio_de_janeiro, file: :envio)
+      end
+      it 'must render the right xml' do
+        subject.tomador.cnpj = nil
+        subject.tomador.cpf = '00011122233'
+        xml('Rps', str: subject.render).must_equal xml('Rps[1]', prefeitura: :rio_de_janeiro, file: :envio_cpf)
       end
     end
   end

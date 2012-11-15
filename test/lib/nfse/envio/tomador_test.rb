@@ -16,15 +16,12 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :cnpj
       subject.must_respond_to :cnpj=
     end
+  end
 
-    it 'must have the right default value' do
-      subject.cnpj.must_equal '77777777777'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = '123456789'
-      subject.cnpj = value
-      subject.cnpj.must_equal value
+  describe 'cpf attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :cpf
+      subject.must_respond_to :cpf=
     end
   end
 

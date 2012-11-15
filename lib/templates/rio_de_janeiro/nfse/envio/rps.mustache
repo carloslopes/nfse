@@ -38,7 +38,12 @@
 		<Tomador>
 			<IdentificacaoTomador>
 				<CpfCnpj>
-					<Cnpj>{{tomador.cnpj}}</Cnpj>
+				  {{#tomador.cpf}}
+  				<Cpf>{{tomador.cpf}}</Cpf>
+  				{{/tomador.cpf}}
+  				{{#tomador.cnpj}}
+  				<Cnpj>{{tomador.cnpj}}</Cnpj>
+  				{{/tomador.cnpj}}
 				</CpfCnpj>
 			</IdentificacaoTomador>
 			<RazaoSocial>{{tomador.razao_social}}</RazaoSocial>
@@ -52,6 +57,7 @@
 				<Cep>{{tomador.cep}}</Cep>
 			</Endereco>
 			<Contato>
+			  <Telefone>{{tomador.ddd}}{{tomador.telefone}}</Telefone>
 				<Email>{{tomador.email}}</Email>
 			</Contato>
 		</Tomador>
