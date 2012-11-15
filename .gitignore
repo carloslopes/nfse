@@ -18,3 +18,4 @@ tmp
 *.sublime*
 .rvmrc
 .rbenv-gemsets
+.DS_Store
