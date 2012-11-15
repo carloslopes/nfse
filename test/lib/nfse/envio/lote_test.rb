@@ -40,6 +40,13 @@ describe Nfse::Envio::Lote do
     end
   end
 
+  describe 'inscricao_municipal attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :inscricao_municipal
+      subject.must_respond_to :inscricao_municipal=
+    end
+  end
+
   describe 'transacao attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :transacao
@@ -157,6 +164,7 @@ describe Nfse::Envio::Lote do
         cod_cidade:   '6291',
         cnpj:         '02646676000182',
         razao_social: 'Empresa Exemplo',
+        inscricao_municipal: '001002003',
         transacao:    'false',
         versao:       '2.5',
         metodo_envio: 'Metodo Exemplo'
@@ -216,6 +224,7 @@ describe Nfse::Envio::Lote do
         Nfse::Base.prefeitura = :rio_de_janeiro
         subject.id = '1ABCDZ'
         subject.cnpj = '02646676000182'
+        subject.inscricao_municipal = '001002003'
         # Rps
         subject.rps << stub(render: xml('Rps[1]', prefeitura: :rio_de_janeiro, file: :envio))
         subject.rps << stub(render: xml('Rps[2]', prefeitura: :rio_de_janeiro, file: :envio))

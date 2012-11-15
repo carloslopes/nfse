@@ -3,7 +3,7 @@ require 'json'
 module Nfse
   module Envio
     class Lote < Nfse::Base
-      attr_accessor :id, :cod_cidade, :cnpj, :razao_social
+      attr_accessor :id, :cod_cidade, :cnpj, :razao_social, :inscricao_municipal
       attr_writer :transacao, :versao, :metodo_envio
       attr_reader :rps
 
