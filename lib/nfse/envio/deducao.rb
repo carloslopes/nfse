@@ -1,7 +1,6 @@
 module Nfse
   module Envio
-    class Deducao < Mustache
-      self.template_file = File.expand_path('../templates/deducao.mustache', __FILE__)
+    class Deducao < Nfse::Base
       attr_accessor :por, :tipo, :cnpj_ref, :num_nf_ref, :valor_total_ref, :percentual
 
       def initialize(attributes = {})

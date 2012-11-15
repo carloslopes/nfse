@@ -1,5 +1,6 @@
-require 'nfse/version'
 require 'mustache'
+require 'nfse/version'
+require 'nfse/base'
 
 module Nfse
   # Envio

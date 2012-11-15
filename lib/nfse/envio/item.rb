@@ -1,7 +1,6 @@
 module Nfse
   module Envio
-    class Item < Mustache
-      self.template_file = File.expand_path('../templates/item.mustache', __FILE__)
+    class Item < Nfse::Base
       attr_accessor :discriminacao, :tributavel
 
       def initialize(attributes = {})

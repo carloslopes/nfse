@@ -2,8 +2,7 @@ require 'json'
 
 module Nfse
   module Envio
-    class Lote < Mustache
-      self.template_file = File.expand_path('../templates/lote.mustache', __FILE__)
+    class Lote < Nfse::Base
       attr_accessor :id, :cod_cidade, :cnpj, :razao_social
       attr_writer :transacao, :versao, :metodo_envio
       attr_reader :rps

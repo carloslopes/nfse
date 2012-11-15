@@ -2,9 +2,7 @@ require 'digest'
 
 module Nfse
   module Envio
-    class Rps < Mustache
-      self.template_file = File.expand_path('../templates/rps.mustache', __FILE__)
-
+    class Rps < Nfse::Base
       attr_accessor :numero, :situacao, :serie_rps_substituido,
         :num_rps_substituido, :num_nfse_substituida, :data_nfse_substituida,
         :cod_atividade, :aliquota_atividade, :tipo_recolhimento,
