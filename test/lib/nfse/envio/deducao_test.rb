@@ -100,7 +100,7 @@ describe Nfse::Envio::Deducao do
       subject.percentual      = 5
       subject.valor           = 10
 
-      xml('Deducao', str: subject.render).must_equal xml('Deducao[1]', file: :envio)
+      xml('Deducao', str: subject.render).must_equal xml('Deducao[1]', prefeitura: :campinas, file: :envio)
     end
   end
 

@@ -119,10 +119,10 @@ describe Nfse::Cancelamento::Lote do
       subject.cod_cidade = '6291'
       subject.cnpj       = '04659416000177'
 
-      subject.notas << stub(render: xml('Nota[1]', file: :cancelamento))
-      subject.notas << stub(render: xml('Nota[2]', file: :cancelamento))
+      subject.notas << stub(render: xml('Nota[1]', prefeitura: :campinas, file: :cancelamento))
+      subject.notas << stub(render: xml('Nota[2]', prefeitura: :campinas, file: :cancelamento))
 
-      xml('ns1:ReqCancelamentoNFSe', str: subject.render).must_equal xml('ns1:ReqCancelamentoNFSe', file: :cancelamento)
+      xml('ns1:ReqCancelamentoNFSe', str: subject.render).must_equal xml('ns1:ReqCancelamentoNFSe', prefeitura: :campinas, file: :cancelamento)
     end
   end
 

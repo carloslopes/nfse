@@ -66,7 +66,7 @@ describe Nfse::ConsultaLote do
       subject.cnpj       = '27394162000108'
       subject.num_lote   = '7105'
 
-      xml('ns1:ReqConsultaLote', str: subject.render).must_equal xml('ns1:ReqConsultaLote', file: :consultalote)
+      xml('ns1:ReqConsultaLote', str: subject.render).must_equal xml('ns1:ReqConsultaLote', prefeitura: :campinas, file: :consultalote)
     end
   end
 

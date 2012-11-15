@@ -512,14 +512,14 @@ describe Nfse::Envio::Rps do
       tomador.telefone            = '923156467'
 
       # Deducao
-      subject.deducoes << stub(render: xml('Deducao[1]', file: :envio))
-      subject.deducoes << stub(render: xml('Deducao[2]', file: :envio))
+      subject.deducoes << stub(render: xml('Deducao[1]', prefeitura: :campinas, file: :envio))
+      subject.deducoes << stub(render: xml('Deducao[2]', prefeitura: :campinas, file: :envio))
 
       # Item
-      subject.itens << stub(render: xml('Item[1]', file: :envio))
-      subject.itens << stub(render: xml('Item[2]', file: :envio))
+      subject.itens << stub(render: xml('Item[1]', prefeitura: :campinas, file: :envio))
+      subject.itens << stub(render: xml('Item[2]', prefeitura: :campinas, file: :envio))
 
-      xml('RPS', str: subject.render).must_equal xml('RPS[1]', file: :envio)
+      xml('RPS', str: subject.render).must_equal xml('RPS[1]', prefeitura: :campinas, file: :envio)
     end
   end
 

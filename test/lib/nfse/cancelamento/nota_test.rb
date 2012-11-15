@@ -62,7 +62,7 @@ describe Nfse::Cancelamento::Nota do
       subject.cod_verificacao     = '98d0e61d9396b60e5a847a361cb9264e4b6d0c9f'
       subject.motivo_cancelamento = 'Teste de cancelamento'
 
-      xml('Nota', str: subject.render).must_equal xml('Nota[1]', file: :cancelamento)
+      xml('Nota', str: subject.render).must_equal xml('Nota[1]', prefeitura: :campinas, file: :cancelamento)
     end
   end
 
