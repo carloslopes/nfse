@@ -1,58 +1,58 @@
 <Rps>
-	<InfRps Id="rps1serieT1">
+	<InfRps Id="{{id}}">
 		<IdentificacaoRps>
-			<Numero>1</Numero>
-			<Serie>A</Serie>
-			<Tipo>1</Tipo>
+			<Numero>{{numero}}</Numero>
+			<Serie>{{serie}}</Serie>
+			<Tipo>{{tipo}}</Tipo>
 		</IdentificacaoRps>
-		<DataEmissao>2010-04-14T15:30:00</DataEmissao>
-		<NaturezaOperacao>1</NaturezaOperacao>
-		<OptanteSimplesNacional>2</OptanteSimplesNacional>
-		<IncentivadorCultural>2</IncentivadorCultural>
-		<Status>1</Status>
+		<DataEmissao>{{data_emissao}}</DataEmissao>
+		<NaturezaOperacao>{{operacao}}</NaturezaOperacao>
+		<OptanteSimplesNacional>{{optante_simples_nacional}}</OptanteSimplesNacional>
+		<IncentivadorCultural>{{incentivador_cultural}}</IncentivadorCultural>
+		<Status>{{status_rps}}</Status>
 		<Servico>
 			<Valores>
-				<ValorServicos>100.00</ValorServicos>
-				<ValorDeducoes>0</ValorDeducoes>
-				<ValorPis>0.00</ValorPis>
-				<ValorCofins>0.00</ValorCofins>
-				<ValorInss>0.00</ValorInss>
-				<ValorIr>0.00</ValorIr>
-				<ValorCsll>0.00</ValorCsll>
-				<IssRetido>2</IssRetido>
-				<ValorIss>5.00</ValorIss>
-				<OutrasRetencoes>0.00</OutrasRetencoes>
-				<Aliquota>0.05</Aliquota>
-				<DescontoIncondicionado>0</DescontoIncondicionado>
-				<DescontoCondicionado>0</DescontoCondicionado>
+				<ValorServicos>{{valor_servico}}</ValorServicos>
+				<ValorDeducoes>{{valor_deducao}}</ValorDeducoes>
+				<ValorPis>{{valor_pis}}</ValorPis>
+				<ValorCofins>{{valor_cofins}}</ValorCofins>
+				<ValorInss>{{valor_inss}}</ValorInss>
+				<ValorIr>{{valor_ir}}</ValorIr>
+				<ValorCsll>{{valor_csll}}</ValorCsll>
+				<IssRetido>{{iss_retido}}</IssRetido>
+				<ValorIss>{{valor_iss}}</ValorIss>
+				<OutrasRetencoes>{{valor_outras_retencoes}}</OutrasRetencoes>
+				<Aliquota>{{aliquota_atividade}}</Aliquota>
+				<DescontoIncondicionado>{{desconto_incondicionado}}</DescontoIncondicionado>
+				<DescontoCondicionado>{{desconto_condicionado}}</DescontoCondicionado>
 			</Valores>
-			<ItemListaServico>1405</ItemListaServico>
-			<CodigoTributacaoMunicipio>140520</CodigoTributacaoMunicipio>
-			<Discriminacao>Exemplo de Discriminacao de RPS</Discriminacao>
-			<CodigoMunicipio>3304557</CodigoMunicipio>
+			<ItemListaServico>{{cod_atividade}}</ItemListaServico>
+			<CodigoTributacaoMunicipio>{{tipo_recolhimento}}</CodigoTributacaoMunicipio>
+			<Discriminacao>{{descricao}}</Discriminacao>
+			<CodigoMunicipio>{{cod_municipio_prestacao}}</CodigoMunicipio>
 		</Servico>
 		<Prestador>
-			<Cnpj>00000000000000</Cnpj>
-			<InscricaoMunicipal>00000000</InscricaoMunicipal>
+			<Cnpj>{{prestador.cnpj}}</Cnpj>
+			<InscricaoMunicipal>{{prestador.inscricao_municipal}}</InscricaoMunicipal>
 		</Prestador>
 		<Tomador>
 			<IdentificacaoTomador>
 				<CpfCnpj>
-					<Cpf>00000000000</Cpf>
+					<Cnpj>{{tomador.cnpj}}</Cnpj>
 				</CpfCnpj>
 			</IdentificacaoTomador>
-			<RazaoSocial>Nome do Tomador</RazaoSocial>
+			<RazaoSocial>{{tomador.razao_social}}</RazaoSocial>
 			<Endereco>
-				<Endereco>Av. Rio Branco</Endereco>
-				<Numero>123</Numero>
-				<Complemento>Andar 1</Complemento>
-				<Bairro>Centro</Bairro>
-				<CodigoMunicipio>3304557</CodigoMunicipio>
-				<Uf>RJ</Uf>
-				<Cep>20040001</Cep>
+				<Endereco>{{tomador.logradouro}}</Endereco>
+				<Numero>{{tomador.num_endereco}}</Numero>
+				<Complemento>{{tomador.complemento_endereco}}</Complemento>
+				<Bairro>{{tomador.bairro}}</Bairro>
+				<CodigoMunicipio>{{tomador.cod_cidade}}</CodigoMunicipio>
+				<Uf>{{tomador.uf}}</Uf>
+				<Cep>{{tomador.cep}}</Cep>
 			</Endereco>
 			<Contato>
-				<Email>meuemail@web.com.br</Email>
+				<Email>{{tomador.email}}</Email>
 			</Contato>
 		</Tomador>
 	</InfRps>

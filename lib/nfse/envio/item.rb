@@ -1,16 +1,14 @@
 module Nfse
   module Envio
     class Item < Nfse::Base
-      attr_accessor :discriminacao, :tributavel
+      attr_accessor :quantidade, :valor_unitario, :discriminacao, :tributavel
 
       def initialize(attributes = {})
+        @quantidade = 0.0
+        @valor_unitario = 0.0
         attributes.each do |k,v|
           send("#{k}=", v)
         end
-      end
-
-      def quantidade
-        @quantidade ||= 0.0
       end
 
       # Atribui um valor para a quantidade
@@ -18,10 +16,6 @@ module Nfse
       def quantidade=(value)
         @quantidade = value.to_f
       rescue NoMethodError
-      end
-
-      def valor_unitario
-        @valor_unitario ||= 0.0
       end
 
       # Atribui um valor para o valor_unitario
@@ -32,7 +26,7 @@ module Nfse
       end
 
       def valor_total
-        quantidade * valor_unitario
+        @quantidade * @valor_unitario
       end
     end
   end

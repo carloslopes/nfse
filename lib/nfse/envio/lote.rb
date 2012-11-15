@@ -3,12 +3,16 @@ require 'json'
 module Nfse
   module Envio
     class Lote < Nfse::Base
-      attr_accessor :id, :numero, :cod_cidade, :cnpj, :razao_social, :inscricao_municipal
-      attr_writer :transacao, :versao, :metodo_envio
+      attr_accessor :id, :numero, :cod_cidade, :cnpj, :razao_social, :inscricao_municipal,
+      :transacao, :versao, :metodo_envio
       attr_reader :rps
 
       def initialize(json = nil)
         @id  = "#{self.object_id}#{Time.now.to_i}"
+        @numero = '1'
+        @transacao = 'true'
+        @versao = '1'
+        @metodo_envio = 'WS'
         @rps = []
 
         if json
@@ -21,22 +25,6 @@ module Nfse
             send("#{k}=", v)
           end
         end
-      end
-
-      def numero
-        @numero ||= '1'
-      end
-
-      def transacao
-        @transacao ||= 'true'
-      end
-
-      def versao
-        @versao ||= '1'
-      end
-
-      def metodo_envio
-        @metodo_envio ||= 'WS'
       end
 
       def qtd_rps

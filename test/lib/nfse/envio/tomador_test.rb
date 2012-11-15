@@ -206,6 +206,23 @@ describe Nfse::Envio::Tomador do
     end
   end
 
+  describe 'uf attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :uf
+      subject.must_respond_to :uf=
+    end
+
+    it 'must have the right default value' do
+      subject.uf.must_equal '-'
+    end
+
+    it 'must respect if a new value is defined' do
+      value = 'RJ'
+      subject.uf = value
+      subject.uf.must_equal value
+    end
+  end
+
   describe 'initialize passing a hash of attributes' do
     before do
       @attr = {

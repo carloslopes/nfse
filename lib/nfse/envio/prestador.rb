@@ -1,7 +1,7 @@
 module Nfse
   module Envio
     class Prestador
-      attr_accessor :inscricao_municipal, :razao_social, :ddd, :telefone
+      attr_accessor :inscricao_municipal, :razao_social, :ddd, :telefone, :cnpj
 
       def initialize(attributes = {})
         if attributes.is_a?(Hash)

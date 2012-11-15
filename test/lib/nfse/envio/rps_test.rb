@@ -4,6 +4,20 @@ describe Nfse::Envio::Rps do
 
   subject { Nfse::Envio::Rps.new }
 
+  describe 'id attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :id
+      subject.must_respond_to :id=
+    end
+
+    it 'must have the right default value' do
+      time = Time.now.to_i
+      Time.expects(:now).returns(time)
+
+      subject.id.must_equal "#{subject.object_id}#{time}"
+    end
+  end
+
   describe 'prestador attribute' do
     it "won't have the writer method" do
       subject.wont_respond_to :prestador=
@@ -312,6 +326,36 @@ describe Nfse::Envio::Rps do
     end
   end
 
+  describe 'optante_simples_nacional attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :optante_simples_nacional
+      subject.must_respond_to :optante_simples_nacional=
+    end
+    it 'must have the right default value' do
+      subject.optante_simples_nacional.must_equal 1
+    end
+  end
+
+  describe 'incentivador_cultural attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :incentivador_cultural
+      subject.must_respond_to :incentivador_cultural=
+    end
+    it 'must have the right default value' do
+      subject.incentivador_cultural.must_equal 2
+    end
+  end
+
+  describe 'status_rps attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :status_rps
+      subject.must_respond_to :status_rps=
+    end
+    it 'must have the right default value' do
+      subject.status_rps.must_equal 1
+    end
+  end
+
   describe '#assinatura' do
     it 'must generate the right signature' do
       subject.prestador.inscricao_municipal = '0317330'
@@ -524,6 +568,65 @@ describe Nfse::Envio::Rps do
         subject.itens << stub(render: xml('Item[2]', prefeitura: :campinas, file: :envio))
 
         xml('RPS', str: subject.render).must_equal xml('RPS[1]', prefeitura: :campinas, file: :envio)
+      end
+    end
+    describe "rio de janeiro" do
+      before do
+        Nfse::Base.prefeitura = :rio_de_janeiro
+      end
+      it 'must render the right xml' do
+        subject.numero = '109'
+        subject.serie = "A"
+        subject.tipo = "1"
+        subject.data_emissao = Time.new(2009, 10, 1)
+        subject.optante_simples_nacional = '2'
+        subject.incentivador_cultural = '1'
+        subject.status_rps = '1'
+        subject.cod_atividade = '1405'
+        subject.aliquota_atividade = '0.05'
+        subject.tipo_recolhimento = '140520'
+        subject.cod_municipio_prestacao = '3304557'
+        subject.operacao = '1'
+        subject.tributacao = 'T'
+        subject.valor_pis = 0.0
+        subject.valor_cofins = 1.11
+        subject.valor_inss = 2.22
+        subject.valor_ir = 3.33
+        subject.valor_csll = 4.44
+        subject.valor_iss = 5.0
+        subject.descricao = 'Exemplo de Discriminacao de RPS'
+        subject.motivo_cancelamento = 'motivo exemplo'
+        subject.cnpj_intermediario = '123456789'
+
+        # Prestador
+        prestador = subject.prestador
+        prestador.cnpj                = '01073249816200'
+        prestador.inscricao_municipal = '0370835'
+
+        # Tomador
+        tomador = subject.tomador
+        tomador.inscricao_municipal = '0000000'
+        tomador.cnpj                = '27394162000108'
+        tomador.razao_social        = 'Nome do Tomador'
+        tomador.logradouro          = 'Av. Rio Branco'
+        tomador.num_endereco        = '123'
+        tomador.complemento_endereco = 'Andar 1'
+        tomador.bairro              = 'Centro'
+        tomador.cod_cidade          = '3304557'
+        tomador.uf                  = 'RJ'
+        tomador.cep                 = '05010040'
+        tomador.email               = 'foo@example.com'
+
+        # Item
+        subject.itens << Nfse::Envio::Item.new({
+          discriminacao:  'Item exemplo',
+          quantidade:     '1',
+          valor_unitario: '100.00',
+          tributavel:     'S'
+        })
+
+        subject.expects(:id).returns('21530858201353011970')
+        xml('Rps', str: subject.render).must_equal xml('Rps[1]', prefeitura: :rio_de_janeiro, file: :envio)
       end
     end
   end
