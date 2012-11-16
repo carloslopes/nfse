@@ -169,7 +169,7 @@ describe Nfse::Envio::Lote do
     end
   end
 
-  describe 'initialize passing a JSON of attributes' do
+  describe 'initialize' do
     before do
       @attr = {
         numero:       '2',
@@ -181,13 +181,27 @@ describe Nfse::Envio::Lote do
         versao:       '2.5',
         metodo_envio: 'Metodo Exemplo'
       }
-
-      @lote = Nfse::Envio::Lote.new(JSON.generate(@attr))
     end
 
-    it 'must have the right attributes values' do
-      @attr.each do |k,v|
-        @lote.send(k).must_equal v
+    describe 'passing a JSON of attributes' do
+      before do
+        @lote = Nfse::Envio::Lote.new(JSON.generate(@attr))
+      end
+      it 'must have the right attributes values' do
+        @attr.each do |k,v|
+          @lote.send(k).must_equal v
+        end
+      end
+    end
+
+    describe 'passing attributes' do
+      before do
+        @lote = Nfse::Envio::Lote.new(@attr)
+      end
+      it 'must have the right attributes values' do
+        @attr.each do |k,v|
+          @lote.send(k).must_equal v
+        end
       end
     end
   end

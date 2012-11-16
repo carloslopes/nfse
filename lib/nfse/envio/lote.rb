@@ -7,7 +7,7 @@ module Nfse
       :transacao, :versao, :metodo_envio
       attr_reader :rps
 
-      def initialize(json = nil)
+      def initialize(attributes = {})
         @id  = "#{self.object_id}#{Time.now.to_i}"
         @numero = '1'
         @transacao = 'true'
@@ -15,15 +15,13 @@ module Nfse
         @metodo_envio = 'WS'
         @rps = []
 
-        if json
-          attributes = JSON.parse(json)
+        attributes = JSON.parse(attributes) if attributes.is_a?(String)
 
-          rps = attributes.delete('rps')
-          rps.each { |data| self.rps << Rps.new(data) } if rps
+        rps = attributes.delete('rps')
+        rps.each { |data| self.rps << Rps.new(data) } if rps
 
-          attributes.each do |k,v|
-            send("#{k}=", v)
-          end
+        attributes.each do |k,v|
+          send("#{k}=", v)
         end
       end
 
