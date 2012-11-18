@@ -16,15 +16,12 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :cnpj
       subject.must_respond_to :cnpj=
     end
+  end
 
-    it 'must have the right default value' do
-      subject.cnpj.must_equal '77777777777'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = '123456789'
-      subject.cnpj = value
-      subject.cnpj.must_equal value
+  describe 'cpf attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :cpf
+      subject.must_respond_to :cpf=
     end
   end
 
@@ -32,16 +29,6 @@ describe Nfse::Envio::Tomador do
     it 'must have the accessors methods' do
       subject.must_respond_to :razao_social
       subject.must_respond_to :razao_social=
-    end
-
-    it 'must have the right default value' do
-      subject.razao_social.must_equal 'Consumidor'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'Empresa exemplo'
-      subject.razao_social = value
-      subject.razao_social.must_equal value
     end
   end
 
@@ -57,16 +44,6 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :tipo_logradouro
       subject.must_respond_to :tipo_logradouro=
     end
-
-    it 'must have the right default value' do
-      subject.tipo_logradouro.must_equal '-'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'Tipo de logradouro exemplo'
-      subject.tipo_logradouro = value
-      subject.tipo_logradouro.must_equal value
-    end
   end
 
   describe 'logradouro attribute' do
@@ -74,32 +51,12 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :logradouro
       subject.must_respond_to :logradouro=
     end
-
-    it 'must have the right default value' do
-      subject.logradouro.must_equal '-'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'Logradouro exemplo'
-      subject.logradouro = value
-      subject.logradouro.must_equal value
-    end
   end
 
   describe 'num_endereco attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :num_endereco
       subject.must_respond_to :num_endereco=
-    end
-
-    it 'must have the right default value' do
-      subject.num_endereco.must_equal '0'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = '123'
-      subject.num_endereco = value
-      subject.num_endereco.must_equal value
     end
   end
 
@@ -115,32 +72,12 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :tipo_bairro
       subject.must_respond_to :tipo_bairro=
     end
-
-    it 'must have the right default value' do
-      subject.tipo_bairro.must_equal '-'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'Tipo do bairro exemplo'
-      subject.tipo_bairro = value
-      subject.tipo_bairro.must_equal value
-    end
   end
 
   describe 'bairro attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :bairro
       subject.must_respond_to :bairro=
-    end
-
-    it 'must have the right default value' do
-      subject.bairro.must_equal '-'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'Bairro exemplo'
-      subject.bairro = value
-      subject.bairro.must_equal value
     end
   end
 
@@ -163,32 +100,12 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :cep
       subject.must_respond_to :cep=
     end
-
-    it 'must have the right default value' do
-      subject.cep.must_equal '00000000'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = '123456789'
-      subject.cep = value
-      subject.cep.must_equal value
-    end
   end
 
   describe 'email attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :email
       subject.must_respond_to :email=
-    end
-
-    it 'must have the right default value' do
-      subject.email.must_equal '-'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'email@example.com'
-      subject.email = value
-      subject.email.must_equal value
     end
   end
 
@@ -203,6 +120,13 @@ describe Nfse::Envio::Tomador do
     it 'must have the accessors methods' do
       subject.must_respond_to :telefone
       subject.must_respond_to :telefone=
+    end
+  end
+
+  describe 'uf attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :uf
+      subject.must_respond_to :uf=
     end
   end
 
@@ -233,6 +157,78 @@ describe Nfse::Envio::Tomador do
     it 'must have the right attributes values' do
       @attr.each do |k,v|
         @tomador.send(k).must_equal v
+      end
+    end
+  end
+
+  describe :tem_contato do
+    describe 'without any attribute' do
+      subject { Nfse::Envio::Tomador.new }
+      it "should return false" do
+        subject.tem_contato.must_equal false
+      end
+    end
+    describe 'with email' do
+      subject { Nfse::Envio::Tomador.new(email: 'email@example.com') }
+      it "should return true" do
+        subject.tem_contato.must_equal true
+      end
+    end
+    describe 'with telefone' do
+      subject { Nfse::Envio::Tomador.new(telefone: '-') }
+      it "should return true" do
+        subject.tem_contato.must_equal true
+      end
+    end
+  end
+  
+  describe :tem_endereco do
+    describe 'without any attribute' do
+      subject { Nfse::Envio::Tomador.new }
+      it "should return false" do
+        subject.tem_endereco.must_equal false
+      end
+    end
+    describe 'with logradouro' do
+      subject { Nfse::Envio::Tomador.new(logradouro: '-') }
+      it "should return true" do
+        subject.tem_endereco.must_equal true
+      end
+    end
+    describe 'with num_endereco' do
+      subject { Nfse::Envio::Tomador.new(num_endereco: '-') }
+      it "should return true" do
+        subject.tem_endereco.must_equal true
+      end
+    end
+    describe 'with complemento_endereco' do
+      subject { Nfse::Envio::Tomador.new(complemento_endereco: '-') }
+      it "should return true" do
+        subject.tem_endereco.must_equal true
+      end
+    end
+    describe 'with bairro' do
+      subject { Nfse::Envio::Tomador.new(bairro: '-') }
+      it "should return true" do
+        subject.tem_endereco.must_equal true
+      end
+    end
+    describe 'with cod_cidade' do
+      subject { Nfse::Envio::Tomador.new(cod_cidade: '-') }
+      it "should return true" do
+        subject.tem_endereco.must_equal true
+      end
+    end
+    describe 'with uf' do
+      subject { Nfse::Envio::Tomador.new(uf: '-') }
+      it "should return true" do
+        subject.tem_endereco.must_equal true
+      end
+    end
+    describe 'with cep' do
+      subject { Nfse::Envio::Tomador.new(cep: '-') }
+      it "should return true" do
+        subject.tem_endereco.must_equal true
       end
     end
   end

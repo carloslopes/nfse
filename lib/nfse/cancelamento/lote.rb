@@ -1,7 +1,6 @@
 module Nfse
   module Cancelamento
-    class Lote < Mustache
-      self.template_file = File.expand_path('../templates/lote.mustache', __FILE__)
+    class Lote < Nfse::Base
       attr_accessor :cod_cidade, :cnpj
       attr_writer :id, :transacao, :versao
       attr_reader :notas

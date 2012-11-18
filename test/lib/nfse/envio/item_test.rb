@@ -93,13 +93,18 @@ describe Nfse::Envio::Item do
   end
 
   describe '#render' do
-    it 'must render the right xml' do
-      subject.discriminacao  = 'Item 1'
-      subject.quantidade     = '2.0'
-      subject.valor_unitario = '3.0'
-      subject.tributavel     = 'S'
+    describe "campinas" do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+      it 'must render the right xml' do
+        subject.discriminacao  = 'Item 1'
+        subject.quantidade     = '2.0'
+        subject.valor_unitario = '3.0'
+        subject.tributavel     = 'S'
 
-      xml('Item', str: subject.render).must_equal xml('Item[1]', file: :envio)
+        xml('Item', str: subject.render).must_equal xml('Item[1]', prefeitura: :campinas, file: :envio)
+      end
     end
   end
 

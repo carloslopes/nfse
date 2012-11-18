@@ -1,7 +1,6 @@
 module Nfse
   module Cancelamento
-    class Nota < Mustache
-      self.template_file = File.expand_path('../templates/nota.mustache', __FILE__)
+    class Nota < Nfse::Base
       attr_accessor :numero, :cod_verificacao, :motivo_cancelamento
       attr_writer :inscricao_municipal
 

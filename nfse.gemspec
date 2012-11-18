@@ -2,8 +2,8 @@
 require File.expand_path('../lib/nfse/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Carlos Eduardo L. Lopes\n"]
-  gem.email         = ["carlos.el.lopes@gmail.com"]
+  gem.authors       = ["Carlos Eduardo L. Lopes\n", "Rafael Lima"]
+  gem.email         = ["carlos.el.lopes@gmail.com", "contato@rafael.adm.br"]
   gem.description   = %q{Gem para realizar diversas ações relacionadas a nota fiscal de serviço eletrônica}
   gem.summary       = %q{Gem para realizar diversas ações relacionadas a nota fiscal de serviço eletrônica}
   gem.homepage      = "https://github.com/carloslopes/nfse"
@@ -20,4 +20,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake', '~> 0.9.2'
   gem.add_development_dependency 'nokogiri', '~> 1.5'
   gem.add_development_dependency 'mocha', '~> 0.12.7'
+  gem.add_development_dependency 'minitest-debugger', '~> 1.0.0'
+
 end
