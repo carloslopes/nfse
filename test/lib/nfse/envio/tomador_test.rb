@@ -30,16 +30,6 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :razao_social
       subject.must_respond_to :razao_social=
     end
-
-    it 'must have the right default value' do
-      subject.razao_social.must_equal 'Consumidor'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'Empresa exemplo'
-      subject.razao_social = value
-      subject.razao_social.must_equal value
-    end
   end
 
   describe 'doc_estrangeiro attribute' do
@@ -54,16 +44,6 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :tipo_logradouro
       subject.must_respond_to :tipo_logradouro=
     end
-
-    it 'must have the right default value' do
-      subject.tipo_logradouro.must_equal '-'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'Tipo de logradouro exemplo'
-      subject.tipo_logradouro = value
-      subject.tipo_logradouro.must_equal value
-    end
   end
 
   describe 'logradouro attribute' do
@@ -71,32 +51,12 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :logradouro
       subject.must_respond_to :logradouro=
     end
-
-    it 'must have the right default value' do
-      subject.logradouro.must_equal '-'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'Logradouro exemplo'
-      subject.logradouro = value
-      subject.logradouro.must_equal value
-    end
   end
 
   describe 'num_endereco attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :num_endereco
       subject.must_respond_to :num_endereco=
-    end
-
-    it 'must have the right default value' do
-      subject.num_endereco.must_equal '0'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = '123'
-      subject.num_endereco = value
-      subject.num_endereco.must_equal value
     end
   end
 
@@ -112,32 +72,12 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :tipo_bairro
       subject.must_respond_to :tipo_bairro=
     end
-
-    it 'must have the right default value' do
-      subject.tipo_bairro.must_equal '-'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'Tipo do bairro exemplo'
-      subject.tipo_bairro = value
-      subject.tipo_bairro.must_equal value
-    end
   end
 
   describe 'bairro attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :bairro
       subject.must_respond_to :bairro=
-    end
-
-    it 'must have the right default value' do
-      subject.bairro.must_equal '-'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'Bairro exemplo'
-      subject.bairro = value
-      subject.bairro.must_equal value
     end
   end
 
@@ -160,32 +100,12 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :cep
       subject.must_respond_to :cep=
     end
-
-    it 'must have the right default value' do
-      subject.cep.must_equal '00000000'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = '123456789'
-      subject.cep = value
-      subject.cep.must_equal value
-    end
   end
 
   describe 'email attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :email
       subject.must_respond_to :email=
-    end
-
-    it 'must have the right default value' do
-      subject.email.must_equal '-'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'email@example.com'
-      subject.email = value
-      subject.email.must_equal value
     end
   end
 
@@ -207,16 +127,6 @@ describe Nfse::Envio::Tomador do
     it 'must have the accessors methods' do
       subject.must_respond_to :uf
       subject.must_respond_to :uf=
-    end
-
-    it 'must have the right default value' do
-      subject.uf.must_equal '-'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'RJ'
-      subject.uf = value
-      subject.uf.must_equal value
     end
   end
 
