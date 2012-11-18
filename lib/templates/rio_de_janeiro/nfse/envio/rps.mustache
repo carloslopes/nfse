@@ -46,20 +46,44 @@
   				{{/tomador.cnpj}}
 				</CpfCnpj>
 			</IdentificacaoTomador>
+			{{#tomador.razao_social}}
 			<RazaoSocial>{{tomador.razao_social}}</RazaoSocial>
+			{{/tomador.razao_social}}
+			{{#tomador.tem_endereco}}
 			<Endereco>
+			  {{#tomador.logradouro}}
 				<Endereco>{{tomador.logradouro}}</Endereco>
+			  {{/tomador.logradouro}}
+			  {{#tomador.num_endereco}}
 				<Numero>{{tomador.num_endereco}}</Numero>
+			  {{/tomador.num_endereco}}
+			  {{#tomador.complemento_endereco}}
 				<Complemento>{{tomador.complemento_endereco}}</Complemento>
+			  {{/tomador.complemento_endereco}}
+			  {{#tomador.bairro}}
 				<Bairro>{{tomador.bairro}}</Bairro>
+			  {{/tomador.bairro}}
+			  {{#tomador.cod_cidade}}
 				<CodigoMunicipio>{{tomador.cod_cidade}}</CodigoMunicipio>
+			  {{/tomador.cod_cidade}}
+			  {{#tomador.uf}}
 				<Uf>{{tomador.uf}}</Uf>
+			  {{/tomador.uf}}
+			  {{#tomador.cep}}
 				<Cep>{{tomador.cep}}</Cep>
+			  {{/tomador.cep}}
 			</Endereco>
+			{{/tomador.tem_endereco}}
+			{{#tomador.tem_contato}}
 			<Contato>
+		    {{#tomador.telefone}}
 			  <Telefone>{{tomador.ddd}}{{tomador.telefone}}</Telefone>
+			  {{/tomador.telefone}}
+			  {{#tomador.email}}
 				<Email>{{tomador.email}}</Email>
+			  {{/tomador.email}}
 			</Contato>
+			{{/tomador.tem_contato}}
 		</Tomador>
 	</InfRps>
 </Rps>

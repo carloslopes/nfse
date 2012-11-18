@@ -12,6 +12,15 @@ module Nfse
           end
         end
       end
+
+      def tem_endereco
+        [@logradouro, @num_endereco, @complemento_endereco, @bairro, @cod_cidade, @uf, @cep].uniq != [nil]
+      end
+
+      def tem_contato
+        [@telefone, @email].uniq != [nil]
+      end
+
     end
   end
 end
