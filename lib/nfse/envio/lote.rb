@@ -4,7 +4,7 @@ module Nfse
   module Envio
     class Lote < Nfse::Base
       attr_accessor :id, :numero, :cod_cidade, :cnpj, :razao_social, :inscricao_municipal,
-      :transacao, :versao, :metodo_envio
+        :transacao, :versao, :metodo_envio
       attr_reader :rps
 
       def initialize(attributes = {})

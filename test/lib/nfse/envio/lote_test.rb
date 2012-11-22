@@ -123,7 +123,7 @@ describe Nfse::Envio::Lote do
   end
 
   describe '#qtd_rps' do
-    it "must return the count of rps's that the lote has" do
+    it 'must return the count of RPSes that the lote has' do
       subject.rps.push(*(1..10).to_a)
       subject.qtd_rps.must_equal 10
     end
@@ -222,45 +222,56 @@ describe Nfse::Envio::Lote do
   end
 
   describe '#render' do
-    describe "campinas" do
+    describe 'campinas' do
       before do
         Nfse::Base.prefeitura = :campinas
+
         subject.id = '1ABCDZ'
         subject.cod_cidade = '6291'
         subject.cnpj = '02646676000182'
         subject.razao_social = 'EMPRESA RESP. MODELO'
+
         # Rps
         subject.rps << stub(render: xml('RPS[1]', prefeitura: :campinas, file: :envio))
         subject.rps << stub(render: xml('RPS[2]', prefeitura: :campinas, file: :envio))
       end
+
       it 'prefeitura must be right' do
         subject.template_file.must_include 'campinas'
       end
+
       it 'must render the right xml' do
         subject.expects(:data_inicio).returns('2009-10-01')
         subject.expects(:data_fim).returns('2009-10-01')
         subject.expects(:qtd_rps).returns(2)
         subject.expects(:valor_servicos).returns('11.00')
         subject.expects(:valor_deducoes).returns('49.30')
+
         xml('ns1:ReqEnvioLoteRPS', str: subject.render).must_equal xml('ns1:ReqEnvioLoteRPS', prefeitura: :campinas, file: :envio)
       end
     end
-    describe "rio_de_janeiro" do
+
+    describe 'rio_de_janeiro' do
       before do
         Nfse::Base.prefeitura = :rio_de_janeiro
+
         subject.numero = '3'
         subject.id = '1ABCDZ'
         subject.cnpj = '02646676000182'
         subject.inscricao_municipal = '001002003'
+
         # Rps
         subject.rps << stub(render: xml('Rps[1]', prefeitura: :rio_de_janeiro, file: :envio))
         subject.rps << stub(render: xml('Rps[2]', prefeitura: :rio_de_janeiro, file: :envio))
       end
+
       it 'prefeitura must be right' do
         subject.template_file.must_include 'rio_de_janeiro'
       end
+
       it 'must render the right xml' do
         subject.expects(:qtd_rps).returns(2)
+
         xml('EnviarLoteRpsEnvio', str: subject.render).must_equal xml('EnviarLoteRpsEnvio', prefeitura: :rio_de_janeiro, file: :envio)
       end
     end

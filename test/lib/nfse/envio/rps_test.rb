@@ -331,6 +331,7 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :optante_simples_nacional
       subject.must_respond_to :optante_simples_nacional=
     end
+
     it 'must have the right default value' do
       subject.optante_simples_nacional.must_equal 1
     end
@@ -341,6 +342,7 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :incentivador_cultural
       subject.must_respond_to :incentivador_cultural=
     end
+
     it 'must have the right default value' do
       subject.incentivador_cultural.must_equal 2
     end
@@ -351,6 +353,7 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :status_rps
       subject.must_respond_to :status_rps=
     end
+
     it 'must have the right default value' do
       subject.status_rps.must_equal 1
     end
@@ -499,11 +502,9 @@ describe Nfse::Envio::Rps do
   end
 
   describe '#render' do
-    describe "campinas" do
+    describe 'campinas' do
       before do
         Nfse::Base.prefeitura = :campinas
-      end
-      it 'must render the right xml' do
         subject.numero = '109'
         subject.data_emissao = Time.new(2009, 10, 1)
         subject.situacao = 'N'
@@ -566,11 +567,14 @@ describe Nfse::Envio::Rps do
         # Item
         subject.itens << stub(render: xml('Item[1]', prefeitura: :campinas, file: :envio))
         subject.itens << stub(render: xml('Item[2]', prefeitura: :campinas, file: :envio))
+      end
 
+      it 'must render the right xml' do
         xml('RPS', str: subject.render).must_equal xml('RPS[1]', prefeitura: :campinas, file: :envio)
       end
     end
-    describe "rio de janeiro" do
+
+    describe 'rio de janeiro' do
       before do
         Nfse::Base.prefeitura = :rio_de_janeiro
         subject.numero = '109'
@@ -624,12 +628,14 @@ describe Nfse::Envio::Rps do
 
         subject.expects(:id).returns('21530858201353011970')
       end
+
       it 'must render the right xml' do
         xml('Rps', str: subject.render).must_equal xml('Rps[1]', prefeitura: :rio_de_janeiro, file: :envio)
       end
+
       it 'must render the right xml' do
         subject.tomador.cnpj = nil
-        subject.tomador.cpf = '00011122233'
+        subject.tomador.cpf  = '00011122233'
         xml('Rps', str: subject.render).must_equal xml('Rps[1]', prefeitura: :rio_de_janeiro, file: :envio_cpf)
       end
     end

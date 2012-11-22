@@ -164,70 +164,91 @@ describe Nfse::Envio::Tomador do
   describe :tem_contato do
     describe 'without any attribute' do
       subject { Nfse::Envio::Tomador.new }
-      it "should return false" do
+
+      it 'should return false' do
         subject.tem_contato.must_equal false
       end
     end
+
     describe 'with email' do
       subject { Nfse::Envio::Tomador.new(email: 'email@example.com') }
-      it "should return true" do
+
+      it 'should return true' do
         subject.tem_contato.must_equal true
       end
+
     end
+
     describe 'with telefone' do
       subject { Nfse::Envio::Tomador.new(telefone: '-') }
-      it "should return true" do
+
+      it 'should return true' do
         subject.tem_contato.must_equal true
       end
     end
   end
-  
+
   describe :tem_endereco do
     describe 'without any attribute' do
       subject { Nfse::Envio::Tomador.new }
-      it "should return false" do
+
+      it 'should return false' do
         subject.tem_endereco.must_equal false
       end
     end
+
     describe 'with logradouro' do
       subject { Nfse::Envio::Tomador.new(logradouro: '-') }
-      it "should return true" do
+
+      it 'should return true' do
         subject.tem_endereco.must_equal true
       end
     end
+
     describe 'with num_endereco' do
       subject { Nfse::Envio::Tomador.new(num_endereco: '-') }
-      it "should return true" do
+
+      it 'should return true' do
         subject.tem_endereco.must_equal true
       end
     end
+
     describe 'with complemento_endereco' do
       subject { Nfse::Envio::Tomador.new(complemento_endereco: '-') }
-      it "should return true" do
+
+      it 'should return true' do
         subject.tem_endereco.must_equal true
       end
     end
+
     describe 'with bairro' do
       subject { Nfse::Envio::Tomador.new(bairro: '-') }
-      it "should return true" do
+
+      it 'should return true' do
         subject.tem_endereco.must_equal true
       end
     end
+
     describe 'with cod_cidade' do
       subject { Nfse::Envio::Tomador.new(cod_cidade: '-') }
-      it "should return true" do
+
+      it 'should return true' do
         subject.tem_endereco.must_equal true
       end
     end
+
     describe 'with uf' do
       subject { Nfse::Envio::Tomador.new(uf: '-') }
-      it "should return true" do
+
+      it 'should return true' do
         subject.tem_endereco.must_equal true
       end
     end
+
     describe 'with cep' do
       subject { Nfse::Envio::Tomador.new(cep: '-') }
-      it "should return true" do
+
+      it 'should return true' do
         subject.tem_endereco.must_equal true
       end
     end

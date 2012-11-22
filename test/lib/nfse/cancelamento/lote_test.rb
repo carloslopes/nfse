@@ -114,10 +114,11 @@ describe Nfse::Cancelamento::Lote do
   end
 
   describe '#render' do
-    describe "campinas" do
+    describe 'campinas' do
       before do
         Nfse::Base.prefeitura = :campinas
       end
+
       it 'must render the right xml' do
         subject.id         = '1ABCDZ'
         subject.cod_cidade = '6291'

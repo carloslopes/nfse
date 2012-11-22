@@ -56,10 +56,11 @@ describe Nfse::Cancelamento::Nota do
   end
 
   describe '#render' do
-    describe "campinas" do
+    describe 'campinas' do
       before do
         Nfse::Base.prefeitura = :campinas
       end
+
       it 'must render the right xml' do
         subject.numero              = '5'
         subject.inscricao_municipal = '108'

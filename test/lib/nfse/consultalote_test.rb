@@ -61,10 +61,11 @@ describe Nfse::ConsultaLote do
   end
 
   describe '#render' do
-    describe "campinas" do
+    describe 'campinas' do
       before do
         Nfse::Base.prefeitura = :campinas
       end
+
       it 'must render the right xml' do
         subject.cod_cidade = '6291'
         subject.cnpj       = '27394162000108'

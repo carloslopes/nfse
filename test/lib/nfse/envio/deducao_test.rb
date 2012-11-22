@@ -91,10 +91,11 @@ describe Nfse::Envio::Deducao do
   end
 
   describe '#render' do
-    describe "campinas" do
+    describe 'campinas' do
       before do
         Nfse::Base.prefeitura = :campinas
       end
+
       it 'must render the right xml' do
         subject.por             = 'Valor'
         subject.tipo            = 'Despesas com Materiais'

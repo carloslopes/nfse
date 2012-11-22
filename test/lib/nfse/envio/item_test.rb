@@ -93,10 +93,11 @@ describe Nfse::Envio::Item do
   end
 
   describe '#render' do
-    describe "campinas" do
+    describe 'campinas' do
       before do
         Nfse::Base.prefeitura = :campinas
       end
+
       it 'must render the right xml' do
         subject.discriminacao  = 'Item 1'
         subject.quantidade     = '2.0'
