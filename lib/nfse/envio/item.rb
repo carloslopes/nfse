@@ -1,7 +1,8 @@
 module Nfse
   module Envio
     class Item < Nfse::Base
-      attr_accessor :quantidade, :valor_unitario, :discriminacao, :tributavel
+      attr_accessor :discriminacao, :tributavel
+      attr_reader :quantidade, :valor_unitario
 
       def initialize(attributes = {})
         @quantidade = 0.0
