@@ -270,8 +270,6 @@ describe Nfse::Envio::Lote do
       end
 
       it 'must render the right xml' do
-        subject.expects(:qtd_rps).returns(2)
-
         xml('EnviarLoteRpsEnvio', str: subject.render).must_equal xml('EnviarLoteRpsEnvio', prefeitura: :rio_de_janeiro, file: :envio)
       end
     end
