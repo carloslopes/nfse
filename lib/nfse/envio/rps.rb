@@ -16,7 +16,7 @@ module Nfse
         :iss_retido, :valor_iss, :valor_outras_retencoes,
         :desconto_incondicionado, :desconto_condicionado
 
-      attr_reader :prestador, :tomador, :itens, :deducoes
+      attr_reader :data_emissao, :prestador, :tomador, :itens, :deducoes
 
       def initialize(attributes = {})
         @id  = "#{self.object_id}#{Time.now.to_i}"
@@ -32,6 +32,7 @@ module Nfse
         @valor_outras_retencoes = 0.0
         @desconto_incondicionado = 0.0
         @desconto_condicionado = 0.0
+        @data_emissao = DateTime.now
         @prestador = Prestador.new(attributes.delete('prestador'))
         @tomador   = Tomador.new(attributes.delete('tomador'))
         @itens     = []
@@ -48,16 +49,15 @@ module Nfse
         end
       end
 
-      def data_emissao
-        @data_emissao ||= DateTime.now
-        @data_emissao.strftime('%Y-%m-%dT%H:%M:%S')
-      end
-
       # Atribui um valor para a data de emissao
       # rescue ArgumentError para quando for passado uma data inválida para o DateTime.parse
       def data_emissao=(value)
         @data_emissao = DateTime.parse(value.to_s)
       rescue ArgumentError
+      end
+
+      def formatted_data_emissao
+        @data_emissao.strftime('%Y-%m-%dT%H:%M:%S')
       end
 
       def assinatura
@@ -98,7 +98,7 @@ module Nfse
           signature = prestador.inscricao_municipal.rjust(11, '0')
           signature << serie.ljust(5)
           signature << numero.rjust(12, '0')
-          signature << @data_emissao.strftime('%Y%m%d')
+          signature << data_emissao.strftime('%Y%m%d')
           signature << tributacao.ljust(2)
           signature << situacao
           signature << (tipo_recolhimento == 'A' ? 'N' : 'S')

@@ -106,7 +106,7 @@ describe Nfse::Envio::Rps do
       now = DateTime.now
       DateTime.expects(:now).returns(now)
 
-      subject.data_emissao.must_equal now.strftime('%Y-%m-%dT%H:%M:%S')
+      subject.data_emissao.must_equal now
     end
 
     it "must keep the old value if is passed an invalid date" do
@@ -114,7 +114,7 @@ describe Nfse::Envio::Rps do
       subject.data_emissao = value
       subject.data_emissao = ''
 
-      subject.data_emissao.must_equal DateTime.parse(value).strftime('%Y-%m-%dT%H:%M:%S')
+      subject.data_emissao.must_equal DateTime.parse(value)
     end
 
     it "must keep the old value if is passed an invalid object" do
@@ -122,14 +122,14 @@ describe Nfse::Envio::Rps do
       subject.data_emissao = value
       subject.data_emissao = false
 
-      subject.data_emissao.must_equal DateTime.parse(value).strftime('%Y-%m-%dT%H:%M:%S')
+      subject.data_emissao.must_equal DateTime.parse(value)
     end
 
     it 'must convert correctly if is passed a valid datetime value' do
       value = '2012-10-10 14:32:45'
       subject.data_emissao = value
 
-      subject.data_emissao.must_equal DateTime.parse(value).strftime('%Y-%m-%dT%H:%M:%S')
+      subject.data_emissao.must_equal DateTime.parse(value)
     end
   end
 
@@ -359,6 +359,15 @@ describe Nfse::Envio::Rps do
     end
   end
 
+  describe '#formatted_data_emissao' do
+    it 'must return the date formatted correctly' do
+      date = DateTime.new(2012, 10, 10)
+      subject.data_emissao = date
+
+      subject.formatted_data_emissao.must_equal date.strftime('%Y-%m-%dT%H:%M:%S')
+    end
+  end
+
   describe '#assinatura' do
     it 'must generate the right signature' do
       subject.prestador.inscricao_municipal = '0317330'
@@ -398,7 +407,7 @@ describe Nfse::Envio::Rps do
 
   describe 'initialize passing a hash of attributes' do
     before do
-      data_emissao = Time.now.to_s
+      data_emissao = DateTime.new(2012, 10, 10)
       @attr = {
         numero:                  '109',
         data_emissao:            data_emissao,
@@ -433,9 +442,6 @@ describe Nfse::Envio::Rps do
       }
 
       @rps = Nfse::Envio::Rps.new(@attr)
-
-      # Formata o valor para ele bater corretamente com o retorno do getter
-      @attr[:data_emissao] = DateTime.parse(data_emissao).strftime('%Y-%m-%dT%H:%M:%S')
     end
 
     it 'must have the right attributes values' do
