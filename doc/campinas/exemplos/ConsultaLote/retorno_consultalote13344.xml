@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:RetornoConsultaLote  xmlns:ns1="http://localhost:8080/WsNFe2/lote" xmlns:tipos="http://localhost:8080/WsNFe2/tp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost:8080/WsNFe2/lote http://localhost:8080/WsNFe2/xsd/RetornoConsultaLote.xsd">
+  <Cabecalho>
+    <CodCidade>6291</CodCidade>
+    <Sucesso>false</Sucesso>
+    <NumeroLote>13344</NumeroLote>
+    <CPFCNPJRemetente>04659416000177</CPFCNPJRemetente>
+    <RazaoSocialRemetente />
+    <DataEnvioLote>2009-11-23T00:00:00</DataEnvioLote>
+    <QtdNotasProcessadas>0</QtdNotasProcessadas>
+    <TempoProcessamento>0</TempoProcessamento>
+    <ValorTotalServicos>0</ValorTotalServicos>
+    <ValorTotalDeducoes>0</ValorTotalDeducoes>
+    <Versao>1</Versao>
+  </Cabecalho>
+  <Alertas />
+  <Erros>
+    <Erro>
+      <Codigo>1428</Codigo>
+      <Descricao>Certificado Digital utilizado na assinatura do lote deve ser o mesmo do remetente do lote. CPF/CNPJ do Certificado diferendo do remetente. Certificado Invalido.</Descricao>
+      <ChaveRPS>
+        <InscricaoPrestador>0720097</InscricaoPrestador>
+        <SerieRPS>NF</SerieRPS>
+        <NumeroRPS>23</NumeroRPS>
+        <DataEmissaoRPS>2009-11-23T00:00:00</DataEmissaoRPS>
+        <RazaoSocialPrestador>Carueme Caminhoes Ltda</RazaoSocialPrestador>
+      </ChaveRPS>
+    </Erro>
+    <Erro>
+      <Codigo>1202</Codigo>
+      <Descricao>Prestador de Servicos nao encontrado no Cadastro Municipal (CCM).O prestador IM 0720097 nao foi encontrado.</Descricao>
+      <ChaveRPS>
+        <InscricaoPrestador>0720097</InscricaoPrestador>
+        <SerieRPS>NF</SerieRPS>
+        <NumeroRPS>23</NumeroRPS>
+        <DataEmissaoRPS>2009-11-23T00:00:00</DataEmissaoRPS>
+        <RazaoSocialPrestador>Carueme Caminhoes Ltda</RazaoSocialPrestador>
+      </ChaveRPS>
+    </Erro>
+  </Erros>
+  <ListaNFSe />
+</ns1:RetornoConsultaLote>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:RetornoCancelamentoNFSe xmlns:ns1="http://localhost:8080/WsNFe2/lote" xmlns:tipos="http://localhost:8080/WsNFe2/tp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost:8080/WsNFe2/lote http://localhost:8080/WsNFe2/xsd/RetornoCancelamentoNFSe.xsd">
+  <Cabecalho>
+    <CodCidade>6291</CodCidade>
+    <Sucesso>true</Sucesso>
+    <CPFCNPJRemetente>04659416000177</CPFCNPJRemetente>
+    <Versao>1</Versao>
+  </Cabecalho>
+  <NotasCanceladas />
+  <Alertas />
+  <Erros>
+    <Erro>
+      <Codigo>1103</Codigo>
+      <Descricao>O CPF/CNPJ do Remetente nao possui permissao para o servico solicitado.Contribuinte IM 0720097 nao vinculado ao remetente do lote de CPF ou CNPF 04659416000177.</Descricao>
+    </Erro>
+    <Erro>
+      <Codigo>1103</Codigo>
+      <Descricao>O CPF/CNPJ do Remetente nao possui permissao para o servico solicitado.Contribuinte IM 0720097 nao vinculado ao remetente do lote de CPF ou CNPF 04659416000177.</Descricao>
+    </Erro>
+    <Erro>
+      <Codigo>1103</Codigo>
+      <Descricao>O CPF/CNPJ do Remetente nao possui permissao para o servico solicitado.Contribuinte IM 0720097 nao vinculado ao remetente do lote de CPF ou CNPF 04659416000177.</Descricao>
+    </Erro>
+    <Erro>
+      <Codigo>1103</Codigo>
+      <Descricao>O CPF/CNPJ do Remetente nao possui permissao para o servico solicitado.Contribuinte IM 0720097 nao vinculado ao remetente do lote de CPF ou CNPF 04659416000177.</Descricao>
+    </Erro>
+    <Erro>
+      <Codigo>1103</Codigo>
+      <Descricao>O CPF/CNPJ do Remetente nao possui permissao para o servico solicitado.Contribuinte IM 0720097 nao vinculado ao remetente do lote de CPF ou CNPF 04659416000177.</Descricao>
+    </Erro>
+  </Erros>
+</ns1:RetornoCancelamentoNFSe>
+

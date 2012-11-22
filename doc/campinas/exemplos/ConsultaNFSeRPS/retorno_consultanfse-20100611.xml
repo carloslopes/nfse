@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:RetornoConsultaNFSeRPS xmlns:ns1="http://localhost:8080/WsNFe2/lote" xmlns:tipos="http://localhost:8080/WsNFe2/tp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost:8080/WsNFe2/lote http://localhost:8080/WsNFe2/xsd/RetornoConsultaNFSeRPS.xsd">
+  <Cabecalho>
+    <CodCidade>6291</CodCidade>
+    <CPFCNPJRemetente>46020301000188</CPFCNPJRemetente>
+    <transacao>true</transacao>
+    <Versao>1</Versao>
+  </Cabecalho>
+  <NotasConsultadas>
+    <Nota>
+      <NumeroNota>1</NumeroNota>
+      <DataProcessamento>2010-04-09T00:00:00</DataProcessamento>
+      <NumeroLote>56020</NumeroLote>
+      <CodigoVerificacao>bc1df385</CodigoVerificacao>
+      <Assinatura>24e8c71de0c734bc54dc4c4275dcfcf27bb5576c</Assinatura>
+      <InscricaoMunicipalPrestador>000528943</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>SOCIEDADE CAMPINEIRA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>1</NumeroRPS>
+      <DataEmissaoRPS>2010-04-09T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>2010-03-05T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>32251936823</CPFCNPJTomador>
+      <RazaoSocialTomador>JOAO PAULO PINTO DE ALENCAR ROSSATO</RazaoSocialTomador>
+      <TipoLogradouroTomador>11</TipoLogradouroTomador>
+      <LogradouroTomador>DOS MINISTERIOS</LogradouroTomador>
+      <NumeroEnderecoTomador>100</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>ESTRADA</TipoBairroTomador>
+      <BairroTomador />
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>13350000</CEPTomador>
+      <EmailTomador>TESTANDO@TESTE.COM.MX</EmailTomador>
+      <CodigoAtividade>853250000</CodigoAtividade>
+      <AliquotaAtividade>0</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>A</Operacao>
+      <Tributacao>F</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>19</DDDPrestador>
+      <TelefonePrestador>33437062</TelefonePrestador>
+      <DDDTomador>19</DDDTomador>
+      <TelefoneTomador>38211152</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARCELA DE ANUIDADE</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>1400.45</ValorUnitario>
+          <ValorTotal>1400.45</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>2</NumeroNota>
+      <DataProcessamento>2010-04-09T00:00:00</DataProcessamento>
+      <NumeroLote>56020</NumeroLote>
+      <CodigoVerificacao>88dece97</CodigoVerificacao>
+      <Assinatura>cf922422aaf2f2498a43fb280720b56e3cfffa48</Assinatura>
+      <InscricaoMunicipalPrestador>000528943</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>SOCIEDADE CAMPINEIRA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>2</NumeroRPS>
+      <DataEmissaoRPS>2010-04-09T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>2010-03-05T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>77777777777</CPFCNPJTomador>
+      <RazaoSocialTomador>Pessoa Fisica</RazaoSocialTomador>
+      <TipoLogradouroTomador />
+      <LogradouroTomador />
+      <NumeroEnderecoTomador />
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador />
+      <BairroTomador />
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador />
+      <EmailTomador />
+      <CodigoAtividade>853250000</CodigoAtividade>
+      <AliquotaAtividade>0</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>A</Operacao>
+      <Tributacao>F</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>19</DDDPrestador>
+      <TelefonePrestador>33437062</TelefonePrestador>
+      <DDDTomador />
+      <TelefoneTomador />
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARCELA DE ANUIDADE</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>2800.89</ValorUnitario>
+          <ValorTotal>2800.89</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>3</NumeroNota>
+      <DataProcessamento>2010-04-09T00:00:00</DataProcessamento>
+      <NumeroLote>56020</NumeroLote>
+      <CodigoVerificacao>8c647d75</CodigoVerificacao>
+      <Assinatura>19f96d93a7773eabb70259b23d7753f7e4e72fb3</Assinatura>
+      <InscricaoMunicipalPrestador>000528943</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>SOCIEDADE CAMPINEIRA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>3</NumeroRPS>
+      <DataEmissaoRPS>2010-04-09T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>2010-03-05T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>77777777777</CPFCNPJTomador>
+      <RazaoSocialTomador>Pessoa Fisica</RazaoSocialTomador>
+      <TipoLogradouroTomador />
+      <LogradouroTomador />
+      <NumeroEnderecoTomador />
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador />
+      <BairroTomador />
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador />
+      <EmailTomador />
+      <CodigoAtividade>853250000</CodigoAtividade>
+      <AliquotaAtividade>0</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>A</Operacao>
+      <Tributacao>F</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>19</DDDPrestador>
+      <TelefonePrestador>33437062</TelefonePrestador>
+      <DDDTomador />
+      <TelefoneTomador />
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARCELA DE ANUIDADE</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>1054.61</ValorUnitario>
+          <ValorTotal>1054.61</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>4</NumeroNota>
+      <DataProcessamento>2010-04-09T00:00:00</DataProcessamento>
+      <NumeroLote>56020</NumeroLote>
+      <CodigoVerificacao>e0a8f38c</CodigoVerificacao>
+      <Assinatura>5ba1e12b3c47a50b5b0e2c86dd31098835ff1d03</Assinatura>
+      <InscricaoMunicipalPrestador>000528943</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>SOCIEDADE CAMPINEIRA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>4</NumeroRPS>
+      <DataEmissaoRPS>2010-04-09T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>2010-03-05T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>77777777777</CPFCNPJTomador>
+      <RazaoSocialTomador>Pessoa Fisica</RazaoSocialTomador>
+      <TipoLogradouroTomador />
+      <LogradouroTomador />
+      <NumeroEnderecoTomador />
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador />
+      <BairroTomador />
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador />
+      <EmailTomador />
+      <CodigoAtividade>853250000</CodigoAtividade>
+      <AliquotaAtividade>0</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>A</Operacao>
+      <Tributacao>F</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>19</DDDPrestador>
+      <TelefonePrestador>33437062</TelefonePrestador>
+      <DDDTomador />
+      <TelefoneTomador />
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARCELA DE ANUIDADE</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>2817.89</ValorUnitario>
+          <ValorTotal>2817.89</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>974</NumeroNota>
+      <DataProcessamento>2010-04-19T00:00:00</DataProcessamento>
+      <NumeroLote>63717</NumeroLote>
+      <CodigoVerificacao>5a39e945</CodigoVerificacao>
+      <Assinatura>a811631ea3df43f8b18e5953ecf89a6e8224ef37</Assinatura>
+      <InscricaoMunicipalPrestador>000528943</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>SOCIEDADE CAMPINEIRA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>974</NumeroRPS>
+      <DataEmissaoRPS>2010-04-19T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>2010-12-07T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>77777777777</CPFCNPJTomador>
+      <RazaoSocialTomador>Pessoa Fisica</RazaoSocialTomador>
+      <TipoLogradouroTomador />
+      <LogradouroTomador />
+      <NumeroEnderecoTomador />
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador />
+      <BairroTomador />
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador />
+      <EmailTomador />
+      <CodigoAtividade>853250000</CodigoAtividade>
+      <AliquotaAtividade>0</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>A</Operacao>
+      <Tributacao>F</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>19</DDDPrestador>
+      <TelefonePrestador>33437062</TelefonePrestador>
+      <DDDTomador />
+      <TelefoneTomador />
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARCELA DE ANUIDADE</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>831.5</ValorUnitario>
+          <ValorTotal>831.5</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>975</NumeroNota>
+      <DataProcessamento>2010-04-19T00:00:00</DataProcessamento>
+      <NumeroLote>63717</NumeroLote>
+      <CodigoVerificacao>817989e0</CodigoVerificacao>
+      <Assinatura>637906a22efd8f193359ee5cd2cffad37c9c114c</Assinatura>
+      <InscricaoMunicipalPrestador>000528943</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>SOCIEDADE CAMPINEIRA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>975</NumeroRPS>
+      <DataEmissaoRPS>2010-04-19T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>2010-12-07T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>77777777777</CPFCNPJTomador>
+      <RazaoSocialTomador>Pessoa Fisica</RazaoSocialTomador>
+      <TipoLogradouroTomador />
+      <LogradouroTomador />
+      <NumeroEnderecoTomador />
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador />
+      <BairroTomador />
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador />
+      <EmailTomador />
+      <CodigoAtividade>853250000</CodigoAtividade>
+      <AliquotaAtividade>0</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>A</Operacao>
+      <Tributacao>F</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>19</DDDPrestador>
+      <TelefonePrestador>33437062</TelefonePrestador>
+      <DDDTomador />
+      <TelefoneTomador />
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARCELA DE ANUIDADE</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>3288.24</ValorUnitario>
+          <ValorTotal>3288.24</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>976</NumeroNota>
+      <DataProcessamento>2010-04-19T00:00:00</DataProcessamento>
+      <NumeroLote>63717</NumeroLote>
+      <CodigoVerificacao>e5404d4e</CodigoVerificacao>
+      <Assinatura>37b4eec1e3909fc9d4ff512b124996ded05af095</Assinatura>
+      <InscricaoMunicipalPrestador>000528943</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>SOCIEDADE CAMPINEIRA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>976</NumeroRPS>
+      <DataEmissaoRPS>2010-04-19T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>2010-12-07T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>77777777777</CPFCNPJTomador>
+      <RazaoSocialTomador>Pessoa Fisica</RazaoSocialTomador>
+      <TipoLogradouroTomador />
+      <LogradouroTomador />
+      <NumeroEnderecoTomador />
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador />
+      <BairroTomador />
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador />
+      <EmailTomador />
+      <CodigoAtividade>853250000</CodigoAtividade>
+      <AliquotaAtividade>0</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>A</Operacao>
+      <Tributacao>F</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>19</DDDPrestador>
+      <TelefonePrestador>33437062</TelefonePrestador>
+      <DDDTomador />
+      <TelefoneTomador />
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARCELA DE ANUIDADE</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>657.56</ValorUnitario>
+          <ValorTotal>657.56</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>977</NumeroNota>
+      <DataProcessamento>2010-04-19T00:00:00</DataProcessamento>
+      <NumeroLote>63717</NumeroLote>
+      <CodigoVerificacao>bfab89e8</CodigoVerificacao>
+      <Assinatura>922ad5c530417936d1a5863ad119e64b214bc4aa</Assinatura>
+      <InscricaoMunicipalPrestador>000528943</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>SOCIEDADE CAMPINEIRA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>977</NumeroRPS>
+      <DataEmissaoRPS>2010-04-19T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>2010-12-07T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>77777777777</CPFCNPJTomador>
+      <RazaoSocialTomador>Pessoa Fisica</RazaoSocialTomador>
+      <TipoLogradouroTomador />
+      <LogradouroTomador />
+      <NumeroEnderecoTomador />
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador />
+      <BairroTomador />
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador />
+      <EmailTomador />
+      <CodigoAtividade>853250000</CodigoAtividade>
+      <AliquotaAtividade>0</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>A</Operacao>
+      <Tributacao>F</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>19</DDDPrestador>
+      <TelefonePrestador>33437062</TelefonePrestador>
+      <DDDTomador />
+      <TelefoneTomador />
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARCELA DE ANUIDADE</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>1223.52</ValorUnitario>
+          <ValorTotal>1223.52</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+  </NotasConsultadas>
+  <Alertas />
+  <Erros />
+</ns1:RetornoConsultaNFSeRPS>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ns1:RetornoEnvioLoteRPS xmlns:ns1="lote" xmlns:tipos="tp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="lote RetornoEnvioLoteRPS.xsd ">
+  <Cabecalho>
+    <CodCidade>6291</CodCidade>
+    <Sucesso>true</Sucesso>
+    <NumeroLote>8904</NumeroLote>
+    <CPFCNPJRemetente>02646676000182</CPFCNPJRemetente>
+    <DataEnvioLote>2009-10-23T00:22:45.0Z</DataEnvioLote>
+    <QtdNotasProcessadas>0</QtdNotasProcessadas>
+    <TempoProcessamento>0</TempoProcessamento>
+    <ValorTotalServicos>0</ValorTotalServicos>
+    <ValorTotalDeducoes>0</ValorTotalDeducoes>
+    <Versao>1</Versao>
+    <Assincrono>S</Assincrono>
+  </Cabecalho>
+</ns1:RetornoEnvioLoteRPS>

@@ -1,0 +1,3596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:RetornoConsultaNotas xmlns:ns1="http://localhost:8080/WsNFe2/lote" xmlns:tipos="http://localhost:8080/WsNFe2/tp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost:8080/WsNFe2/lote http://localhost:8080/WsNFe2/xsd/RetornoConsultaNotas.xsd">
+  <Cabecalho>
+    <CodCidade>6291</CodCidade>
+    <CPFCNPJRemetente>04659416000177</CPFCNPJRemetente>
+    <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+    <dtInicio>2009-01-01</dtInicio>
+    <dtFim>2010-12-30</dtFim>
+    <Versao>1</Versao>
+  </Cabecalho>
+  <Notas>
+    <Nota>
+      <NumeroNota>1</NumeroNota>
+      <DataProcessamento>2009-12-07T00:00:00</DataProcessamento>
+      <NumeroLote>15484</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>a6dd79664dd34d6bec80c781aef3c2b291c56dac</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>1</NumeroRPS>
+      <DataEmissaoRPS>2009-12-07T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>90</ValorUnitario>
+          <ValorTotal>90</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>2</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15501</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>163eedce424ddd2b2f8c48e067a6d2e684e86081</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>2</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>100</ValorUnitario>
+          <ValorTotal>100</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>3</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15623</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>f4d398689553611057ced408478496e617236bba</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>3</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>100</ValorUnitario>
+          <ValorTotal>100</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>4</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15624</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>2e8b3b2de658286c899e82418216d0a5a539be52</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>4</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>200</ValorUnitario>
+          <ValorTotal>200</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>5</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15641</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>9c6510a417d3f49391b838934d79ad30c7518e3e</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>5</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>C</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento>Teste de cancelamento</MotCancelamento>
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>60</ValorUnitario>
+          <ValorTotal>60</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>6</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15652</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>1f021705a6cbb895ac3bc35bf8812466138f840b</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>6</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0.83</ValorPIS>
+      <ValorCOFINS>3.8</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0.75</ValorIR>
+      <ValorCSLL>0.5</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>TAPAPOBIPARTIDO</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>50</ValorUnitario>
+          <ValorTotal>50</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>7</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15653</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>b63795a6b418e0b2630bf989650ef549bff8750e</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>7</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>70</ValorUnitario>
+          <ValorTotal>70</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>8</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15654</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>dc42211b5e94a647a475ce7e94f2cf54d3356f4d</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>8</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.49</ValorPIS>
+      <ValorCOFINS>6.84</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.35</ValorIR>
+      <ValorCSLL>0.9</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>90</ValorUnitario>
+          <ValorTotal>90</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>9</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15655</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>adce05155918fef0fcba9328892058511832af96</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>9</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.65</ValorPIS>
+      <ValorCOFINS>7.6</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.5</ValorIR>
+      <ValorCSLL>1</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>100</ValorUnitario>
+          <ValorTotal>100</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>10</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15660</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>684ccf9328d6d5343def3036f956cd16cf7ef601</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>10</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.82</ValorPIS>
+      <ValorCOFINS>8.36</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.65</ValorIR>
+      <ValorCSLL>1.1</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>110</ValorUnitario>
+          <ValorTotal>110</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>11</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15661</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>2ce50990fc0eec8436b53499053a195ed5a07f3e</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>11</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.98</ValorPIS>
+      <ValorCOFINS>9.12</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.8</ValorIR>
+      <ValorCSLL>1.2</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>120</ValorUnitario>
+          <ValorTotal>120</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>12</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15662</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>8bb1f603c4a79efd9e9cd14bf46bd194aaccdf70</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>12</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.85</ValorPIS>
+      <ValorCOFINS>8.51</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.68</ValorIR>
+      <ValorCSLL>1.12</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>112</ValorUnitario>
+          <ValorTotal>112</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>13</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15663</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>e958edb0ee01faeb87635303c5968bb86bec257d</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>13</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.86</ValorPIS>
+      <ValorCOFINS>8.59</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.7</ValorIR>
+      <ValorCSLL>1.13</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>113</ValorUnitario>
+          <ValorTotal>113</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>14</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15664</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>5bcf74e27dd606db2e55b73a4dfa5f3c87c8dea4</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>14</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.88</ValorPIS>
+      <ValorCOFINS>8.66</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.71</ValorIR>
+      <ValorCSLL>1.14</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>114</ValorUnitario>
+          <ValorTotal>114</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>15</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15665</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>0bb89f4d41f3e4eefaee56b66e49dea91562bda4</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>15</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.9</ValorPIS>
+      <ValorCOFINS>8.74</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.73</ValorIR>
+      <ValorCSLL>1.15</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>115</ValorUnitario>
+          <ValorTotal>115</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>16</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15666</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>85a46566392679a7d4c72da3192157fea7e1f824</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>16</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.91</ValorPIS>
+      <ValorCOFINS>8.82</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.74</ValorIR>
+      <ValorCSLL>1.16</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>116</ValorUnitario>
+          <ValorTotal>116</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>17</NumeroNota>
+      <DataProcessamento>2009-12-10T00:00:00</DataProcessamento>
+      <NumeroLote>15667</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>598ecfdd01f36fc9f3822a17cd5980db3259861e</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>17</NumeroRPS>
+      <DataEmissaoRPS>2009-12-10T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0.5</ValorPIS>
+      <ValorCOFINS>2.28</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0.45</ValorIR>
+      <ValorCSLL>0.3</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>10</ValorUnitario>
+          <ValorTotal>10</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+        <Item>
+          <DiscriminacaoServico>TAPAPOBIPARTIDO</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>20</ValorUnitario>
+          <ValorTotal>20</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>18</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15700</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>d5fef476073b2b227c2ee464f1fdeff898e41975</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>18</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.98</ValorPIS>
+      <ValorCOFINS>9.12</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.8</ValorIR>
+      <ValorCSLL>1.2</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>120</ValorUnitario>
+          <ValorTotal>120</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>19</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15702</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>7a7fa62af79a6dc10c55b0ce99c0e63aec1d7f56</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>19</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.65</ValorPIS>
+      <ValorCOFINS>7.6</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.5</ValorIR>
+      <ValorCSLL>1</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>100</ValorUnitario>
+          <ValorTotal>100</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>20</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15705</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>80f01e9118ac06f677c4045ae82017a7e8145092</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>20</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>3.3</ValorPIS>
+      <ValorCOFINS>15.2</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>3</ValorIR>
+      <ValorCSLL>2</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>200</ValorUnitario>
+          <ValorTotal>200</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>21</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15722</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>bf3fbf6fad126f1f8caa80e9caab6676c536a6a9</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>21</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>3.47</ValorPIS>
+      <ValorCOFINS>15.96</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>3.15</ValorIR>
+      <ValorCSLL>2.1</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>210</ValorUnitario>
+          <ValorTotal>210</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>22</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15724</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>1cecfc8badeaa86360eb312b5d795766d785b568</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>22</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>3.63</ValorPIS>
+      <ValorCOFINS>16.72</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>3.3</ValorIR>
+      <ValorCSLL>2.2</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>220</ValorUnitario>
+          <ValorTotal>220</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>23</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15725</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>1082bde8afeb4c587bfaf9a340cdf46ed4c92537</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>23</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>230</ValorUnitario>
+          <ValorTotal>230</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>24</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15741</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>adc25e905584d6db5787db8c282ce437cac00d03</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>24</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>3.47</ValorPIS>
+      <ValorCOFINS>15.96</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>3.15</ValorIR>
+      <ValorCSLL>2.1</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>210</ValorUnitario>
+          <ValorTotal>210</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>25</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15742</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>32a688149cccc4b06ba9db706fa7cfbb79fe614b</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>25</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>3.47</ValorPIS>
+      <ValorCOFINS>15.96</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>3.15</ValorIR>
+      <ValorCSLL>2.1</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>210</ValorUnitario>
+          <ValorTotal>210</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>26</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15743</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>996f5a9aaf2a3320c2cb87aabf02d0ddcc890265</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>26</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>260</ValorUnitario>
+          <ValorTotal>260</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>27</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15745</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>b95c15fc9fc93df92603a7dc1b229e64693c6f6a</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>27</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>270</ValorUnitario>
+          <ValorTotal>270</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>28</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15747</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>e7e183f668847f618fa800d0928b2922ca6f38e6</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>28</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>280</ValorUnitario>
+          <ValorTotal>280</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>29</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15751</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>30fe46dd40ca366d4a005924d13ab26598327c4a</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>29</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>510</ValorUnitario>
+          <ValorTotal>510</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>30</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15752</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>1b932c2b245054dd26f748671d55907e3cf9de15</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>30</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>300</ValorUnitario>
+          <ValorTotal>300</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>31</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15753</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>5482676de8de675006a5a69ebf7ac21e9d8f5ba4</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>31</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>100</ValorUnitario>
+          <ValorTotal>100</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>32</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15754</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>db7c6145bf35d09844c3f028f2442e0543a47794</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>32</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>150</ValorUnitario>
+          <ValorTotal>150</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>33</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15766</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>7c8c800e9ed77aad946698d571e18dbaee2da72d</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>33</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>1000</ValorUnitario>
+          <ValorTotal>1000</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>34</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15767</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>ae38b201a22bf76b8ff5305ccb8e723b05bd6f5c</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>34</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>6.39</ValorUnitario>
+          <ValorTotal>6.39</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>35</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15768</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>4cf148ec542377af012a88932d3c3226b75ebb04</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>35</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>6.39</ValorUnitario>
+          <ValorTotal>6.39</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>36</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15769</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>0e69cc533951629b3db23da911a447c47eedd194</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>36</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.98</ValorPIS>
+      <ValorCOFINS>9.12</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.8</ValorIR>
+      <ValorCSLL>1.2</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>120</ValorUnitario>
+          <ValorTotal>120</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>37</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15770</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>606005fbcb5d5ed3dd2b39d8afbcef821c4f8dc9</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>37</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>900</ValorUnitario>
+          <ValorTotal>900</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>38</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15776</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>a09486f02b12471285dc0d3ff40151a97b713f5f</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>38</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.98</ValorPIS>
+      <ValorCOFINS>9.12</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.8</ValorIR>
+      <ValorCSLL>1.2</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>120</ValorUnitario>
+          <ValorTotal>120</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>39</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15778</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>753d101ee6ff5691e2f3a9a1a7af23544f320265</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>39</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>230</ValorUnitario>
+          <ValorTotal>230</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>40</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15780</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>a0fff1fe8700295b1c31229eb7589c08f44a9711</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>40</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>C</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>1.98</ValorPIS>
+      <ValorCOFINS>9.12</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>1.8</ValorIR>
+      <ValorCSLL>1.2</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento>fkldsjf dlkfj djklfdj klf</MotCancelamento>
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>120</ValorUnitario>
+          <ValorTotal>120</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>41</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15782</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>66ff9959a626c35cada2e2a3aba168e4f865cf95</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>41</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>100</ValorUnitario>
+          <ValorTotal>100</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>42</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15801</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>64b181d4fb3518de9ebe0f21ae5df2330a565278</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>42</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>35150097</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>177</ValorUnitario>
+          <ValorTotal>177</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>43</NumeroNota>
+      <DataProcessamento>2009-12-11T00:00:00</DataProcessamento>
+      <NumeroLote>15810</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>67357fae485e65c349b000bc91f4a046072b851c</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>43</NumeroRPS>
+      <DataEmissaoRPS>2009-12-11T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>6.39</ValorUnitario>
+          <ValorTotal>6.39</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>45</NumeroNota>
+      <DataProcessamento>2009-12-14T00:00:00</DataProcessamento>
+      <NumeroLote>15974</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>75510646d9705a78d827aefd2db63fcb41011961</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>44</NumeroRPS>
+      <DataEmissaoRPS>2009-12-14T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>49407627004</CPFCNPJTomador>
+      <RazaoSocialTomador>ADRIANO XAVIER PIVETA</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>rua rrrrrrrrrrrrrrrrrrrrrrr</LogradouroTomador>
+      <NumeroEnderecoTomador>125</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>bairo y</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78450000</CEPTomador>
+      <EmailTomador>juliana@grupovanguarda.com</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33081212</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>77</ValorUnitario>
+          <ValorTotal>77</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>46</NumeroNota>
+      <DataProcessamento>2009-12-15T00:00:00</DataProcessamento>
+      <NumeroLote>16002</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>c01a9742c998563e4ef5af8c7e30bc0fbab24194</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>45</NumeroRPS>
+      <DataEmissaoRPS>2009-12-15T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>49407627004</CPFCNPJTomador>
+      <RazaoSocialTomador>ADRIANO XAVIER PIVETA</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>rua rrrrrrrrrrrrrrrrrrrrrrr</LogradouroTomador>
+      <NumeroEnderecoTomador>125</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>bairo y</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78450000</CEPTomador>
+      <EmailTomador>juliana@grupovanguarda.com</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33081212</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>TAPAPOBIPARTIDO</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>12</ValorUnitario>
+          <ValorTotal>12</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>47</NumeroNota>
+      <DataProcessamento>2009-12-15T00:00:00</DataProcessamento>
+      <NumeroLote>16003</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>39bae8feb35120a838d11faebc47ab6cfc3fe72f</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>46</NumeroRPS>
+      <DataEmissaoRPS>2009-12-15T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>49407627004</CPFCNPJTomador>
+      <RazaoSocialTomador>ADRIANO XAVIER PIVETA</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>rua rrrrrrrrrrrrrrrrrrrrrrr</LogradouroTomador>
+      <NumeroEnderecoTomador>125</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>bairo y</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78450000</CEPTomador>
+      <EmailTomador>juliana@grupovanguarda.com</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33081212</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>CHAPA L</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>13.68</ValorUnitario>
+          <ValorTotal>13.68</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>48</NumeroNota>
+      <DataProcessamento>2009-12-15T00:00:00</DataProcessamento>
+      <NumeroLote>16020</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>4feabe4e4b8c27e89d74f1c153058cd80df564f4</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>47</NumeroRPS>
+      <DataEmissaoRPS>2009-12-15T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>1000</ValorUnitario>
+          <ValorTotal>1000</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>49</NumeroNota>
+      <DataProcessamento>2009-12-15T00:00:00</DataProcessamento>
+      <NumeroLote>16022</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>cddf14c3a989f3b4a5dfb78322eca472836bb173</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>48</NumeroRPS>
+      <DataEmissaoRPS>2009-12-15T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>49407627004</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE PF CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>rua rrrrrrrrrrrrrrrr</LogradouroTomador>
+      <NumeroEnderecoTomador>125</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>bairro y</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78450000</CEPTomador>
+      <EmailTomador>juliana@grupovanguarda.com</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33081212</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>1000</ValorUnitario>
+          <ValorTotal>1000</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>50</NumeroNota>
+      <DataProcessamento>2009-12-15T00:00:00</DataProcessamento>
+      <NumeroLote>16031</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>9a8f557e44daccb3181ea7f3a8180e20fa3a3caa</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>49</NumeroRPS>
+      <DataEmissaoRPS>2009-12-15T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>49407627004</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE PF CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>rua rrrrrrrrrrrrrrrr</LogradouroTomador>
+      <NumeroEnderecoTomador>125</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>bairro y</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78450000</CEPTomador>
+      <EmailTomador>juliana@grupovanguarda.com</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33081212</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>6.39</ValorUnitario>
+          <ValorTotal>6.39</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>51</NumeroNota>
+      <DataProcessamento>2009-12-15T00:00:00</DataProcessamento>
+      <NumeroLote>16062</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>f89928f4020a4d9bcfbd00413104a43430403784</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>50</NumeroRPS>
+      <DataEmissaoRPS>2009-12-15T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>49407627004</CPFCNPJTomador>
+      <RazaoSocialTomador>CLIENTE PF CAMPINAS</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>rua rrrrrrrrrrrrrrrr</LogradouroTomador>
+      <NumeroEnderecoTomador>125</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>bairro y</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78450000</CEPTomador>
+      <EmailTomador>juliana@grupovanguarda.com</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33081212</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>6.39</ValorUnitario>
+          <ValorTotal>6.39</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>52</NumeroNota>
+      <DataProcessamento>2009-12-17T00:00:00</DataProcessamento>
+      <NumeroLote>16121</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>0e7e986f108b94d0ead3ac488466be8832e7daa8</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>51</NumeroRPS>
+      <DataEmissaoRPS>2009-12-17T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>reginaldo.felix@dsfnet.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>1000.09</ValorUnitario>
+          <ValorTotal>1000.09</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>53</NumeroNota>
+      <DataProcessamento>2009-12-17T00:00:00</DataProcessamento>
+      <NumeroLote>16142</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>68cec5c8ed83701041a16ae21e9c65fe3bd3c358</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>52</NumeroRPS>
+      <DataEmissaoRPS>2009-12-17T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>6.39</ValorUnitario>
+          <ValorTotal>6.39</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>54</NumeroNota>
+      <DataProcessamento>2009-12-17T00:00:00</DataProcessamento>
+      <NumeroLote>16157</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>dc2b575bf733d7c9f5105edb377339b08f934385</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>53</NumeroRPS>
+      <DataEmissaoRPS>2009-12-17T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>6.39</ValorUnitario>
+          <ValorTotal>6.39</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>55</NumeroNota>
+      <DataProcessamento>2009-12-17T00:00:00</DataProcessamento>
+      <NumeroLote>16160</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>4e91a9b5138f8ae2a4d4d7a46e1ae3f167e0022f</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>54</NumeroRPS>
+      <DataEmissaoRPS>2009-12-17T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>joseluiz@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>100</ValorUnitario>
+          <ValorTotal>100</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>
+    <Nota>
+      <NumeroNota>56</NumeroNota>
+      <DataProcessamento>2009-12-21T00:00:00</DataProcessamento>
+      <NumeroLote>16549</NumeroLote>
+      <CodigoVerificacao>208f6f76</CodigoVerificacao>
+      <Assinatura>dc4d3d2530d1e2b6861a561491b0884c14ba7a7a</Assinatura>
+      <InscricaoMunicipalPrestador>000720097</InscricaoMunicipalPrestador>
+      <RazaoSocialPrestador>CARUEME CAMINHOES LTDA</RazaoSocialPrestador>
+      <TipoRPS>RPS</TipoRPS>
+      <SerieRPS>NF</SerieRPS>
+      <NumeroRPS>55</NumeroRPS>
+      <DataEmissaoRPS>2009-12-21T00:00:00</DataEmissaoRPS>
+      <SituacaoRPS>N</SituacaoRPS>
+      <SerieRPSSubstituido />
+      <NumeroRPSSubstituido>0</NumeroRPSSubstituido>
+      <NumeroNFSeSubstituida>0</NumeroNFSeSubstituida>
+      <DataEmissaoNFSeSubstituida>1900-01-01T00:00:00</DataEmissaoNFSeSubstituida>
+      <SeriePrestacao>99</SeriePrestacao>
+      <InscricaoMunicipalTomador />
+      <CPFCNPJTomador>01902994000102</CPFCNPJTomador>
+      <RazaoSocialTomador>ADEMIR RODRIGUES COMERCIO -ME</RazaoSocialTomador>
+      <TipoLogradouroTomador>Rua</TipoLogradouroTomador>
+      <LogradouroTomador>RUAZZZZZZZZZZZZZZZZZZZ</LogradouroTomador>
+      <NumeroEnderecoTomador>1.667</NumeroEnderecoTomador>
+      <ComplementoEnderecoTomador />
+      <TipoBairroTomador>Bairro</TipoBairroTomador>
+      <BairroTomador>BAIRRO X</BairroTomador>
+      <CidadeTomador>6291</CidadeTomador>
+      <CidadeTomadorDescricao>CAMPINAS</CidadeTomadorDescricao>
+      <CEPTomador>78550000</CEPTomador>
+      <EmailTomador>evandrop@spress.com.br</EmailTomador>
+      <CodigoAtividade>452000300</CodigoAtividade>
+      <AliquotaAtividade>5</AliquotaAtividade>
+      <TipoRecolhimento>A</TipoRecolhimento>
+      <MunicipioPrestacao>6291</MunicipioPrestacao>
+      <MunicipioPrestacaoDescricao>CAMPINAS</MunicipioPrestacaoDescricao>
+      <Operacao>B</Operacao>
+      <Tributacao>T</Tributacao>
+      <ValorPIS>0</ValorPIS>
+      <ValorCOFINS>0</ValorCOFINS>
+      <ValorINSS>0</ValorINSS>
+      <ValorIR>0</ValorIR>
+      <ValorCSLL>0</ValorCSLL>
+      <AliquotaPIS>0</AliquotaPIS>
+      <AliquotaCOFINS>0</AliquotaCOFINS>
+      <AliquotaINSS>0</AliquotaINSS>
+      <AliquotaIR>0</AliquotaIR>
+      <AliquotaCSLL>0</AliquotaCSLL>
+      <DescricaoRPS />
+      <DDDPrestador>0</DDDPrestador>
+      <TelefonePrestador>21012872</TelefonePrestador>
+      <DDDTomador>0</DDDTomador>
+      <TelefoneTomador>33091047</TelefoneTomador>
+      <MotCancelamento />
+      <Deducoes />
+      <Itens>
+        <Item>
+          <DiscriminacaoServico>PARA LAMA</DiscriminacaoServico>
+          <Quantidade>1</Quantidade>
+          <ValorUnitario>6.39</ValorUnitario>
+          <ValorTotal>6.39</ValorTotal>
+          <Tributavel>S</Tributavel>
+        </Item>
+      </Itens>
+    </Nota>      
+  </Notas>
+</ns1:RetornoConsultaNotas>
+
