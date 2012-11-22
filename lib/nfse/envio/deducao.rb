@@ -1,17 +1,13 @@
 module Nfse
   module Envio
-    class Deducao < Mustache
-      self.template_file = File.expand_path('../templates/deducao.mustache', __FILE__)
-      attr_accessor :por, :tipo, :cnpj_ref, :num_nf_ref, :valor_total_ref, :percentual
+    class Deducao < Nfse::Base
+      attr_accessor :valor, :por, :tipo, :cnpj_ref, :num_nf_ref, :valor_total_ref, :percentual
 
       def initialize(attributes = {})
+        @valor = 0.0
         attributes.each do |k,v|
           send("#{k}=", v)
         end
-      end
-
-      def valor
-        @valor ||= 0.0
       end
 
       # Atribui um valor para o valor

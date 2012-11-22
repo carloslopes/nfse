@@ -1,0 +1,5 @@
+﻿<EnviarLoteRpsResposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abrasf.org.br/ABRASF/arquivos/nfse.xsd">
+	<NumeroLote>1</NumeroLote>
+	<DataRecebimento>2010-01-01T21:00:35</DataRecebimento>
+	<Protocolo>00000000000000000000000000000000000000000000000001</Protocolo>
+</EnviarLoteRpsResposta>

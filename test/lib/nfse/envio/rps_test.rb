@@ -4,6 +4,20 @@ describe Nfse::Envio::Rps do
 
   subject { Nfse::Envio::Rps.new }
 
+  describe 'id attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :id
+      subject.must_respond_to :id=
+    end
+
+    it 'must have the right default value' do
+      time = Time.now.to_i
+      Time.expects(:now).returns(time)
+
+      subject.id.must_equal "#{subject.object_id}#{time}"
+    end
+  end
+
   describe 'prestador attribute' do
     it "won't have the writer method" do
       subject.wont_respond_to :prestador=
@@ -312,6 +326,36 @@ describe Nfse::Envio::Rps do
     end
   end
 
+  describe 'optante_simples_nacional attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :optante_simples_nacional
+      subject.must_respond_to :optante_simples_nacional=
+    end
+    it 'must have the right default value' do
+      subject.optante_simples_nacional.must_equal 1
+    end
+  end
+
+  describe 'incentivador_cultural attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :incentivador_cultural
+      subject.must_respond_to :incentivador_cultural=
+    end
+    it 'must have the right default value' do
+      subject.incentivador_cultural.must_equal 2
+    end
+  end
+
+  describe 'status_rps attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :status_rps
+      subject.must_respond_to :status_rps=
+    end
+    it 'must have the right default value' do
+      subject.status_rps.must_equal 1
+    end
+  end
+
   describe '#assinatura' do
     it 'must generate the right signature' do
       subject.prestador.inscricao_municipal = '0317330'
@@ -455,71 +499,139 @@ describe Nfse::Envio::Rps do
   end
 
   describe '#render' do
-    it 'must render the right xml' do
-      subject.numero = '109'
-      subject.data_emissao = Time.new(2009, 10, 1)
-      subject.situacao = 'N'
-      subject.serie_rps_substituido = '123'
-      subject.num_rps_substituido = '0'
-      subject.num_nfse_substituida = '1'
-      subject.data_nfse_substituida = '1900-01-01'
-      subject.cod_atividade = '412040000'
-      subject.aliquota_atividade = '5.0'
-      subject.tipo_recolhimento = 'R'
-      subject.cod_municipio_prestacao = '0006291'
-      subject.municipio_prestacao = 'CAMPINAS'
-      subject.operacao = 'A'
-      subject.tributacao = 'T'
-      subject.valor_pis = 0.0
-      subject.valor_cofins = 1.1
-      subject.valor_inss = 2.2
-      subject.valor_ir = 3.3
-      subject.valor_csll = 4.4
-      subject.aliquota_pis = 5.5
-      subject.aliquota_cofins = 6.6
-      subject.aliquota_inss = 7.7
-      subject.aliquota_ir = 8.8
-      subject.aliquota_csll = 9.9
-      subject.descricao = 'TESTE'
-      subject.motivo_cancelamento = 'motivo exemplo'
-      subject.cnpj_intermediario = '123456789'
+    describe "campinas" do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+      it 'must render the right xml' do
+        subject.numero = '109'
+        subject.data_emissao = Time.new(2009, 10, 1)
+        subject.situacao = 'N'
+        subject.serie_rps_substituido = '123'
+        subject.num_rps_substituido = '0'
+        subject.num_nfse_substituida = '1'
+        subject.data_nfse_substituida = '1900-01-01'
+        subject.cod_atividade = '412040000'
+        subject.aliquota_atividade = '5.0'
+        subject.tipo_recolhimento = 'R'
+        subject.cod_municipio_prestacao = '0006291'
+        subject.municipio_prestacao = 'CAMPINAS'
+        subject.operacao = 'A'
+        subject.tributacao = 'T'
+        subject.valor_pis = 0.0
+        subject.valor_cofins = 1.1
+        subject.valor_inss = 2.2
+        subject.valor_ir = 3.3
+        subject.valor_csll = 4.4
+        subject.aliquota_pis = 5.5
+        subject.aliquota_cofins = 6.6
+        subject.aliquota_inss = 7.7
+        subject.aliquota_ir = 8.8
+        subject.aliquota_csll = 9.9
+        subject.descricao = 'TESTE'
+        subject.motivo_cancelamento = 'motivo exemplo'
+        subject.cnpj_intermediario = '123456789'
 
-      # Assinatura
-      subject.expects(:assinatura).returns('02bc34ff87f8112295e56901832a4a87b5c4fb6a')
+        # Assinatura
+        subject.expects(:assinatura).returns('02bc34ff87f8112295e56901832a4a87b5c4fb6a')
 
-      # Prestador
-      prestador = subject.prestador
-      prestador.inscricao_municipal = '0370835'
-      prestador.razao_social        = 'EMPRESA MODELO'
-      prestador.ddd                 = '035'
-      prestador.telefone            = '40405050'
+        # Prestador
+        prestador = subject.prestador
+        prestador.inscricao_municipal = '0370835'
+        prestador.razao_social        = 'EMPRESA MODELO'
+        prestador.ddd                 = '035'
+        prestador.telefone            = '40405050'
 
-      # Tomador
-      tomador = subject.tomador
-      tomador.inscricao_municipal = '0000000'
-      tomador.cnpj                = '27394162000108'
-      tomador.razao_social        = 'EMPRESA DE TESTE'
-      tomador.tipo_logradouro     = 'RUA'
-      tomador.logradouro          = 'logradouro exemplo'
-      tomador.num_endereco        = '9'
-      tomador.tipo_bairro         = 'BAIRRO'
-      tomador.bairro              = 'bairro exemplo'
-      tomador.cod_cidade          = '00062910'
-      tomador.cidade              = 'SAO PAULO'
-      tomador.cep                 = '05010040'
-      tomador.email               = 'foo@example.com'
-      tomador.ddd                 = '011'
-      tomador.telefone            = '923156467'
+        # Tomador
+        tomador = subject.tomador
+        tomador.inscricao_municipal = '0000000'
+        tomador.cnpj                = '27394162000108'
+        tomador.razao_social        = 'EMPRESA DE TESTE'
+        tomador.tipo_logradouro     = 'RUA'
+        tomador.logradouro          = 'logradouro exemplo'
+        tomador.num_endereco        = '9'
+        tomador.tipo_bairro         = 'BAIRRO'
+        tomador.bairro              = 'bairro exemplo'
+        tomador.cod_cidade          = '00062910'
+        tomador.cidade              = 'SAO PAULO'
+        tomador.cep                 = '05010040'
+        tomador.email               = 'foo@example.com'
+        tomador.ddd                 = '011'
+        tomador.telefone            = '923156467'
 
-      # Deducao
-      subject.deducoes << stub(render: xml('Deducao[1]', file: :envio))
-      subject.deducoes << stub(render: xml('Deducao[2]', file: :envio))
+        # Deducao
+        subject.deducoes << stub(render: xml('Deducao[1]', prefeitura: :campinas, file: :envio))
+        subject.deducoes << stub(render: xml('Deducao[2]', prefeitura: :campinas, file: :envio))
 
-      # Item
-      subject.itens << stub(render: xml('Item[1]', file: :envio))
-      subject.itens << stub(render: xml('Item[2]', file: :envio))
+        # Item
+        subject.itens << stub(render: xml('Item[1]', prefeitura: :campinas, file: :envio))
+        subject.itens << stub(render: xml('Item[2]', prefeitura: :campinas, file: :envio))
 
-      xml('RPS', str: subject.render).must_equal xml('RPS[1]', file: :envio)
+        xml('RPS', str: subject.render).must_equal xml('RPS[1]', prefeitura: :campinas, file: :envio)
+      end
+    end
+    describe "rio de janeiro" do
+      before do
+        Nfse::Base.prefeitura = :rio_de_janeiro
+        subject.numero = '109'
+        subject.serie = "A"
+        subject.tipo = "1"
+        subject.data_emissao = Time.new(2009, 10, 1)
+        subject.optante_simples_nacional = '2'
+        subject.incentivador_cultural = '1'
+        subject.status_rps = '1'
+        subject.cod_atividade = '1405'
+        subject.aliquota_atividade = '0.05'
+        subject.tipo_recolhimento = '140520'
+        subject.cod_municipio_prestacao = '3304557'
+        subject.operacao = '1'
+        subject.valor_pis = 0.0
+        subject.valor_cofins = 1.11
+        subject.valor_inss = 2.22
+        subject.valor_ir = 3.33
+        subject.valor_csll = 4.44
+        subject.valor_iss = 5.0
+        subject.descricao = 'Exemplo de Discriminacao de RPS'
+
+        # Prestador
+        prestador = subject.prestador
+        prestador.cnpj                = '01073249816200'
+        prestador.inscricao_municipal = '0370835'
+
+        # Tomador
+        tomador = subject.tomador
+        tomador.inscricao_municipal = '0000000'
+        tomador.cnpj                = '27394162000108'
+        tomador.razao_social        = 'Nome do Tomador'
+        tomador.logradouro          = 'Av. Rio Branco'
+        tomador.num_endereco        = '123'
+        tomador.complemento_endereco = 'Andar 1'
+        tomador.bairro              = 'Centro'
+        tomador.cod_cidade          = '3304557'
+        tomador.uf                  = 'RJ'
+        tomador.cep                 = '05010040'
+        tomador.email               = 'foo@example.com'
+        tomador.ddd                 = '21'
+        tomador.telefone            = '99999999'
+
+        # Item
+        subject.itens << Nfse::Envio::Item.new({
+          discriminacao:  'Item exemplo',
+          quantidade:     '1',
+          valor_unitario: '100.00',
+          tributavel:     'S'
+        })
+
+        subject.expects(:id).returns('21530858201353011970')
+      end
+      it 'must render the right xml' do
+        xml('Rps', str: subject.render).must_equal xml('Rps[1]', prefeitura: :rio_de_janeiro, file: :envio)
+      end
+      it 'must render the right xml' do
+        subject.tomador.cnpj = nil
+        subject.tomador.cpf = '00011122233'
+        xml('Rps', str: subject.render).must_equal xml('Rps[1]', prefeitura: :rio_de_janeiro, file: :envio_cpf)
+      end
     end
   end
 

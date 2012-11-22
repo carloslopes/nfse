@@ -7,7 +7,6 @@ Gemfile.lock
 InstalledFiles
 _yardoc
 coverage
-doc/
 lib/bundler/man
 pkg
 rdoc
@@ -18,3 +17,4 @@ tmp
 *.sublime*
 .rvmrc
 .rbenv-gemsets
+.DS_Store

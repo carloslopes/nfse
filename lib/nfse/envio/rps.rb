@@ -1,23 +1,37 @@
 require 'digest'
+require 'date'
 
 module Nfse
   module Envio
-    class Rps < Mustache
-      self.template_file = File.expand_path('../templates/rps.mustache', __FILE__)
-
-      attr_accessor :numero, :situacao, :serie_rps_substituido,
+    class Rps < Nfse::Base
+      attr_accessor :id, :numero, :situacao, :serie_rps_substituido,
         :num_rps_substituido, :num_nfse_substituida, :data_nfse_substituida,
         :cod_atividade, :aliquota_atividade, :tipo_recolhimento,
         :cod_municipio_prestacao, :municipio_prestacao, :operacao,
         :tributacao, :valor_pis, :valor_cofins, :valor_inss, :valor_ir,
         :valor_csll, :aliquota_pis, :aliquota_cofins, :aliquota_inss,
         :aliquota_ir, :aliquota_csll, :descricao, :motivo_cancelamento,
-        :cnpj_intermediario
+        :cnpj_intermediario, :tipo, :serie, :serie_prestacao,
+        :optante_simples_nacional, :incentivador_cultural, :status_rps,
+        :iss_retido, :valor_iss, :valor_outras_retencoes,
+        :desconto_incondicionado, :desconto_condicionado
 
-      attr_writer :tipo, :serie, :serie_prestacao
       attr_reader :prestador, :tomador, :itens, :deducoes
 
       def initialize(attributes = {})
+        @id  = "#{self.object_id}#{Time.now.to_i}"
+        @tipo = 'RPS' # RJ: 1 - RPS, 2 – Nota Fiscal Conjugada (Mista), 3 – Cupom
+        @serie = 'NF'
+        @serie_prestacao = '99'
+        @operacao = '1' # RJ: 1 – Tributação no município, 2 - Tributação fora do município, 3 - Isenção, 4 - Imune, 5 –Exigibilidade suspensa por decisão judicial, 6 – Exigibilidade suspensa por procedimento administrativo
+        @optante_simples_nacional = 1 # RJ: 1 = Sim, 2 = Não
+        @incentivador_cultural = 2 # RJ: 1 = Sim, 2 = Não
+        @status_rps = 1 # RJ: 1 = Normal, 2 = Cancelado
+        @iss_retido = 2 # RJ: 1 = Sim, 2 = Não
+        @valor_iss = 0.0
+        @valor_outras_retencoes = 0.0
+        @desconto_incondicionado = 0.0
+        @desconto_condicionado = 0.0
         @prestador = Prestador.new(attributes.delete('prestador'))
         @tomador   = Tomador.new(attributes.delete('tomador'))
         @itens     = []
@@ -44,18 +58,6 @@ module Nfse
       def data_emissao=(value)
         @data_emissao = DateTime.parse(value.to_s)
       rescue ArgumentError
-      end
-
-      def tipo
-        @tipo ||= 'RPS'
-      end
-
-      def serie
-        @serie ||= 'NF'
-      end
-
-      def serie_prestacao
-        @serie_prestacao ||= '99'
       end
 
       def assinatura
