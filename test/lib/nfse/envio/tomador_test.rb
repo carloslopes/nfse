@@ -16,6 +16,24 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :cnpj
       subject.must_respond_to :cnpj=
     end
+
+    describe 'campinas' do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+
+      subject { Nfse::Envio::Tomador.new }
+
+      it 'must have the right default value' do
+        subject.cnpj.must_equal '77777777777'
+      end
+
+      it 'must respect if a new value is defined' do
+        value = '000100020003'
+        subject.cnpj = value
+        subject.cnpj.must_equal value
+      end
+    end
   end
 
   describe 'cpf attribute' do
@@ -29,6 +47,24 @@ describe Nfse::Envio::Tomador do
     it 'must have the accessors methods' do
       subject.must_respond_to :razao_social
       subject.must_respond_to :razao_social=
+    end
+
+    describe 'campinas' do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+
+      subject { Nfse::Envio::Tomador.new }
+
+      it 'must have the right default value' do
+        subject.razao_social.must_equal 'Consumidor'
+      end
+
+      it 'must respect if a new value is defined' do
+        value = 'Empresa exemplo'
+        subject.razao_social = value
+        subject.razao_social.must_equal value
+      end
     end
   end
 
@@ -44,6 +80,24 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :tipo_logradouro
       subject.must_respond_to :tipo_logradouro=
     end
+
+    describe 'campinas' do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+
+      subject { Nfse::Envio::Tomador.new }
+
+      it 'must have the right default value' do
+        subject.tipo_logradouro.must_equal '-'
+      end
+
+      it 'must respect if a new value is defined' do
+        value = 'Bairro'
+        subject.tipo_logradouro = value
+        subject.tipo_logradouro.must_equal value
+      end
+    end
   end
 
   describe 'logradouro attribute' do
@@ -51,12 +105,48 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :logradouro
       subject.must_respond_to :logradouro=
     end
+
+    describe 'campinas' do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+
+      subject { Nfse::Envio::Tomador.new }
+
+      it 'must have the right default value' do
+        subject.logradouro.must_equal '-'
+      end
+
+      it 'must respect if a new value is defined' do
+        value = 'Logradouro exemplo'
+        subject.logradouro = value
+        subject.logradouro.must_equal value
+      end
+    end
   end
 
   describe 'num_endereco attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :num_endereco
       subject.must_respond_to :num_endereco=
+    end
+
+    describe 'campinas' do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+
+      subject { Nfse::Envio::Tomador.new }
+
+      it 'must have the right default value' do
+        subject.num_endereco.must_equal '0'
+      end
+
+      it 'must respect if a new value is defined' do
+        value = '123'
+        subject.num_endereco = value
+        subject.num_endereco.must_equal value
+      end
     end
   end
 
@@ -72,12 +162,48 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :tipo_bairro
       subject.must_respond_to :tipo_bairro=
     end
+
+    describe 'campinas' do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+
+      subject { Nfse::Envio::Tomador.new }
+
+      it 'must have the right default value' do
+        subject.tipo_bairro.must_equal '-'
+      end
+
+      it 'must respect if a new value is defined' do
+        value = 'Bairro'
+        subject.tipo_bairro = value
+        subject.tipo_bairro.must_equal value
+      end
+    end
   end
 
   describe 'bairro attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :bairro
       subject.must_respond_to :bairro=
+    end
+
+    describe 'campinas' do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+
+      subject { Nfse::Envio::Tomador.new }
+
+      it 'must have the right default value' do
+        subject.bairro.must_equal '-'
+      end
+
+      it 'must respect if a new value is defined' do
+        value = 'Bairro exemplo'
+        subject.bairro = value
+        subject.bairro.must_equal value
+      end
     end
   end
 
@@ -100,12 +226,48 @@ describe Nfse::Envio::Tomador do
       subject.must_respond_to :cep
       subject.must_respond_to :cep=
     end
+
+    describe 'campinas' do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+
+      subject { Nfse::Envio::Tomador.new }
+
+      it 'must have the right default value' do
+        subject.cep.must_equal '00000000'
+      end
+
+      it 'must respect if a new value is defined' do
+        value = '123456789'
+        subject.cep = value
+        subject.cep.must_equal value
+      end
+    end
   end
 
   describe 'email attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :email
       subject.must_respond_to :email=
+    end
+
+    describe 'campinas' do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+
+      subject { Nfse::Envio::Tomador.new }
+
+      it 'must have the right default value' do
+        subject.email.must_equal '-'
+      end
+
+      it 'must respect if a new value is defined' do
+        value = 'email@example.com'
+        subject.email = value
+        subject.email.must_equal value
+      end
     end
   end
 
@@ -161,7 +323,11 @@ describe Nfse::Envio::Tomador do
     end
   end
 
-  describe :tem_contato do
+  describe '#tem_contato' do
+    before do
+      Nfse::Base.prefeitura = :rio_de_janeiro
+    end
+
     describe 'without any attribute' do
       subject { Nfse::Envio::Tomador.new }
 
@@ -188,7 +354,11 @@ describe Nfse::Envio::Tomador do
     end
   end
 
-  describe :tem_endereco do
+  describe '#tem_endereco' do
+    before do
+      Nfse::Base.prefeitura = :rio_de_janeiro
+    end
+
     describe 'without any attribute' do
       subject { Nfse::Envio::Tomador.new }
 
