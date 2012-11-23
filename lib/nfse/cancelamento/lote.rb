@@ -5,18 +5,15 @@ module Nfse
       attr_writer :id, :transacao, :versao
       attr_reader :notas
 
-      def initialize(json = nil)
+      def initialize(attributes = {})
+        attributes = JSON.parse(attributes) if attributes.is_a?(String)
+
         @notas = []
+        notas = attributes.delete('notas') || attributes.delete(:notas)
+        notas.each { |data| self.notas << Nota.new(data) } if notas
 
-        if json
-          attributes = JSON.parse(json)
-
-          notas = attributes.delete('notas')
-          notas.each { |data| self.notas << Nota.new(data) } if notas
-
-          attributes.each do |k,v|
-            send("#{k}=", v)
-          end
+        attributes.each do |k,v|
+          send("#{k}=", v)
         end
       end
 

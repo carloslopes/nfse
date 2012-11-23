@@ -82,34 +82,58 @@ describe Nfse::Cancelamento::Lote do
     end
   end
 
-  describe 'initialize passing a JSON of attributes' do
-    it 'must have the right attributes values' do
-      attr = {
+  describe 'initialize' do
+    before do
+      @nota1 = { numero: '1' }
+      @nota2 = { numero: '2' }
+
+      @attrs = {
         id:         '1ABCDZ',
         cod_cidade: '6291',
         cnpj:       '04659416000177',
         transacao:  'false',
-        versao:     '2'
+        versao:     '2',
+        notas:      [@nota1, @nota2]
       }
+    end
 
-      lote = Nfse::Cancelamento::Lote.new(JSON.generate(attr))
+    describe 'passing attributes' do
+      before do
+        @lote = Nfse::Cancelamento::Lote.new(@attrs)
+      end
 
-      attr.each do |k,v|
-        lote.send("#{k}=", v)
+      it 'must have the right attributes values' do
+        @attrs.each do |k,v|
+          @lote.send(k).must_equal v
+        end
+      end
+
+      it "must have the right notas' values" do
+        notas_lote = @lote.notas
+
+        notas_lote.first.numero.must_equal @nota1[:numero]
+        notas_lote.last.numero.must_equal @nota2[:numero]
       end
     end
-  end
 
-  describe 'initialize passing a JSON of attributes with Notas data' do
-    it 'notas must have the right attributes values' do
-      nota1 = { numero: '1' }
-      nota2 = { numero: '2' }
+    describe 'passing a JSON of attributes' do
+      before do
+        @lote = Nfse::Cancelamento::Lote.new(JSON.generate(@attrs))
+        @attrs.delete(:notas)
+      end
 
-      attributes = { notas: [nota1, nota2] }
-      lote = Nfse::Cancelamento::Lote.new(JSON.generate(attributes))
+      it 'must have the right attributes values' do
+        @attrs.each do |k,v|
+          @lote.send(k).must_equal v
+        end
+      end
 
-      lote.notas[0].numero.must_equal nota1[:numero]
-      lote.notas[1].numero.must_equal nota2[:numero]
+      it "must have the right notas' values" do
+        notas_lote = @lote.notas
+
+        notas_lote.first.numero.must_equal @nota1[:numero]
+        notas_lote.last.numero.must_equal @nota2[:numero]
+      end
     end
   end
 
