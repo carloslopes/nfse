@@ -13,11 +13,11 @@ module Nfse
         @transacao = 'true'
         @versao = '1'
         @metodo_envio = 'WS'
-        @rps = []
 
         attributes = JSON.parse(attributes) if attributes.is_a?(String)
 
-        rps = attributes.delete('rps')
+        @rps = []
+        rps = attributes.delete('rps') || attributes.delete(:rps)
         rps.each { |data| self.rps << Rps.new(data) } if rps
 
         attributes.each do |k,v|

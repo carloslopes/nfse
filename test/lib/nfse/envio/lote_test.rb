@@ -171,7 +171,10 @@ describe Nfse::Envio::Lote do
 
   describe 'initialize' do
     before do
-      @attr = {
+      @rps1 = { numero: '1' }
+      @rps2 = { numero: '2' }
+
+      @attrs = {
         numero:       '2',
         cod_cidade:   '6291',
         cnpj:         '02646676000182',
@@ -179,45 +182,48 @@ describe Nfse::Envio::Lote do
         inscricao_municipal: '001002003',
         transacao:    'false',
         versao:       '2.5',
-        metodo_envio: 'Metodo Exemplo'
+        metodo_envio: 'Metodo Exemplo',
+        rps:          [@rps1, @rps2]
       }
-    end
-
-    describe 'passing a JSON of attributes' do
-      before do
-        @lote = Nfse::Envio::Lote.new(JSON.generate(@attr))
-      end
-      it 'must have the right attributes values' do
-        @attr.each do |k,v|
-          @lote.send(k).must_equal v
-        end
-      end
     end
 
     describe 'passing attributes' do
       before do
-        @lote = Nfse::Envio::Lote.new(@attr)
+        @lote = Nfse::Envio::Lote.new(@attrs)
       end
+
       it 'must have the right attributes values' do
-        @attr.each do |k,v|
+        @attrs.each do |k,v|
           @lote.send(k).must_equal v
         end
       end
-    end
-  end
 
-  describe 'initialize passing a JSON of attributes with RPSes data' do
-    before do
-      @rps1 = { numero: '1' }
-      @rps2 = { numero: '2' }
+      it "must have the right RPSes' values" do
+        lote_rpses = @lote.rps
 
-      attributes = { rps: [@rps1, @rps2] }
-      @lote = Nfse::Envio::Lote.new(JSON.generate(attributes))
+        lote_rpses.first.numero.must_equal @rps1[:numero]
+        lote_rpses.last.numero.must_equal @rps2[:numero]
+      end
     end
 
-    it 'must have the right attributes values' do
-      @lote.rps[0].numero.must_equal @rps1[:numero]
-      @lote.rps[1].numero.must_equal @rps2[:numero]
+    describe 'passing a JSON of attributes' do
+      before do
+        @lote = Nfse::Envio::Lote.new(JSON.generate(@attrs))
+        @attrs.delete(:rps)
+      end
+
+      it 'must have the right attributes values' do
+        @attrs.each do |k,v|
+          @lote.send(k).must_equal v
+        end
+      end
+
+      it "must have the right RPSes' values" do
+        lote_rpses = @lote.rps
+
+        lote_rpses.first.numero.must_equal @rps1[:numero]
+        lote_rpses.last.numero.must_equal @rps2[:numero]
+      end
     end
   end
 
