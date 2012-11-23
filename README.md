@@ -30,16 +30,16 @@ Atenção: O layout do Rio de Janeiro ainda está sendo desenvolvido e não foi 
 
 ### Campinas
 
-[Manual de uso do WebService](http://nfse.campinas.sp.gov.br/NotaFiscal/cpqPDF/WebService.pdf) 
+[Manual de uso do WebService](http://nfse.campinas.sp.gov.br/NotaFiscal/cpqPDF/WebService.pdf)  
 [Exemplos de XML e XSD](http://www.dsfnet.com.br/nfse_lote/exemplosws.zip)
 
 ### Rio de Janeiro
 
-[Manual de uso do WebService](https://notacarioca.rio.gov.br/files/manuais/WsNFSeNacional.pdf) 
-[Manual de Integração ABRASF](https://notacarioca.rio.gov.br/files/manuais/nfse_abrasf_integracao.pdf) 
-[Manual Conceitual da ABRASF](https://notacarioca.rio.gov.br/files/manuais/nfse_abrasf_conceitual.pdf) 
-[Schemas XML](https://notacarioca.rio.gov.br/files/WSNacional/schemas.zip) 
-[Exemplos de XML](https://notacarioca.rio.gov.br/files/WSNacional/exemplos.zip)
+[Manual de uso do WebService](https://notacarioca.rio.gov.br/files/manuais/WsNFSeNacional.pdf)  
+[Manual de Integração ABRASF](https://notacarioca.rio.gov.br/files/manuais/nfse_abrasf_integracao.pdf)  
+[Manual Conceitual da ABRASF](https://notacarioca.rio.gov.br/files/manuais/nfse_abrasf_conceitual.pdf)  
+[Schemas XML](https://notacarioca.rio.gov.br/files/WSNacional/schemas.zip)  
+[Exemplos de XML](https://notacarioca.rio.gov.br/files/WSNacional/exemplos.zip) 
 
 ## Instalação
 
@@ -265,7 +265,7 @@ puts xml
 
 ## Autores
 
-[Carlos Lopes](https://github.com/carloslopes) 
+[Carlos Lopes](https://github.com/carloslopes)  
 [Rafael Lima](https://github.com/rafaelp)
 
 ## Como Contribuir?
