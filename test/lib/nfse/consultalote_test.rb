@@ -43,19 +43,37 @@ describe Nfse::ConsultaLote do
     end
   end
 
-  describe 'initialize passing a JSON of attributes' do
-    it 'must have the right attributes values' do
-      attr = {
+  describe 'initialize' do
+    before do
+      @attr = {
         cod_cidade: '6291',
         cnpj:       '27394162000108',
         versao:     '2',
         num_lote:   '7105'
       }
+    end
 
-      consulta = Nfse::ConsultaLote.new(JSON.generate(attr))
+    describe 'passing attributes' do
+      before do
+        @consulta = Nfse::ConsultaLote.new(@attr)
+      end
 
-      attr.each do |k,v|
-        consulta.send(k).must_equal v
+      it 'must have the right attributes values' do
+        @attr.each do |k,v|
+          @consulta.send(k).must_equal v
+        end
+      end
+    end
+
+    describe 'passing a JSON of attributes' do
+      before do
+        @consulta = Nfse::ConsultaLote.new(JSON.generate(@attr))
+      end
+
+      it 'must have the right attributes values' do
+        @attr.each do |k,v|
+          @consulta.send(k).must_equal v
+        end
       end
     end
   end
