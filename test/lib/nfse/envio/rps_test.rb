@@ -4,56 +4,46 @@ describe Nfse::Envio::Rps do
 
   subject { Nfse::Envio::Rps.new }
 
-  describe 'id attribute' do
-    it 'must have the accessors methods' do
-      subject.must_respond_to :id
-      subject.must_respond_to :id=
+  describe 'prestador attribute' do
+    it 'must have the accessor methods' do
+      subject.must_respond_to :prestador
+      subject.must_respond_to :prestador=
     end
 
     it 'must have the right default value' do
-      time = Time.now.to_i
-      Time.expects(:now).returns(time)
-
-      subject.id.must_equal "#{subject.object_id}#{time}"
-    end
-  end
-
-  describe 'prestador attribute' do
-    it "won't have the writer method" do
-      subject.wont_respond_to :prestador=
-    end
-
-    it 'must be an instance of Prestador' do
       subject.prestador.must_be_instance_of Nfse::Envio::Prestador
     end
   end
 
   describe 'tomador attribute' do
-    it "won't have the writer method" do
-      subject.wont_respond_to :tomador=
+    it 'must have the accessor methods' do
+      subject.must_respond_to :tomador
+      subject.must_respond_to :tomador=
     end
 
-    it 'must be an instance of Tomador' do
+    it 'must have the right default value' do
       subject.tomador.must_be_instance_of Nfse::Envio::Tomador
     end
   end
 
   describe 'itens attribute' do
-    it "won't have the writer method" do
-      subject.wont_respond_to :itens=
+    it 'must have the accessor methods' do
+      subject.must_respond_to :itens
+      subject.must_respond_to :itens=
     end
 
-    it 'must be an instance of Array' do
+    it 'must have the right default value' do
       subject.itens.must_be_instance_of Array
     end
   end
 
   describe 'deducoes attribute' do
-    it "won't have the writer method" do
-      subject.wont_respond_to :deducoes=
+    it 'must have the accessor methods' do
+      subject.must_respond_to :deducoes
+      subject.must_respond_to :deducoes=
     end
 
-    it 'must be an instance of Array' do
+    it 'must have the right default value' do
       subject.deducoes.must_be_instance_of Array
     end
   end
@@ -67,13 +57,6 @@ describe Nfse::Envio::Rps do
     it 'must have the right default value' do
       subject.tipo.must_equal 'RPS'
     end
-
-    it 'must respect if a new value is defined' do
-      value = 'foobar'
-      subject.tipo = value
-
-      subject.tipo.must_equal value
-    end
   end
 
   describe 'serie attribute' do
@@ -85,19 +68,17 @@ describe Nfse::Envio::Rps do
     it 'must have the right default value' do
       subject.serie.must_equal 'NF'
     end
-
-    it 'must respect if a new value is defined' do
-      value = 'foobar'
-      subject.serie = value
-
-      subject.serie.must_equal value
-    end
   end
 
   describe 'numero attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :numero
       subject.must_respond_to :numero=
+    end
+
+    it 'must coerce the value to integer' do
+      subject.numero = '123'
+      subject.numero.must_equal 123
     end
   end
 
@@ -109,27 +90,9 @@ describe Nfse::Envio::Rps do
       subject.data_emissao.must_equal now
     end
 
-    it "must keep the old value if is passed an invalid date" do
-      value = '2012-10-10'
-      subject.data_emissao = value
-      subject.data_emissao = ''
-
-      subject.data_emissao.must_equal DateTime.parse(value)
-    end
-
-    it "must keep the old value if is passed an invalid object" do
-      value = '2012-10-10'
-      subject.data_emissao = value
-      subject.data_emissao = false
-
-      subject.data_emissao.must_equal DateTime.parse(value)
-    end
-
-    it 'must convert correctly if is passed a valid datetime value' do
-      value = '2012-10-10 14:32:45'
-      subject.data_emissao = value
-
-      subject.data_emissao.must_equal DateTime.parse(value)
+    it 'must coerce the value to datetime' do
+      subject.data_emissao = '20/10/2000'
+      subject.data_emissao.must_be_instance_of DateTime
     end
   end
 
@@ -152,6 +115,11 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :num_rps_substituido
       subject.must_respond_to :num_rps_substituido=
     end
+
+    it 'must coerce the value to integer' do
+      subject.num_rps_substituido = '123'
+      subject.num_rps_substituido.must_equal 123
+    end
   end
 
   describe 'num_nfse_substituida attribute' do
@@ -159,12 +127,22 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :num_nfse_substituida
       subject.must_respond_to :num_nfse_substituida=
     end
+
+    it 'must coerce the value to integer' do
+      subject.num_nfse_substituida = '123'
+      subject.num_nfse_substituida.must_equal 123
+    end
   end
 
   describe 'data_nfse_substituida attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :data_nfse_substituida
       subject.must_respond_to :data_nfse_substituida=
+    end
+
+    it 'must coerce the value to DateTime' do
+      subject.data_nfse_substituida = '20/10/2000'
+      subject.data_nfse_substituida.must_be_instance_of DateTime
     end
   end
 
@@ -175,14 +153,12 @@ describe Nfse::Envio::Rps do
     end
 
     it 'must have the right default value' do
-      subject.serie_prestacao.must_equal '99'
+      subject.serie_prestacao.must_equal 99
     end
 
-    it 'must respect if a new value is defined' do
-      value = 10
-      subject.serie_prestacao = value
-
-      subject.serie_prestacao.must_equal value
+    it 'must coerce the value to integer' do
+      subject.serie_prestacao = '12'
+      subject.serie_prestacao.must_equal 12
     end
   end
 
@@ -197,6 +173,11 @@ describe Nfse::Envio::Rps do
     it 'must have the accessors methods' do
       subject.must_respond_to :aliquota_atividade
       subject.must_respond_to :aliquota_atividade=
+    end
+
+    it 'must coerce the value to float' do
+      subject.aliquota_atividade = '1.5'
+      subject.aliquota_atividade.must_equal 1.5
     end
   end
 
@@ -226,6 +207,18 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :operacao
       subject.must_respond_to :operacao=
     end
+
+    describe 'rio de janeiro' do
+      before do
+        Nfse::Base.prefeitura = :rio_de_janeiro
+      end
+
+      subject { Nfse::Envio::Rps.new }
+
+      it 'must have the right default value' do
+        subject.operacao.must_equal '1'
+      end
+    end
   end
 
   describe 'tributacao attribute' do
@@ -240,12 +233,22 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :valor_pis
       subject.must_respond_to :valor_pis=
     end
+
+    it 'must coerce the value to float' do
+      subject.valor_pis = '1.2'
+      subject.valor_pis.must_equal 1.2
+    end
   end
 
   describe 'valor_cofins attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :valor_cofins
       subject.must_respond_to :valor_cofins=
+    end
+
+    it 'must coerce the value to float' do
+      subject.valor_cofins = '1.2'
+      subject.valor_cofins.must_equal 1.2
     end
   end
 
@@ -254,12 +257,22 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :valor_inss
       subject.must_respond_to :valor_inss=
     end
+
+    it 'must coerce the value to float' do
+      subject.valor_inss = '1.2'
+      subject.valor_inss.must_equal 1.2
+    end
   end
 
   describe 'valor_ir attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :valor_ir
       subject.must_respond_to :valor_ir=
+    end
+
+    it 'must coerce the value to float' do
+      subject.valor_ir = '1.2'
+      subject.valor_ir.must_equal 1.2
     end
   end
 
@@ -268,12 +281,22 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :valor_csll
       subject.must_respond_to :valor_csll=
     end
+
+    it 'must coerce the value to float' do
+      subject.valor_csll = '1.2'
+      subject.valor_csll.must_equal 1.2
+    end
   end
 
   describe 'aliquota_pis attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :aliquota_pis
       subject.must_respond_to :aliquota_pis=
+    end
+
+    it 'must coerce the value to float' do
+      subject.aliquota_pis = '1.2'
+      subject.aliquota_pis.must_equal 1.2
     end
   end
 
@@ -282,12 +305,22 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :aliquota_cofins
       subject.must_respond_to :aliquota_cofins=
     end
+
+    it 'must coerce the value to float' do
+      subject.aliquota_cofins = '1.2'
+      subject.aliquota_cofins.must_equal 1.2
+    end
   end
 
   describe 'aliquota_inss attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :aliquota_inss
       subject.must_respond_to :aliquota_inss=
+    end
+
+    it 'must coerce the value to float' do
+      subject.aliquota_inss = '1.2'
+      subject.aliquota_inss.must_equal 1.2
     end
   end
 
@@ -296,12 +329,22 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :aliquota_ir
       subject.must_respond_to :aliquota_ir=
     end
+
+    it 'must coerce the value to float' do
+      subject.aliquota_ir = '1.2'
+      subject.aliquota_ir.must_equal 1.2
+    end
   end
 
   describe 'aliquota_csll attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :aliquota_csll
       subject.must_respond_to :aliquota_csll=
+    end
+
+    it 'must coerce the value to float' do
+      subject.aliquota_csll = '1.2'
+      subject.aliquota_csll.must_equal 1.2
     end
   end
 
@@ -323,6 +366,20 @@ describe Nfse::Envio::Rps do
     it 'must have the accessors methods' do
       subject.must_respond_to :cnpj_intermediario
       subject.must_respond_to :cnpj_intermediario=
+    end
+  end
+
+  describe 'id attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :id
+      subject.must_respond_to :id=
+    end
+
+    it 'must have the right default value' do
+      date = Time.now
+      Time.expects(:now).returns(date)
+
+      subject.id.must_equal "#{subject.object_id}#{date.to_i}"
     end
   end
 
@@ -348,19 +405,90 @@ describe Nfse::Envio::Rps do
     end
   end
 
-  describe 'status_rps attribute' do
+  describe 'status attribute' do
     it 'must have the accessors methods' do
-      subject.must_respond_to :status_rps
-      subject.must_respond_to :status_rps=
+      subject.must_respond_to :status
+      subject.must_respond_to :status=
     end
 
     it 'must have the right default value' do
-      subject.status_rps.must_equal 1
+      subject.status.must_equal 1
+    end
+  end
+
+  describe 'iss_retido attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :iss_retido
+      subject.must_respond_to :iss_retido=
+    end
+
+    it 'must have the right default value' do
+      subject.iss_retido.must_equal 2
+    end
+  end
+
+  describe 'valor_iss attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :valor_iss
+      subject.must_respond_to :valor_iss=
+    end
+
+    it 'must coerce the value to float' do
+      subject.valor_iss = '1.2'
+      subject.valor_iss.must_equal 1.2
+    end
+  end
+
+  describe 'valor_outras_retencoes attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :valor_outras_retencoes
+      subject.must_respond_to :valor_outras_retencoes=
+    end
+
+    it 'must have the right default value' do
+      subject.valor_outras_retencoes.must_equal 0.0
+    end
+
+    it 'must coerce the value to float' do
+      subject.valor_outras_retencoes = '1.2'
+      subject.valor_outras_retencoes.must_equal 1.2
+    end
+  end
+
+  describe 'desconto_incondicionado attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :desconto_incondicionado
+      subject.must_respond_to :desconto_incondicionado=
+    end
+
+    it 'must have the right default value' do
+      subject.desconto_incondicionado.must_equal 0.0
+    end
+
+    it 'must coerce the value to float' do
+      subject.desconto_incondicionado = '1.2'
+      subject.desconto_incondicionado.must_equal 1.2
+    end
+  end
+
+  describe 'desconto_condicionado attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :desconto_condicionado
+      subject.must_respond_to :desconto_condicionado=
+    end
+
+    it 'must have the right default value' do
+      subject.desconto_condicionado.must_equal 0.0
+    end
+
+    it 'must coerce the value to float' do
+      subject.desconto_condicionado = '1.2'
+      subject.desconto_condicionado.must_equal 1.2
     end
   end
 
   describe '#formatted_data_emissao' do
-    it 'must return the date formatted correctly' do
+    it 'must return the date with the right format' do
       date = DateTime.new(2012, 10, 10)
       subject.data_emissao = date
 
@@ -368,11 +496,20 @@ describe Nfse::Envio::Rps do
     end
   end
 
+  describe '#formatted_data_nfse_substituida' do
+    it 'must return the date with the right format' do
+      date = DateTime.now
+      subject.data_nfse_substituida = date
+
+      subject.formatted_data_nfse_substituida.must_equal date.strftime('%Y-%m-%d')
+    end
+  end
+
   describe '#assinatura' do
     it 'must generate the right signature' do
       subject.prestador.inscricao_municipal = '0317330'
       subject.serie                         = 'NF'
-      subject.numero                        = '38663'
+      subject.numero                        = 38663
       subject.data_emissao                  = '2009-09-05'
       subject.tributacao                    = 'T'
       subject.situacao                      = 'N'
@@ -382,8 +519,8 @@ describe Nfse::Envio::Rps do
 
       subject.itens << stub(valor_total: 1686)
 
-      assinatura = '6bcbb93fd7e6d7f0417656f4931ba9f92a7ac1da'
-      subject.assinatura.must_equal assinatura
+      expected = '6bcbb93fd7e6d7f0417656f4931ba9f92a7ac1da'
+      subject.assinatura.must_equal expected
     end
   end
 
@@ -405,57 +542,11 @@ describe Nfse::Envio::Rps do
     end
   end
 
-  describe 'initialize passing a hash of attributes' do
-    before do
-      data_emissao = DateTime.new(2012, 10, 10)
-      @attr = {
-        numero:                  '109',
-        data_emissao:            data_emissao,
-        situacao:                'N',
-        serie_rps_substituido:   '123',
-        num_rps_substituido:     '456',
-        num_nfse_substituida:    '789',
-        data_nfse_substituida:   Time.new(2012, 2, 2).to_s,
-        cod_atividade:           '412040000',
-        aliquota_atividade:      '5.00',
-        tipo_recolhimento:       'R',
-        cod_municipio_prestacao: '0006291',
-        municipio_prestacao:     'CAMPINAS',
-        operacao:                'A',
-        tributacao:              'T',
-        valor_pis:               '0.00',
-        valor_cofins:            '1.11',
-        valor_inss:              '2.22',
-        valor_ir:                '3.33',
-        valor_csll:              '4.44',
-        aliquota_pis:            '5.55',
-        aliquota_cofins:         '6.66',
-        aliquota_inss:           '7.77',
-        aliquota_ir:             '8.88',
-        aliquota_csll:           '9.99',
-        descricao:               'TESTE',
-        motivo_cancelamento:     'motivo exemplo',
-        cnpj_intermediario:      '123456789',
-        tipo:                    'Tipo Exemplo',
-        serie:                   'Serie Exemplo',
-        serie_prestacao:         '21'
-      }
-
-      @rps = Nfse::Envio::Rps.new(@attr)
-    end
-
-    it 'must have the right attributes values' do
-      @attr.each do |k,v|
-        @rps.send(k).must_equal v
-      end
-    end
-  end
-
-  describe 'initialize passing a hash of attributes with Prestador data' do
+  describe 'initialize passing Prestador data' do
     before do
       @prestador = { inscricao_municipal: '123' }
 
-      attributes = { 'prestador' => @prestador }
+      attributes = { prestador: @prestador }
       @rps = Nfse::Envio::Rps.new(attributes)
     end
 
@@ -464,11 +555,11 @@ describe Nfse::Envio::Rps do
     end
   end
 
-  describe 'initialize passing a hash of attributes with Tomador data' do
+  describe 'initialize passing Tomador data' do
     before do
       @tomador = { email: 'foo@example.com' }
 
-      attributes = { 'tomador' => @tomador }
+      attributes = { tomador: @tomador }
       @rps = Nfse::Envio::Rps.new(attributes)
     end
 
@@ -477,12 +568,12 @@ describe Nfse::Envio::Rps do
     end
   end
 
-  describe 'initialize passing a hash of attributes with Itens data' do
+  describe 'initialize passing Itens data' do
     before do
       @item1 = { discriminacao: 'Item 1' }
       @item2 = { discriminacao: 'Item 2' }
 
-      attributes = { 'itens' => [@item1, @item2] }
+      attributes = { itens: [@item1, @item2] }
       @rps = Nfse::Envio::Rps.new(attributes)
     end
 
@@ -492,12 +583,12 @@ describe Nfse::Envio::Rps do
     end
   end
 
-  describe 'initialize passing a hash of attributes with Deducoes data' do
+  describe 'initialize passing Deducoes data' do
     before do
       @deducao1 = { por: 'Valor' }
       @deducao2 = { por: 'Percentual' }
 
-      attributes = { 'deducoes' => [@deducao1, @deducao2] }
+      attributes = { deducoes: [@deducao1, @deducao2] }
       @rps = Nfse::Envio::Rps.new(attributes)
     end
 
@@ -511,15 +602,15 @@ describe Nfse::Envio::Rps do
     describe 'campinas' do
       before do
         Nfse::Base.prefeitura = :campinas
-        subject.numero = '109'
-        subject.data_emissao = Time.new(2009, 10, 1)
+        subject.numero = 109
+        subject.data_emissao = '01/10/2009'
         subject.situacao = 'N'
-        subject.serie_rps_substituido = '123'
-        subject.num_rps_substituido = '0'
-        subject.num_nfse_substituida = '1'
+        subject.serie_rps_substituido = 123
+        subject.num_rps_substituido = 0
+        subject.num_nfse_substituida = 1
         subject.data_nfse_substituida = '1900-01-01'
         subject.cod_atividade = '412040000'
-        subject.aliquota_atividade = '5.0'
+        subject.aliquota_atividade = 5.0
         subject.tipo_recolhimento = 'R'
         subject.cod_municipio_prestacao = '0006291'
         subject.municipio_prestacao = 'CAMPINAS'
@@ -583,15 +674,15 @@ describe Nfse::Envio::Rps do
     describe 'rio de janeiro' do
       before do
         Nfse::Base.prefeitura = :rio_de_janeiro
-        subject.numero = '109'
-        subject.serie = "A"
-        subject.tipo = "1"
-        subject.data_emissao = Time.new(2009, 10, 1)
-        subject.optante_simples_nacional = '2'
-        subject.incentivador_cultural = '1'
-        subject.status_rps = '1'
+        subject.numero = 109
+        subject.serie = 'A'
+        subject.tipo = '1'
+        subject.data_emissao = '01/10/2009'
+        subject.optante_simples_nacional = 2
+        subject.incentivador_cultural = 1
+        subject.status = 1
         subject.cod_atividade = '1405'
-        subject.aliquota_atividade = '0.05'
+        subject.aliquota_atividade = 0.05
         subject.tipo_recolhimento = '140520'
         subject.cod_municipio_prestacao = '3304557'
         subject.operacao = '1'

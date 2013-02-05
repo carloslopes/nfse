@@ -171,8 +171,8 @@ describe Nfse::Envio::Lote do
 
   describe 'initialize' do
     before do
-      @rps1 = { numero: '1' }
-      @rps2 = { numero: '2' }
+      @rps1 = { numero: 1 }
+      @rps2 = { numero: 2 }
 
       @attrs = {
         numero:       '2',
