@@ -39,24 +39,4 @@ describe Nfse::Envio::Prestador do
     end
   end
 
-  describe 'initialize passing a hash of attributes' do
-    before do
-      @attr = {
-        inscricao_municipal: '1234567',
-        razao_social:        'Empresa exemplo',
-        ddd:                 '019',
-        telefone:            '987654321',
-        cnpj:                '000000000000000'
-      }
-
-      @prestador = Nfse::Envio::Prestador.new(@attr)
-    end
-
-    it 'must have the right attributes values' do
-      @attr.each do |k,v|
-        @prestador.send(k).must_equal v
-      end
-    end
-  end
-
 end

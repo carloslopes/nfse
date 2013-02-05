@@ -1,15 +1,15 @@
 module Nfse
   module Envio
     class Prestador
-      attr_accessor :inscricao_municipal, :razao_social, :ddd, :telefone, :cnpj
+      include Virtus
 
-      def initialize(attributes = {})
-        if attributes.is_a?(Hash)
-          attributes.each do |k,v|
-            send("#{k}=", v)
-          end
-        end
-      end
+      attribute :inscricao_municipal, String
+      attribute :razao_social, String
+      attribute :ddd, String
+      attribute :telefone, String
+
+      # Rio de janeiro
+      attribute :cnpj, String
     end
   end
 end
