@@ -27,12 +27,6 @@ describe Nfse::Envio::Tomador do
       it 'must have the right default value' do
         subject.cnpj.must_equal '77777777777'
       end
-
-      it 'must respect if a new value is defined' do
-        value = '000100020003'
-        subject.cnpj = value
-        subject.cnpj.must_equal value
-      end
     end
   end
 
@@ -91,12 +85,6 @@ describe Nfse::Envio::Tomador do
       it 'must have the right default value' do
         subject.tipo_logradouro.must_equal '-'
       end
-
-      it 'must respect if a new value is defined' do
-        value = 'Bairro'
-        subject.tipo_logradouro = value
-        subject.tipo_logradouro.must_equal value
-      end
     end
   end
 
@@ -116,12 +104,6 @@ describe Nfse::Envio::Tomador do
       it 'must have the right default value' do
         subject.logradouro.must_equal '-'
       end
-
-      it 'must respect if a new value is defined' do
-        value = 'Logradouro exemplo'
-        subject.logradouro = value
-        subject.logradouro.must_equal value
-      end
     end
   end
 
@@ -140,12 +122,6 @@ describe Nfse::Envio::Tomador do
 
       it 'must have the right default value' do
         subject.num_endereco.must_equal '0'
-      end
-
-      it 'must respect if a new value is defined' do
-        value = '123'
-        subject.num_endereco = value
-        subject.num_endereco.must_equal value
       end
     end
   end
@@ -173,12 +149,6 @@ describe Nfse::Envio::Tomador do
       it 'must have the right default value' do
         subject.tipo_bairro.must_equal '-'
       end
-
-      it 'must respect if a new value is defined' do
-        value = 'Bairro'
-        subject.tipo_bairro = value
-        subject.tipo_bairro.must_equal value
-      end
     end
   end
 
@@ -197,12 +167,6 @@ describe Nfse::Envio::Tomador do
 
       it 'must have the right default value' do
         subject.bairro.must_equal '-'
-      end
-
-      it 'must respect if a new value is defined' do
-        value = 'Bairro exemplo'
-        subject.bairro = value
-        subject.bairro.must_equal value
       end
     end
   end
@@ -237,12 +201,6 @@ describe Nfse::Envio::Tomador do
       it 'must have the right default value' do
         subject.cep.must_equal '00000000'
       end
-
-      it 'must respect if a new value is defined' do
-        value = '123456789'
-        subject.cep = value
-        subject.cep.must_equal value
-      end
     end
   end
 
@@ -261,12 +219,6 @@ describe Nfse::Envio::Tomador do
 
       it 'must have the right default value' do
         subject.email.must_equal '-'
-      end
-
-      it 'must respect if a new value is defined' do
-        value = 'email@example.com'
-        subject.email = value
-        subject.email.must_equal value
       end
     end
   end
@@ -292,38 +244,7 @@ describe Nfse::Envio::Tomador do
     end
   end
 
-  describe 'initialize passing a hash of attributes' do
-    before do
-      @attr = {
-        inscricao_municipal:  '123456789',
-        doc_estrangeiro:      '123',
-        complemento_endereco: '456',
-        cod_cidade:           '789',
-        cidade:               'Exemplo',
-        ddd:                  '019',
-        telefone:             '987654321',
-        cnpj:                 '321456987',
-        razao_social:         'Empresa exemplo',
-        tipo_logradouro:      'Avenida',
-        logradouro:           'Exemplo logradouro',
-        tipo_bairro:          'Bairro',
-        bairro:               'Exemplo bairro',
-        email:                'email@example.com',
-        num_endereco:         '925',
-        cep:                  '82947296'
-      }
-
-      @tomador = Nfse::Envio::Tomador.new(@attr)
-    end
-
-    it 'must have the right attributes values' do
-      @attr.each do |k,v|
-        @tomador.send(k).must_equal v
-      end
-    end
-  end
-
-  describe '#tem_contato' do
+  describe '#tem_contato?' do
     before do
       Nfse::Base.prefeitura = :rio_de_janeiro
     end
@@ -332,7 +253,7 @@ describe Nfse::Envio::Tomador do
       subject { Nfse::Envio::Tomador.new }
 
       it 'should return false' do
-        subject.tem_contato.must_equal false
+        subject.tem_contato?.must_equal false
       end
     end
 
@@ -340,7 +261,7 @@ describe Nfse::Envio::Tomador do
       subject { Nfse::Envio::Tomador.new(email: 'email@example.com') }
 
       it 'should return true' do
-        subject.tem_contato.must_equal true
+        subject.tem_contato?.must_equal true
       end
 
     end
@@ -349,12 +270,12 @@ describe Nfse::Envio::Tomador do
       subject { Nfse::Envio::Tomador.new(telefone: '-') }
 
       it 'should return true' do
-        subject.tem_contato.must_equal true
+        subject.tem_contato?.must_equal true
       end
     end
   end
 
-  describe '#tem_endereco' do
+  describe '#tem_endereco?' do
     before do
       Nfse::Base.prefeitura = :rio_de_janeiro
     end
@@ -363,7 +284,7 @@ describe Nfse::Envio::Tomador do
       subject { Nfse::Envio::Tomador.new }
 
       it 'should return false' do
-        subject.tem_endereco.must_equal false
+        subject.tem_endereco?.must_equal false
       end
     end
 
@@ -371,7 +292,7 @@ describe Nfse::Envio::Tomador do
       subject { Nfse::Envio::Tomador.new(logradouro: '-') }
 
       it 'should return true' do
-        subject.tem_endereco.must_equal true
+        subject.tem_endereco?.must_equal true
       end
     end
 
@@ -379,7 +300,7 @@ describe Nfse::Envio::Tomador do
       subject { Nfse::Envio::Tomador.new(num_endereco: '-') }
 
       it 'should return true' do
-        subject.tem_endereco.must_equal true
+        subject.tem_endereco?.must_equal true
       end
     end
 
@@ -387,7 +308,7 @@ describe Nfse::Envio::Tomador do
       subject { Nfse::Envio::Tomador.new(complemento_endereco: '-') }
 
       it 'should return true' do
-        subject.tem_endereco.must_equal true
+        subject.tem_endereco?.must_equal true
       end
     end
 
@@ -395,7 +316,7 @@ describe Nfse::Envio::Tomador do
       subject { Nfse::Envio::Tomador.new(bairro: '-') }
 
       it 'should return true' do
-        subject.tem_endereco.must_equal true
+        subject.tem_endereco?.must_equal true
       end
     end
 
@@ -403,7 +324,7 @@ describe Nfse::Envio::Tomador do
       subject { Nfse::Envio::Tomador.new(cod_cidade: '-') }
 
       it 'should return true' do
-        subject.tem_endereco.must_equal true
+        subject.tem_endereco?.must_equal true
       end
     end
 
@@ -411,7 +332,7 @@ describe Nfse::Envio::Tomador do
       subject { Nfse::Envio::Tomador.new(uf: '-') }
 
       it 'should return true' do
-        subject.tem_endereco.must_equal true
+        subject.tem_endereco?.must_equal true
       end
     end
 
@@ -419,8 +340,39 @@ describe Nfse::Envio::Tomador do
       subject { Nfse::Envio::Tomador.new(cep: '-') }
 
       it 'should return true' do
-        subject.tem_endereco.must_equal true
+        subject.tem_endereco?.must_equal true
       end
+    end
+  end
+
+  describe '#formatted_cnpj' do
+    it 'must return the cnpj with the right format' do
+      subject.cnpj = 191
+      subject.formatted_cnpj.must_equal '00000000000191'
+    end
+
+    describe 'campinas' do
+      before do
+        Nfse::Base.prefeitura = :campinas
+      end
+
+      subject { Nfse::Envio::Tomador.new }
+
+      it 'should not format the default value' do
+        subject.formatted_cnpj.must_equal subject.default_cnpj
+      end
+    end
+  end
+
+  describe '#formatted_cep' do
+    it 'must return the cpf with the right format' do
+      subject.cep = 379
+      subject.formatted_cep.must_equal '37900000'
+    end
+
+    it 'must return nil if cpf is nil' do
+      subject.cep = nil
+      subject.formatted_cep.must_be_nil
     end
   end
 

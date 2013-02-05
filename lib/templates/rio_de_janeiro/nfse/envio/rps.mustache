@@ -49,7 +49,7 @@
 			{{#tomador.razao_social}}
 			<RazaoSocial>{{tomador.razao_social}}</RazaoSocial>
 			{{/tomador.razao_social}}
-			{{#tomador.tem_endereco}}
+			{{#tomador.tem_endereco?}}
 			<Endereco>
 			  {{#tomador.logradouro}}
 				<Endereco>{{tomador.logradouro}}</Endereco>
@@ -73,8 +73,8 @@
 				<Cep>{{tomador.cep}}</Cep>
 			  {{/tomador.cep}}
 			</Endereco>
-			{{/tomador.tem_endereco}}
-			{{#tomador.tem_contato}}
+			{{/tomador.tem_endereco?}}
+			{{#tomador.tem_contato?}}
 			<Contato>
 		    {{#tomador.telefone}}
 			  <Telefone>{{tomador.ddd}}{{tomador.telefone}}</Telefone>
@@ -83,7 +83,7 @@
 				<Email>{{tomador.email}}</Email>
 			  {{/tomador.email}}
 			</Contato>
-			{{/tomador.tem_contato}}
+			{{/tomador.tem_contato?}}
 		</Tomador>
 	</InfRps>
 </Rps>

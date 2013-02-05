@@ -16,10 +16,10 @@ Gem::Specification.new do |gem|
   gem.version       = Nfse::VERSION
 
   gem.add_dependency 'mustache', '~> 0.99'
+  gem.add_dependency 'virtus', '~> 0.5.4'
 
   gem.add_development_dependency 'rake', '~> 0.9.2'
   gem.add_development_dependency 'nokogiri', '~> 1.5'
   gem.add_development_dependency 'mocha', '~> 0.12.7'
   gem.add_development_dependency 'minitest-debugger', '~> 1.0.0'
-
 end

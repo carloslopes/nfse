@@ -1,37 +1,65 @@
 module Nfse
   module Envio
     class Tomador
-      attr_accessor :inscricao_municipal, :doc_estrangeiro, :complemento_endereco,
-        :cod_cidade, :cidade, :ddd, :telefone, :uf, :cpf, :razao_social,
-        :tipo_logradouro, :logradouro, :num_endereco, :tipo_bairro, :bairro,
-        :cep, :email, :cnpj
+      include Virtus
 
-      def initialize(attributes = {})
-        if Nfse::Base.prefeitura == :campinas
-          @cnpj = '77777777777'
-          @razao_social = 'Consumidor'
-          @tipo_logradouro = '-'
-          @logradouro = '-'
-          @num_endereco = '0'
-          @tipo_bairro = '-'
-          @bairro = '-'
-          @cep = '00000000'
-          @email = '-'
-        end
+      attribute :inscricao_municipal, String
+      attribute :cnpj, String, default: :default_cnpj
+      attribute :razao_social, String, default: :default_razao_social
+      attribute :doc_estrangeiro, String
+      attribute :tipo_logradouro, String, default: :default_dash
+      attribute :logradouro, String, default: :default_dash
+      attribute :num_endereco, String, default: :default_num_endereco
+      attribute :complemento_endereco, String
+      attribute :tipo_bairro, String, default: :default_dash
+      attribute :bairro, String, default: :default_dash
+      attribute :cod_cidade, String
+      attribute :cidade, String
+      attribute :cep, String, default: :default_cep
+      attribute :email, String, default: :default_dash
+      attribute :ddd, String
+      attribute :telefone, String
 
-        if attributes.is_a?(Hash)
-          attributes.each do |k,v|
-            send("#{k}=", v)
-          end
-        end
-      end
+      # Rio de janeiro
+      attribute :cpf, String
+      attribute :uf, String
 
-      def tem_endereco
+      def tem_endereco?
         [@logradouro, @num_endereco, @complemento_endereco, @bairro, @cod_cidade, @uf, @cep].uniq != [nil]
       end
 
-      def tem_contato
+      def tem_contato?
         [@telefone, @email].uniq != [nil]
+      end
+
+      def formatted_cnpj
+        return cnpj if cnpj == default_cnpj
+        cnpj.rjust(14, '0')
+      end
+
+      def formatted_cep
+        cep.ljust(8, '0') unless cep.nil?
+      end
+
+      # Attributes default values
+      def default_cnpj
+        '77777777777' if Nfse::Base.prefeitura == :campinas
+      end
+
+      def default_razao_social
+        'Consumidor' if Nfse::Base.prefeitura == :campinas
+      end
+
+      def default_dash
+        '-' if Nfse::Base.prefeitura == :campinas
+      end
+
+      def default_num_endereco
+        '0' if Nfse::Base.prefeitura == :campinas
+      end
+
+      def default_cep
+        '00000000' if Nfse::Base.prefeitura == :campinas
       end
     end
   end
