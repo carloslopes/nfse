@@ -265,7 +265,9 @@ puts xml
 ## Autores
 
 [Carlos Lopes](https://github.com/carloslopes)  
-[Rafael Lima](https://github.com/rafaelp)
+
+
+[Contribuidores](https://github.com/carloslopes/nfse/graphs/contributors)
 
 ## Como Contribuir?
 
