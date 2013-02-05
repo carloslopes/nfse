@@ -73,7 +73,7 @@
 					<CPFCNPJReferencia>27394162000108</CPFCNPJReferencia>
 					<NumeroNFReferencia>321</NumeroNFReferencia>
 					<ValorTotalReferencia>25.5</ValorTotalReferencia>
-					<PercentualDeduzir>5</PercentualDeduzir>
+					<PercentualDeduzir>5.0</PercentualDeduzir>
 					<ValorDeduzir>10.0</ValorDeduzir>
 				</Deducao>
 				<Deducao>
@@ -82,7 +82,7 @@
 					<CPFCNPJReferencia>80100026149372</CPFCNPJReferencia>
 					<NumeroNFReferencia>546</NumeroNFReferencia>
 					<ValorTotalReferencia>15.5</ValorTotalReferencia>
-					<PercentualDeduzir>10</PercentualDeduzir>
+					<PercentualDeduzir>10.0</PercentualDeduzir>
 					<ValorDeduzir>1.55</ValorDeduzir>
 				</Deducao>
 			</Deducoes>
