@@ -18,9 +18,8 @@ Atenção: O layout do Rio de Janeiro ainda está sendo desenvolvido e não foi 
 
 ### TODO
 * Assinar os XML gerados
-* Enviar os XML gerados e assinados para o WebService
-* Consulta de notas
-* Consulta sequencial RPS
+* Geração do xml de consulta de notas
+* Geração do xml de consulta sequencial RPS
 * Refatorar testes do initialize da RPS (usar um describe apenas)
 * Instanciar os default values dos atributos apenas para os que não receberam nada pelo initialize
 
