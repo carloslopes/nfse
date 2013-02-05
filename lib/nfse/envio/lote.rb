@@ -3,40 +3,37 @@ require 'json'
 module Nfse
   module Envio
     class Lote < Nfse::Base
-      attr_accessor :id, :numero, :cod_cidade, :cnpj, :razao_social, :inscricao_municipal,
-        :transacao, :versao, :metodo_envio
-      attr_reader :rps
+      include Virtus
 
-      def initialize(attributes = {})
-        @id  = "#{self.object_id}#{Time.now.to_i}"
-        @numero = '1'
-        @transacao = 'true'
-        @versao = '1'
-        @metodo_envio = 'WS'
+      attribute :rps, Array[Rps], default: lambda { |*_| Array.new }
 
+      attribute :id, String, default: lambda { |lote,_| "#{lote.object_id}#{Time.now.to_i}" }
+      attribute :cod_cidade, String
+      attribute :cnpj, String
+      attribute :razao_social, String
+      attribute :transacao, String, default: 'true'
+      attribute :versao, Integer, default: 1
+      attribute :metodo_envio, String, default: 'WS'
+
+      # Rio de janeiro
+      attribute :numero, Integer, default: 1
+      attribute :inscricao_municipal, String
+
+      def initialize(attributes = nil)
         attributes = JSON.parse(attributes) if attributes.is_a?(String)
-
-        @rps = []
-        rps = attributes.delete('rps') || attributes.delete(:rps)
-        rps.each { |data| self.rps << Rps.new(data) } if rps
-
-        attributes.each do |k,v|
-          send("#{k}=", v)
-        end
+        super(attributes)
       end
 
       def qtd_rps
         rps.size
       end
 
-      # Soma do valor de todos os serviços de cada RPS
       def valor_servicos
         rps.reduce(0) do |total,obj|
           total += obj.valor_servico
         end
       end
 
-      # Soma do valor de todos as deduções de cada RPS
       def valor_deducoes
         rps.reduce(0) do |total,obj|
           total += obj.valor_deducao

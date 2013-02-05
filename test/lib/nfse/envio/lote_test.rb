@@ -1,5 +1,4 @@
 require_relative '../../../test_helper'
-require 'json'
 
 describe Nfse::Envio::Lote do
 
@@ -26,7 +25,12 @@ describe Nfse::Envio::Lote do
     end
 
     it 'must have the right default value' do
-      subject.numero.must_equal "1"
+      subject.numero.must_equal 1
+    end
+
+    it 'must coerce the value to integer' do
+      subject.numero = '123'
+      subject.numero.must_equal 123
     end
   end
 
@@ -67,21 +71,15 @@ describe Nfse::Envio::Lote do
     it 'must have the right default value' do
       subject.transacao.must_equal 'true'
     end
-
-    it 'must respect if a new value is defined' do
-      value = 'false'
-      subject.transacao = value
-
-      subject.transacao.must_equal value
-    end
   end
 
   describe 'rps attribute' do
-    it "won't have the writer method" do
-      subject.wont_respond_to :rps=
+    it 'must have the accessors methods' do
+      subject.must_respond_to :rps
+      subject.must_respond_to :rps=
     end
 
-    it 'must be an instance of Array' do
+    it 'must have the right default value' do
       subject.rps.must_be_instance_of Array
     end
   end
@@ -93,14 +91,12 @@ describe Nfse::Envio::Lote do
     end
 
     it 'must have the right default value' do
-      subject.versao.must_equal '1'
+      subject.versao.must_equal 1
     end
 
-    it 'must respect if a new value is defined' do
-      value = '2'
-      subject.versao = value
-
-      subject.versao.must_equal value
+    it 'must coerce the value to integer' do
+      subject.versao = '123'
+      subject.versao.must_equal 123
     end
   end
 
@@ -112,13 +108,6 @@ describe Nfse::Envio::Lote do
 
     it 'must have the right default value' do
       subject.metodo_envio.must_equal 'WS'
-    end
-
-    it 'must respect if a new value is defined' do
-      value = 'Foobar'
-      subject.metodo_envio = value
-
-      subject.metodo_envio.must_equal value
     end
   end
 
@@ -169,61 +158,23 @@ describe Nfse::Envio::Lote do
     end
   end
 
-  describe 'initialize' do
+  describe 'intialize passing JSON as argument' do
     before do
-      @rps1 = { numero: 1 }
-      @rps2 = { numero: 2 }
-
-      @attrs = {
-        numero:       '2',
-        cod_cidade:   '6291',
-        cnpj:         '02646676000182',
-        razao_social: 'Empresa Exemplo',
-        inscricao_municipal: '001002003',
-        transacao:    'false',
-        versao:       '2.5',
-        metodo_envio: 'Metodo Exemplo',
-        rps:          [@rps1, @rps2]
+      @attributes = {
+        id: '1',
+        rps: [{ numero: 2 }]
       }
+
+      @lote = Nfse::Envio::Lote.new(JSON.generate(@attributes))
     end
 
-    describe 'passing attributes' do
-      before do
-        @lote = Nfse::Envio::Lote.new(@attrs)
-      end
-
-      it 'must have the right attributes values' do
-        @attrs.each do |k,v|
-          @lote.send(k).must_equal v
-        end
-      end
-
-      it "must have the right RPSes' values" do
-        lote_rpses = @lote.rps
-
-        lote_rpses.first.numero.must_equal @rps1[:numero]
-        lote_rpses.last.numero.must_equal @rps2[:numero]
-      end
+    it 'lote sould have your attributes defined correctly' do
+      @lote.id.must_equal(@attributes[:id])
     end
 
-    describe 'passing a JSON of attributes' do
-      before do
-        @lote = Nfse::Envio::Lote.new(JSON.generate(@attrs))
-        @attrs.delete(:rps)
-      end
-
-      it 'must have the right attributes values' do
-        @attrs.each do |k,v|
-          @lote.send(k).must_equal v
-        end
-      end
-
-      it "must have the right RPSes' values" do
-        lote_rpses = @lote.rps
-
-        lote_rpses.first.numero.must_equal @rps1[:numero]
-        lote_rpses.last.numero.must_equal @rps2[:numero]
-      end
+    it 'rps should have your attributes defined correctly' do
+      rps = @lote.rps.first
+      rps.numero.must_equal(@attributes[:rps].first[:numero])
     end
   end
 
