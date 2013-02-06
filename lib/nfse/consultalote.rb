@@ -2,19 +2,16 @@ require 'json'
 
 module Nfse
   class ConsultaLote < Nfse::Base
-    attr_accessor :cod_cidade, :cnpj, :num_lote
-    attr_writer :versao
+    include Virtus
 
-    def initialize(attributes = {})
+    attribute :cod_cidade, String
+    attribute :cnpj, String
+    attribute :num_lote, String
+    attribute :versao, Integer, default: 1
+
+    def initialize(attributes = nil)
       attributes = JSON.parse(attributes) if attributes.is_a?(String)
-
-      attributes.each do |k,v|
-        send("#{k}=", v)
-      end
-    end
-
-    def versao
-      @versao ||= '1'
+      super(attributes)
     end
   end
 end

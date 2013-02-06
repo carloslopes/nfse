@@ -1,5 +1,4 @@
 require_relative '../../test_helper'
-require 'json'
 
 describe Nfse::ConsultaLote do
 
@@ -19,23 +18,6 @@ describe Nfse::ConsultaLote do
     end
   end
 
-  describe 'versao attribute' do
-    it 'must have the accessors methods' do
-      subject.must_respond_to :versao
-      subject.must_respond_to :versao=
-    end
-
-    it 'must have the right default value' do
-      subject.versao.must_equal '1'
-    end
-
-    it 'must respect if a new value is defined' do
-      subject.versao = '2'
-
-      subject.versao.must_equal '2'
-    end
-  end
-
   describe 'num_lote attribute' do
     it 'must have the accessors methods' do
       subject.must_respond_to :num_lote
@@ -43,37 +25,34 @@ describe Nfse::ConsultaLote do
     end
   end
 
-  describe 'initialize' do
-    before do
-      @attr = {
+  describe 'versao attribute' do
+    it 'must have the accessors methods' do
+      subject.must_respond_to :versao
+      subject.must_respond_to :versao=
+    end
+
+    it 'must have the right default value' do
+      subject.versao.must_equal 1
+    end
+
+    it 'must coerce the value to integer' do
+      subject.versao = '123'
+      subject.versao.must_equal 123
+    end
+  end
+
+  describe 'initialize passing a JSON as argument' do
+    it 'must evaluate the attributes correclty' do
+      attrs = {
         cod_cidade: '6291',
         cnpj:       '27394162000108',
-        versao:     '2',
         num_lote:   '7105'
       }
-    end
 
-    describe 'passing attributes' do
-      before do
-        @consulta = Nfse::ConsultaLote.new(@attr)
-      end
+      consulta = Nfse::ConsultaLote.new(JSON.generate(attrs))
 
-      it 'must have the right attributes values' do
-        @attr.each do |k,v|
-          @consulta.send(k).must_equal v
-        end
-      end
-    end
-
-    describe 'passing a JSON of attributes' do
-      before do
-        @consulta = Nfse::ConsultaLote.new(JSON.generate(@attr))
-      end
-
-      it 'must have the right attributes values' do
-        @attr.each do |k,v|
-          @consulta.send(k).must_equal v
-        end
+      attrs.each do |k,v|
+        consulta.send(k).must_equal v
       end
     end
   end
