@@ -1,32 +1,19 @@
 module Nfse
   module Cancelamento
     class Lote < Nfse::Base
-      attr_accessor :cod_cidade, :cnpj
-      attr_writer :id, :transacao, :versao
-      attr_reader :notas
+      include Virtus
 
-      def initialize(attributes = {})
+      attribute :id, String, default: lambda { |lote,_| "#{lote.object_id}#{Time.now.to_i}" }
+      attribute :cod_cidade, String
+      attribute :cnpj, String
+      attribute :transacao, String, default: 'true'
+      attribute :versao, Integer, default: 1
+
+      attribute :notas, Array[Nota]
+
+      def initialize(attributes = nil)
         attributes = JSON.parse(attributes) if attributes.is_a?(String)
-
-        @notas = []
-        notas = attributes.delete('notas') || attributes.delete(:notas)
-        notas.each { |data| self.notas << Nota.new(data) } if notas
-
-        attributes.each do |k,v|
-          send("#{k}=", v)
-        end
-      end
-
-      def id
-        @id ||= "#{self.object_id}#{Time.now.to_i}"
-      end
-
-      def transacao
-        @transacao ||= 'true'
-      end
-
-      def versao
-        @versao ||= '1'
+        super(attributes)
       end
 
       def render_notas
