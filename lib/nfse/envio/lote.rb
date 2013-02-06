@@ -5,7 +5,7 @@ module Nfse
     class Lote < Nfse::Base
       include Virtus
 
-      attribute :rps, Array[Rps], default: lambda { |*_| Array.new }
+      attribute :rps, Array[Rps]
 
       attribute :id, String, default: lambda { |lote,_| "#{lote.object_id}#{Time.now.to_i}" }
       attribute :cod_cidade, String

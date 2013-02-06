@@ -10,7 +10,7 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :prestador=
     end
 
-    it 'must have the right default value' do
+    it 'must be a new Prestador' do
       subject.prestador.must_be_instance_of Nfse::Envio::Prestador
     end
   end
@@ -21,7 +21,7 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :tomador=
     end
 
-    it 'must have the right default value' do
+    it 'must be a new Tomador' do
       subject.tomador.must_be_instance_of Nfse::Envio::Tomador
     end
   end
@@ -32,8 +32,15 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :itens=
     end
 
-    it 'must have the right default value' do
+    it 'must be an Array' do
       subject.itens.must_be_instance_of Array
+    end
+
+    it 'must build an Item when passing a hash of attributes' do
+      subject.itens = [{}]
+
+      item = subject.itens[0]
+      item.must_be_instance_of Nfse::Envio::Item
     end
   end
 
@@ -43,8 +50,15 @@ describe Nfse::Envio::Rps do
       subject.must_respond_to :deducoes=
     end
 
-    it 'must have the right default value' do
+    it 'must be an Array' do
       subject.deducoes.must_be_instance_of Array
+    end
+
+    it 'must build a Deducao when passing a hash of attributes' do
+      subject.deducoes = [{}]
+
+      deducao = subject.deducoes[0]
+      deducao.must_be_instance_of Nfse::Envio::Deducao
     end
   end
 

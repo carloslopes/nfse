@@ -79,8 +79,15 @@ describe Nfse::Envio::Lote do
       subject.must_respond_to :rps=
     end
 
-    it 'must have the right default value' do
+    it 'must be an Array' do
       subject.rps.must_be_instance_of Array
+    end
+
+    it 'must build a Rps when passing a hash of attributes' do
+      subject.rps = [{}]
+
+      rps = subject.rps[0]
+      rps.must_be_instance_of Nfse::Envio::Rps
     end
   end
 

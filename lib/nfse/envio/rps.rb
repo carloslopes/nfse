@@ -7,8 +7,8 @@ module Nfse
 
       attribute :prestador, Prestador, default: lambda { |*_| Prestador.new }
       attribute :tomador, Tomador, default: lambda { |*_| Tomador.new }
-      attribute :itens, Array[Item], default: lambda { |*_| Array.new }
-      attribute :deducoes, Array[Deducao], default: lambda { |*_| Array.new }
+      attribute :itens, Array[Item]
+      attribute :deducoes, Array[Deducao]
 
       attribute :tipo, String, default: 'RPS'
       attribute :serie, String, default: 'NF'
