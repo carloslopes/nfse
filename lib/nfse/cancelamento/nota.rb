@@ -1,17 +1,15 @@
 module Nfse
   module Cancelamento
     class Nota < Nfse::Base
-      attr_accessor :numero, :cod_verificacao, :motivo_cancelamento
-      attr_writer :inscricao_municipal
+      include Virtus
 
-      def initialize(attributes = {})
-        attributes.each do |k,v|
-          send("#{k}=", v)
-        end
-      end
+      attribute :numero, Integer
+      attribute :inscricao_municipal, String
+      attribute :cod_verificacao, String
+      attribute :motivo_cancelamento, String
 
-      def inscricao_municipal
-        @inscricao_municipal.to_s.rjust(9, '0')
+      def formatted_inscricao_municipal
+        inscricao_municipal.to_s.rjust(9, '0')
       end
     end
   end

@@ -84,8 +84,8 @@ describe Nfse::Cancelamento::Lote do
 
   describe 'initialize' do
     before do
-      @nota1 = { numero: '1' }
-      @nota2 = { numero: '2' }
+      @nota1 = { numero: 1 }
+      @nota2 = { numero: 2 }
 
       @attrs = {
         id:         '1ABCDZ',
@@ -95,25 +95,6 @@ describe Nfse::Cancelamento::Lote do
         versao:     '2',
         notas:      [@nota1, @nota2]
       }
-    end
-
-    describe 'passing attributes' do
-      before do
-        @lote = Nfse::Cancelamento::Lote.new(@attrs)
-      end
-
-      it 'must have the right attributes values' do
-        @attrs.each do |k,v|
-          @lote.send(k).must_equal v
-        end
-      end
-
-      it "must have the right notas' values" do
-        notas_lote = @lote.notas
-
-        notas_lote.first.numero.must_equal @nota1[:numero]
-        notas_lote.last.numero.must_equal @nota2[:numero]
-      end
     end
 
     describe 'passing a JSON of attributes' do
